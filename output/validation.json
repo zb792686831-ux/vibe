@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-21T09:58:35.507Z",
+  "file": "output/test-5s.mp4",
+  "video": {
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "colorSpace": "bt709",
+    "colorRange": "tv",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "frames": 300,
+    "durationSeconds": 5
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "durationSeconds": 5
+  },
+  "fullDecode": "passed",
+  "sampledFrames": [
+    0,
+    150,
+    299
+  ],
+  "frameChecksums": [
+    "c88a28674f996a9ccbaef2eb832b2cf8",
+    "d485072db070e412c2b3a9ab97b9d548",
+    "c7de882afd763237115511429ea5062f"
+  ],
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+}
