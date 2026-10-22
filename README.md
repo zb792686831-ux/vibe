@@ -1,24 +1,24 @@
 # AI 视频制作环境
 
-这是用于 AI 辅助视频制作的 Remotion + FFmpeg 项目。环境及 5 秒测试已验证，当前正在按用户反馈重做无配音的新媒体运营介绍短片。
+这是用于 AI 辅助视频制作的 Remotion + FFmpeg 项目。环境及 5 秒测试已验证，已完成按用户反馈修订的无配音新媒体运营介绍短片。
 
-## 当前第二版：文案与脚本已确认，第二轮风格样稿待确认
+## 当前第二版：完整成片
 
-新版从观众刷到小猫、停留与点赞出发，进入信号汇流与内容反馈；面向所有观众，纯文字动画、贴图、音乐和音效，无配音。文案与2分10秒脚本已确认；首轮风格被否定后，当前重做暖纸拼贴／深青蓝波点、粗曲线和局部光效的R2样稿；三张关键帧来自同一10秒／1080p／60fps试片，等待素材与剪辑风格确认。
+已按用户最新要求完成完整无配音成片，7800帧与全长音频解码通过：2分10秒、40段已确认原文；恢复中心主体与底部宋体正文，放慢动画，纯黑与深色浅波点背景按段落交替。音乐使用用户上传BGM，配原创材质音效。
 
-[观看第二轮风格样稿与声音说明](production/new-media-v2/style-review-r2.md) · [下载新版10秒动态试片](https://github.com/zb792686831-ux/vibe/raw/refs/heads/main/output/new-media-v2-style-r2-trial.mp4) · [已确认脚本](production/new-media-v2/script.md) · [当前确认状态](production/new-media-v2/approval-state.json)
+[完整成片与制作说明](production/new-media-v2/final-production.md) · [下载完整MP4](https://github.com/zb792686831-ux/vibe/raw/refs/heads/main/output/new-media-v2-final.mp4) · [媒体验证](output/new-media-v2-final-validation.json) · [当前状态](production/new-media-v2/approval-state.json)
 
-下方第一版样片保留作历史版本，不代表用户认可的最终风格。新版尚未开始整片剪辑。
+`npm run video:build` 已切换为当前第二版流程；在保留用户音乐的环境中，先用 `npm run video:prepare` 生成本地全长混音。旧带配音流程保留为 `npm run video:legacy:build`。之前的R1／R2候选见制作目录，属于历史样稿。
 
-## 新媒体运营介绍短片
+## 历史第一版（带配音）
 
-**音画样片，原参考 BGM 待接入**。全片 2 分 50.8 秒、17 场、49 句普通话旁白，使用原创矢量动画和原创合成音效。用户指定的抖音参考音乐尚未取得，没有擅自换曲，也没有把缺音乐的版本标为最终版。
+**历史音画样片，该版本缺参考BGM；当前第二版已使用用户上传音乐。**全片 2 分 50.8 秒、17 场、49 句普通话旁白，使用原创矢量动画和原创合成音效。用户指定的抖音参考音乐尚未取得，没有擅自换曲，也没有把缺音乐的版本标为最终版。
 
 [下载音画样片 MP4](https://github.com/zb792686831-ux/vibe/raw/refs/heads/main/output/new-media-intro-preview.mp4) · [完整脚本](production/new-media/script.md) · [制作与待办](production/new-media/README.md)
 
 ![新媒体运营短片画面](output/new-media-cover.jpg)
 
-在根目录执行 `npm run video:build` 可从保留素材重建视频并验证；`npm run video:prepare` 用实测逐句音长重新生成时间轴和混音。详细依赖、音源状态及配音复核见制作目录。
+此历史版本使用 `npm run video:legacy:build` 重建；逐句配音时间轴准备使用 `npm run video:legacy:prepare`。详细依赖、音源状态及配音复核见制作目录。
 
 默认规格：**16:9、1920×1080、60fps**。测试组合名为 `SetupTest`，时长 5 秒，共 300 帧；最终视频使用 H.264 / yuv420p、BT.709 色彩空间，附带 AAC 测试音轨。
 

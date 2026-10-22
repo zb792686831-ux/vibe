@@ -22,34 +22,49 @@
       "userConfirmation": "脚本通过，进入素材与风格确认"
     },
     "assetsAndStyle": {
-      "status": "awaiting-user-review",
-      "approved": false,
-      "artifact": "style-review-r2.md",
-      "previewVideo": "output/new-media-v2-style-r2-trial.mp4",
+      "status": "user-instructed-production-with-revisions",
+      "approved": true,
+      "artifact": "final-production.md",
+      "previewVideo": "output/new-media-v2-final.mp4",
       "keyframes": [
-        "output/new-media-v2-style-r2-collage.jpg",
-        "output/new-media-v2-style-r2-signal.jpg",
-        "output/new-media-v2-style-r2-question.jpg"
+        "output/new-media-v2-final-cover.jpg",
+        "output/new-media-v2-final-signals.jpg",
+        "output/new-media-v2-final-loop.jpg"
       ],
-      "verificationReport": "output/new-media-v2-style-r2-review.json",
-      "musicUpdate": "R2 preserves the user BGM and original SFX mix byte-for-byte; only picture changes.",
-      "revision": 2,
+      "verificationReport": "output/new-media-v2-final-validation.json",
+      "musicUpdate": "Full film uses continuous user BGM excerpt0.048–130.048s with 22 restrained original SFX, no new voiceover.",
+      "revision": 3,
       "previousCandidate": {
         "artifact": "style-review.md",
         "previewVideo": "output/new-media-v2-style-trial.mp4",
         "userFeedback": "Rejected as too sparse, overly black, thin lines and weak animation; requested warm/dark halftone backgrounds, curved motion, selective light effects, richer semantic collage and thicker strokes."
       },
-      "keyframeTrialFrames": [
-        90,
-        402,
-        540
+      "mediaVerification": "passed: full130s/7800-frame AV decode, exact approved copy hash, actual JPEG frame correspondence and audio headroom",
+      "previewSource": "Target exports from final MP4 frames1740/3660/6900 with explicit BT709-to-JPEG matrix conversion.",
+      "approvalBasis": "explicit-user-instruction-to-produce-full-film-with-revisions",
+      "userConfirmation": "动画节奏还是有点快，排版还是按照原来那样吧，背景只要深色背景，但是要纯黑与波点交替，动效背景，这次你直接生成成片",
+      "requiredRevisions": [
+        "Slower smooth entrances and transitions, stable reading holds",
+        "Restore centered visual subject with centered lower reading line from first style candidate",
+        "Only dark backgrounds: pure black alternating with dark light-dot patterns; subtle animated background",
+        "Keep approved 40-unit text, original user BGM and no new voiceover"
       ],
-      "mediaVerification": "passed: 3 actual MP4-frame JPEGs and 10-second/600-frame 1080p60 H264/AAC trial; full AV decode, changing frames and preview-to-video SSIM verified",
-      "previewSource": "exported MP4 frames 90, 402, 540, with BT709-to-JPEG color matrix conversion"
+      "previousReviewArtifact": "style-review-r2.md",
+      "previousReview": {
+        "revision": 2,
+        "artifact": "style-review-r2.md",
+        "previewVideo": "output/new-media-v2-style-r2-trial.mp4",
+        "acceptedUnchanged": false
+      },
+      "keyframeVideoFrames": [
+        1740,
+        3660,
+        6900
+      ]
     }
   },
-  "fullEditStarted": false,
-  "nextStep": "Deliver revision-2 style sample and obtain asset/style feedback. Copy/script remain approved. Do not start the 130-second full edit until style approval.",
+  "fullEditStarted": true,
+  "nextStep": "Deliver the complete130-second MP4 and actual exported-frame previews; any subsequent changes follow user feedback, no pending prior style gate.",
   "currentCopyRevision": 2,
   "referenceFileBytes": 11767133,
   "referenceLocalPath": "/workspace/attachments/f7520f7f-5c3d-45d5-8f5d-ae06a3b8092f/Iwanau-Vibe知识大赏_《运气的形状》本视...-20261022_092444.mp4",
@@ -72,5 +87,55 @@
     "sourceFilePath": "/workspace/attachments/fbe8109f-0ab9-4284-ac06-71a509607930/bgm.mp4",
     "sourceFileSha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
     "referenceAlignmentSeconds": 0.048
-  }
+  },
+  "status": "full-film-completed-and-technically-validated",
+  "renderedTimeline": "src/new-media-v2/final/timeline.json",
+  "visualQa": {
+    "status": "composition-and-exported-keyframes-reviewed-no-blockers",
+    "frames": [
+      120,
+      1140,
+      1740,
+      2160,
+      2520,
+      2580,
+      3600,
+      3660,
+      4500,
+      5520,
+      6240,
+      6780,
+      7440,
+      7500,
+      7740,
+      6900
+    ],
+    "checks": [
+      "centered subject and lower serif reading line",
+      "text safe margins and font glyphs",
+      "black and dark-dot section alternation",
+      "semantic source assets",
+      "cleaned centered loop at frame6900"
+    ],
+    "scope": "AI visual inspection of representative composition and exported frames; separate full7800-frame AV decoding passed.",
+    "exportedFrames": [
+      1740,
+      3660,
+      6900
+    ]
+  },
+  "finalOutputs": {
+    "video": "output/new-media-v2-final.mp4",
+    "validation": "output/new-media-v2-final-validation.json",
+    "durationSeconds": 130,
+    "durationInFrames": 7800,
+    "fps": 60,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "aeaf72992cc5f22e98d9cd602ca04915da13b7b96915155ded99ad795fb27a98",
+    "bytes": 25277546,
+    "validationPassed": true,
+    "decodedFrames": 7800
+  },
+  "fullEditCompleted": true
 }

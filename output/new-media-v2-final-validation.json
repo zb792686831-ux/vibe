@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "status": "full-film-technical-validation-passed",
+  "isFinalFilm": true,
+  "finalFilmAcceptanceByUserAssessed": false,
+  "checkedAt": "2026-10-22T06:06:00.664Z",
+  "approvals": {
+    "copy": true,
+    "script": true,
+    "assetsAndStyle": "user-instructed-production-with-revisions",
+    "fullEditStarted": true,
+    "basis": "explicit-user-instruction-to-produce-full-film-with-revisions",
+    "note": "The user authorized full production with specified revisions; this does not mean the previous R2 candidate was accepted unchanged."
+  },
+  "copy": {
+    "units": 40,
+    "approvedSha256": "9325dc02fb91a2bbc993e52b24372c2a17cb8eb9ff6b6d7673fce9e4b4d60773",
+    "actualAuthoringTimeline": "src/new-media-v2/final/timeline.json",
+    "timelineSha256": "9b3d5f54a92ff68e7e4ff767e2758bb09fe3fe0911b4f7ec531920bb81a80811",
+    "orderedCoverage": "passed",
+    "literalPauseSeconds": [
+      18,
+      23
+    ],
+    "finalStableHoldSeconds": [
+      128.8,
+      130
+    ]
+  },
+  "images": [
+    {
+      "file": "output/new-media-v2-final-cover.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 148662,
+      "sha256": "148eaf0b72c5f771f5b28fa76dd28f122d339b4cc14390b029afa98dc7d595ea",
+      "fullDecode": "passed",
+      "videoFrame": 1740,
+      "videoTimeSeconds": 29,
+      "ssim": 0.994564
+    },
+    {
+      "file": "output/new-media-v2-final-signals.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 165350,
+      "sha256": "508340c7fffa56bb20c404af2c02f744e0de673eccfa392c801a403b80ea2a84",
+      "fullDecode": "passed",
+      "videoFrame": 3660,
+      "videoTimeSeconds": 61,
+      "ssim": 0.995727
+    },
+    {
+      "file": "output/new-media-v2-final-loop.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 151157,
+      "sha256": "254cb118c82484d72a043b74e5911937e28bf15c86c5a9977697873d8156cc96",
+      "fullDecode": "passed",
+      "videoFrame": 6900,
+      "videoTimeSeconds": 115,
+      "ssim": 0.995402
+    }
+  ],
+  "visualCheckScope": "JPEG decoding and SSIM verify correspondence with exported frames. Frame hashes verify sampled changes. These do not establish subjective readability, design quality or human visual review.",
+  "video": {
+    "file": "output/new-media-v2-final.mp4",
+    "sha256": "aeaf72992cc5f22e98d9cd602ca04915da13b7b96915155ded99ad795fb27a98",
+    "durationSeconds": 130,
+    "frames": 7800,
+    "decodedFrames": 7800,
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "colorSpace": "bt709",
+    "fullAudioVideoDecode": "passed",
+    "sampledFrames": [
+      0,
+      1800,
+      4200,
+      7799
+    ],
+    "frameChecksums": [
+      "9b2c4088acb2c896d5d79adbe4b893ac",
+      "0b69cbebc70c6a8ccbc7b7fdbc356d5d",
+      "27db2ac9903143c14d0aeafd4307edd9",
+      "aa435a5054f3df0b47c59279697c6b26"
+    ]
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSeconds": 130,
+    "samplePeakDbFS": -6.4,
+    "meanVolumeDb": -17.3,
+    "sourceManifest": "production/new-media-v2/final-audio-manifest.json",
+    "sourceManifestSha256": "6e048deedb4d1a3d036a8fc80cc708b3581fefccbf7a08db7048350931234f26",
+    "sourceMixFile": "public/audio/new-media-v2/final/final-mix.wav",
+    "sourceMixSha256": "f1af1d6adde5ebc6a9c88c71bdb5daa4dc8986fd9665b25285582d2bb684cbcd",
+    "sourceMixHashRechecked": true,
+    "musicSource": {
+      "type": "user-supplied-bgm-file",
+      "fileName": "bgm.mp4",
+      "sha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+      "acquired": true,
+      "sourceExcerptSeconds": [
+        0.048,
+        130.048
+      ],
+      "referenceAlignmentSeconds": 0.048,
+      "originalUploadHashRechecked": true,
+      "networkSourceRequired": false
+    },
+    "productionIntent": {
+      "addNewVoiceover": false,
+      "basis": "Declared production intent and the audio manifest."
+    },
+    "humanListeningPerformedByThisVerifier": false,
+    "absenceOfAllSpeechVerified": false,
+    "purityOrVocalContentAssessed": false,
+    "individualStemsAvailable": false,
+    "warning": "The user supplied bgm.mp4; the film mixes its aligned excerpt with original added SFX. Technical checks do not establish vocal absence or clean isolated stems."
+  }
+}

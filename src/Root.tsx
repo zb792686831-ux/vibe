@@ -3,6 +3,7 @@ import {SetupTest} from './SetupTest';
 import {NewMediaRegistration} from './new-media/Registration.generated';
 import {NewMediaV2StyleRegistration} from './new-media-v2/style-review/Registration';
 import {NewMediaV2StyleR2Registration} from './new-media-v2/style-review-r2/Registration';
+import {NewMediaV2FinalRegistration} from './new-media-v2/final/Registration';
 
 export const RemotionRoot = () => (
   <>
@@ -18,5 +19,6 @@ export const RemotionRoot = () => (
   <NewMediaRegistration />
   <NewMediaV2StyleRegistration />
   <NewMediaV2StyleR2Registration />
+  <NewMediaV2FinalRegistration />
   </>
 );

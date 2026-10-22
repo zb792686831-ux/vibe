@@ -26,3 +26,11 @@ output/*
 !output/new-media-v2-style-r2-question.jpg
 !output/new-media-v2-style-r2-trial.mp4
 !output/new-media-v2-style-r2-review.json
+
+# Keep the complete uploaded music and separate full-length mix local.
+public/audio/new-media-v2/final/
+!output/new-media-v2-final.mp4
+!output/new-media-v2-final-cover.jpg
+!output/new-media-v2-final-signals.jpg
+!output/new-media-v2-final-loop.jpg
+!output/new-media-v2-final-validation.json

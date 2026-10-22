@@ -1,0 +1,346 @@
+{
+  "durationSeconds": 130,
+  "durationInFrames": 7800,
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "voiceover": false,
+  "captionFadeInSeconds": 0.55,
+  "captionMicroTravelPx": 10,
+  "subjectMotionDurationSeconds": [
+    1.0,
+    1.6
+  ],
+  "captions": [
+    {
+      "unit": 1,
+      "start": 0,
+      "end": 3,
+      "text": "你以为，他上班只是在刷手机。"
+    },
+    {
+      "unit": 2,
+      "start": 3,
+      "end": 6,
+      "text": "其实，他在研究你为什么停下。"
+    },
+    {
+      "unit": 3,
+      "start": 6,
+      "end": 9,
+      "text": "这份工作，叫新媒体运营。"
+    },
+    {
+      "unit": 4,
+      "start": 9,
+      "end": 12.5,
+      "text": "你正准备，把手机收起来。"
+    },
+    {
+      "unit": 5,
+      "start": 12.5,
+      "end": 16,
+      "text": "一只小猫，突然探进画面。"
+    },
+    {
+      "unit": 6,
+      "start": 16,
+      "end": 18,
+      "text": "它歪了歪头。"
+    },
+    {
+      "unit": 7,
+      "start": 18,
+      "end": 23,
+      "text": "你停住了。"
+    },
+    {
+      "unit": 8,
+      "start": 23,
+      "end": 25,
+      "text": "五秒。"
+    },
+    {
+      "unit": 9,
+      "start": 25,
+      "end": 28,
+      "text": "看完，又看了一遍。"
+    },
+    {
+      "unit": 10,
+      "start": 28,
+      "end": 31,
+      "text": "顺手，点亮一颗红心。"
+    },
+    {
+      "unit": 11,
+      "start": 31,
+      "end": 32.45,
+      "text": "然后，划走。"
+    },
+    {
+      "unit": 12,
+      "start": 32.45,
+      "end": 34.1,
+      "text": "视频过去了。"
+    },
+    {
+      "unit": 13,
+      "start": 34.1,
+      "end": 36.3,
+      "text": "你的反应，留下了。"
+    },
+    {
+      "unit": 14,
+      "start": 36.3,
+      "end": 39,
+      "text": "刚才那几秒，去了哪里？"
+    },
+    {
+      "unit": 15,
+      "start": 39,
+      "end": 42,
+      "text": "停留、重看、点赞……"
+    },
+    {
+      "unit": 16,
+      "start": 42,
+      "end": 45.5,
+      "text": "它们被平台记录，变成信号。"
+    },
+    {
+      "unit": 17,
+      "start": 45.5,
+      "end": 48,
+      "text": "成为推荐的参考。"
+    },
+    {
+      "unit": 18,
+      "start": 48,
+      "end": 52,
+      "text": "运营看到的，是汇总后的反馈。"
+    },
+    {
+      "unit": 19,
+      "start": 52,
+      "end": 56,
+      "text": "五秒、两秒、看到最后。"
+    },
+    {
+      "unit": 20,
+      "start": 56,
+      "end": 60,
+      "text": "当成千上万次停留汇在一起，"
+    },
+    {
+      "unit": 21,
+      "start": 60,
+      "end": 64,
+      "text": "零散的动作，慢慢显出轮廓。"
+    },
+    {
+      "unit": 22,
+      "start": 64,
+      "end": 67.5,
+      "text": "哪里留住了人？"
+    },
+    {
+      "unit": 23,
+      "start": 67.5,
+      "end": 71,
+      "text": "哪里，大家突然离开？"
+    },
+    {
+      "unit": 24,
+      "start": 71,
+      "end": 74.5,
+      "text": "运营，就在这片数据洪流里，"
+    },
+    {
+      "unit": 25,
+      "start": 74.5,
+      "end": 78,
+      "text": "寻找那些反复出现的变化。"
+    },
+    {
+      "unit": 26,
+      "start": 78,
+      "end": 81,
+      "text": "是小猫歪头的那一下？"
+    },
+    {
+      "unit": 27,
+      "start": 81,
+      "end": 84,
+      "text": "还是刚刚好的节奏？"
+    },
+    {
+      "unit": 28,
+      "start": 84,
+      "end": 86.6,
+      "text": "数字给出线索。"
+    },
+    {
+      "unit": 29,
+      "start": 86.6,
+      "end": 90,
+      "text": "原因，还要回到内容里验证。"
+    },
+    {
+      "unit": 30,
+      "start": 90,
+      "end": 93.5,
+      "text": "于是，下一条内容，"
+    },
+    {
+      "unit": 31,
+      "start": 93.5,
+      "end": 97,
+      "text": "换了一个开头，"
+    },
+    {
+      "unit": 32,
+      "start": 97,
+      "end": 101,
+      "text": "留长了一个瞬间。"
+    },
+    {
+      "unit": 33,
+      "start": 101,
+      "end": 108,
+      "text": "再等一轮，真实的回应。"
+    },
+    {
+      "unit": 34,
+      "start": 108,
+      "end": 112,
+      "text": "内容，影响着你的停留。"
+    },
+    {
+      "unit": 35,
+      "start": 112,
+      "end": 116,
+      "text": "你的停留，也在影响内容。"
+    },
+    {
+      "unit": 36,
+      "start": 116,
+      "end": 118.5,
+      "text": "你看到的，是一只小猫。"
+    },
+    {
+      "unit": 37,
+      "start": 118.5,
+      "end": 120.7,
+      "text": "屏幕另一边的人，"
+    },
+    {
+      "unit": 38,
+      "start": 120.7,
+      "end": 124,
+      "text": "想从无数个这样的瞬间里，"
+    },
+    {
+      "unit": 39,
+      "start": 124,
+      "end": 127.2,
+      "text": "找到让人愿意留下的理由。"
+    },
+    {
+      "unit": 40,
+      "start": 127.2,
+      "end": 130,
+      "text": "这，就是新媒体运营。"
+    }
+  ],
+  "literalPause": [
+    18,
+    23
+  ],
+  "finalStableHold": [
+    128.8,
+    130
+  ],
+  "backgroundAlternation": [
+    {
+      "start": 0,
+      "end": 9,
+      "pattern": false
+    },
+    {
+      "start": 9,
+      "end": 16,
+      "pattern": true
+    },
+    {
+      "start": 16,
+      "end": 25,
+      "pattern": false
+    },
+    {
+      "start": 25,
+      "end": 31,
+      "pattern": true
+    },
+    {
+      "start": 31,
+      "end": 39,
+      "pattern": false
+    },
+    {
+      "start": 39,
+      "end": 48,
+      "pattern": true
+    },
+    {
+      "start": 48,
+      "end": 56,
+      "pattern": false
+    },
+    {
+      "start": 56,
+      "end": 64,
+      "pattern": true
+    },
+    {
+      "start": 64,
+      "end": 71,
+      "pattern": false
+    },
+    {
+      "start": 71,
+      "end": 78,
+      "pattern": true
+    },
+    {
+      "start": 78,
+      "end": 90,
+      "pattern": false
+    },
+    {
+      "start": 90,
+      "end": 101,
+      "pattern": true
+    },
+    {
+      "start": 101,
+      "end": 108,
+      "pattern": false
+    },
+    {
+      "start": 108,
+      "end": 116,
+      "pattern": true
+    },
+    {
+      "start": 116,
+      "end": 124,
+      "pattern": false
+    },
+    {
+      "start": 124,
+      "end": 130,
+      "pattern": true
+    }
+  ]
+}
