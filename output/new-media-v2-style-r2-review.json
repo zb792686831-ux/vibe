@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "status": "style-review-awaiting-user-approval",
+  "isFinalFilm": false,
+  "styleRevision": 2,
+  "stillSampleFramesInTrial": [
+    90,
+    402,
+    540
+  ],
+  "approvedCopySha256": "9325dc02fb91a2bbc993e52b24372c2a17cb8eb9ff6b6d7673fce9e4b4d60773",
+  "checkedAt": "2026-10-22T03:59:04.336Z",
+  "approvals": {
+    "copy": true,
+    "script": true,
+    "assetsAndStyle": false,
+    "fullEditStarted": false
+  },
+  "images": [
+    {
+      "file": "output/new-media-v2-style-r2-collage.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 189567,
+      "sha256": "2d5b7c42021ea76da3ce5611ca920937610540a5b1f87a835c84ab3e09af14b9",
+      "fullDecode": "passed"
+    },
+    {
+      "file": "output/new-media-v2-style-r2-signal.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 182515,
+      "sha256": "b3f86485913066952fb496f42234f4d48fd8aecd88f5a87a94e571c049199352",
+      "fullDecode": "passed"
+    },
+    {
+      "file": "output/new-media-v2-style-r2-question.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 239257,
+      "sha256": "c21e337191239fa0795ed95998668919cbf4b6c8a0a6a93176775e4f83b63ecb",
+      "fullDecode": "passed"
+    }
+  ],
+  "previewFrameComparisons": [
+    {
+      "file": "output/new-media-v2-style-r2-collage.jpg",
+      "trialFrame": 90,
+      "ssim": 0.994765
+    },
+    {
+      "file": "output/new-media-v2-style-r2-signal.jpg",
+      "trialFrame": 402,
+      "ssim": 0.995116
+    },
+    {
+      "file": "output/new-media-v2-style-r2-question.jpg",
+      "trialFrame": 540,
+      "ssim": 0.996051
+    }
+  ],
+  "video": {
+    "file": "output/new-media-v2-style-r2-trial.mp4",
+    "sha256": "a837233e59d94a7652c5462aab0b11293bb6c5ff60363361322d074bc1d6db06",
+    "durationSeconds": 10,
+    "frames": 600,
+    "decodedFrames": 600,
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "colorSpace": "bt709",
+    "fullAudioVideoDecode": "passed",
+    "sampledFrames": [
+      0,
+      180,
+      599
+    ],
+    "frameChecksums": [
+      "fc9419ed05065d5c05b9161fb45a41aa",
+      "886d6a89e89a61e07b7afe4bc457ead6",
+      "47455f120a7898097fb1b42acd1c52d0"
+    ]
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSeconds": 10.005,
+    "samplePeakDbFS": -8.2,
+    "meanVolumeDb": -17.4,
+    "sourceManifest": "public/audio/new-media-v2/style-review/audio-manifest.json",
+    "sourceManifestSha256": "f10be73e077fe84f3b4bdc72f3186bab94539adc09bcff702c660b07ae303f0a",
+    "sourceMixFile": "public/audio/new-media-v2/style-review/trial-mix.wav",
+    "sourceMixSha256": "5e55b8e9fbb29c3678491cb25fb0a577e6ebef74c629689b075fe3c69db210a1",
+    "bedType": "user-supplied-bgm-file",
+    "musicSource": {
+      "fileName": "bgm.mp4",
+      "sha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+      "acquired": true,
+      "sourceChannels": 1,
+      "sourceSampleRate": 44100,
+      "sourceDurationSeconds": 133.07356,
+      "sourceExcerptSeconds": [
+        28.048,
+        38.048
+      ],
+      "referenceSceneSeconds": [
+        28,
+        38
+      ],
+      "referenceAlignmentSeconds": 0.048,
+      "alignmentEvidence": {
+        "referenceSceneSeconds": [
+          28,
+          38
+        ],
+        "verifiedUserBgmOffsetSeconds": 0.048,
+        "selectedExcerptMatchesVerifiedAlignment": true,
+        "analysisMethod": "Full-length normalized cross-correlation, checked in three separate twenty-second windows",
+        "reportedCorrelation": 0.9889,
+        "reportedDriftObserved": false,
+        "evidenceSource": "Reference-video analysis reported by coordinating agent"
+      },
+      "originalMusicAvailableLocally": true,
+      "originalUploadHashRechecked": true,
+      "networkMusicSourceRequired": false,
+      "sourceIsReferenceFilmMix": false
+    },
+    "productionIntent": {
+      "addNewVoiceover": false,
+      "basis": "Declared production intent and the audio manifest, not speech detection or human listening."
+    },
+    "humanListeningPerformedByThisVerifier": false,
+    "absenceOfAllSpeechVerified": false,
+    "purityOrVocalContentAssessed": false,
+    "individualStemsAvailable": false,
+    "warning": "Music was supplied directly by the user as bgm.mp4. The trial uses its aligned 28.048–38.048-second excerpt plus original added SFX. Technical checks establish neither vocal absence nor clean isolated stems."
+  }
+}

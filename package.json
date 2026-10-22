@@ -18,7 +18,10 @@
     "video:prepare": "python3 scripts/prepare-new-media.py",
     "video:render": "node scripts/render-new-media.mjs",
     "video:verify": "node scripts/verify-new-media.mjs",
-    "video:build": "npm run typecheck && npm run video:render && npm run video:verify"
+    "video:build": "npm run typecheck && npm run video:render && npm run video:verify",
+    "style:r2:render": "remotion render src/index.ts NewMediaV2StyleTrialR2 output/new-media-v2-style-r2-trial.mp4 --concurrency=1 --gl=swangle --x264-preset=fast",
+    "style:r2:frames": "node scripts/extract-new-media-v2-r2-frames.mjs",
+    "style:r2:verify": "node scripts/verify-new-media-v2-style-r2.mjs"
   },
   "dependencies": {
     "@remotion/fonts": "4.0.537",

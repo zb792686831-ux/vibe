@@ -1,0 +1,10 @@
+{
+  "family": "Noto Sans CJK SC",
+  "weight": 700,
+  "source": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+  "collectionIndex": 2,
+  "subsetFrom": "production/new-media-v2/copy-draft-r2.md",
+  "format": "woff",
+  "sha256": "f8435932b5f17067174a3a6b09ed114e62b7a9de54e77d791528fa7501e48f12",
+  "license": "SIL Open Font License 1.1; see OFL.txt"
+}

@@ -24,20 +24,32 @@
     "assetsAndStyle": {
       "status": "awaiting-user-review",
       "approved": false,
-      "artifact": "style-review.md",
-      "previewVideo": "output/new-media-v2-style-trial.mp4",
+      "artifact": "style-review-r2.md",
+      "previewVideo": "output/new-media-v2-style-r2-trial.mp4",
       "keyframes": [
-        "output/new-media-v2-style-cat.jpg",
-        "output/new-media-v2-style-river.jpg",
-        "output/new-media-v2-style-loop.jpg"
+        "output/new-media-v2-style-r2-collage.jpg",
+        "output/new-media-v2-style-r2-signal.jpg",
+        "output/new-media-v2-style-r2-question.jpg"
       ],
-      "mediaVerification": "passed: 3 JPEGs and 10-second/600-frame 1080p60 H264/AAC trial, full decode and changing frames",
-      "verificationReport": "output/new-media-v2-style-review.json",
-      "musicUpdate": "Updated to user-supplied bgm.mp4, source28.048–38.048s, preserving the original SFX and video payload."
+      "verificationReport": "output/new-media-v2-style-r2-review.json",
+      "musicUpdate": "R2 preserves the user BGM and original SFX mix byte-for-byte; only picture changes.",
+      "revision": 2,
+      "previousCandidate": {
+        "artifact": "style-review.md",
+        "previewVideo": "output/new-media-v2-style-trial.mp4",
+        "userFeedback": "Rejected as too sparse, overly black, thin lines and weak animation; requested warm/dark halftone backgrounds, curved motion, selective light effects, richer semantic collage and thicker strokes."
+      },
+      "keyframeTrialFrames": [
+        90,
+        402,
+        540
+      ],
+      "mediaVerification": "passed: 3 actual MP4-frame JPEGs and 10-second/600-frame 1080p60 H264/AAC trial; full AV decode, changing frames and preview-to-video SSIM verified",
+      "previewSource": "exported MP4 frames 90, 402, 540, with BT709-to-JPEG color matrix conversion"
     }
   },
   "fullEditStarted": false,
-  "nextStep": "Verify and deliver the updated style trial, then obtain asset/style feedback. User BGM is available; no network step is required. Full 130-second edit is still unstarted.",
+  "nextStep": "Deliver revision-2 style sample and obtain asset/style feedback. Copy/script remain approved. Do not start the 130-second full edit until style approval.",
   "currentCopyRevision": 2,
   "referenceFileBytes": 11767133,
   "referenceLocalPath": "/workspace/attachments/f7520f7f-5c3d-45d5-8f5d-ae06a3b8092f/Iwanau-Vibe知识大赏_《运气的形状》本视...-20261022_092444.mp4",
