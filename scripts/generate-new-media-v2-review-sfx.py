@@ -4,10 +4,16 @@
 The four added material sounds are original, deterministic oscillator/noise
 synthesis. No downloaded SFX, paid services, or voice models are used.
 
-IMPORTANT: The temporary music bed is the uploaded reference film's *mixed*
-audio excerpt. It may already contain that film's SFX. This is not an isolated
-or independently obtained BGM master, and this is not the final film's mix.
-The source MP4 is read only and is never copied or overwritten by this script.
+The default music input is the BGM file supplied directly by the user. Its
+audio is resampled/upmixed to 48kHz stereo and excerpt loudness is measured
+before deriving the music gain. This identifies provenance, not audio purity:
+no claim is made about vocal content or availability of individual stems.
+
+--music-input PATH --music-start-seconds N selects another user-supplied BGM
+file/excerpt. The legacy --reference PATH option is retained only for explicitly
+rebuilding an older reference-film mixed-audio trial. Its manifest is labelled
+accordingly; that legacy source is not the default. All source files are read
+only. This is a ten-second style review, not the final film's mix.
 """
 
 import argparse
@@ -29,9 +35,14 @@ DEFAULT_REFERENCE = Path(
     "/workspace/attachments/f7520f7f-5c3d-45d5-8f5d-ae06a3b8092f/"
     "Iwanau-Vibe知识大赏_《运气的形状》本视...-20261022_092444.mp4"
 )
+DEFAULT_USER_MUSIC = Path(
+    "/workspace/attachments/fbe8109f-0ab9-4284-ac06-71a509607930/bgm.mp4"
+)
 RATE = 48_000
 CHANNELS = 2
 DURATION = 10.0
+REFERENCE_SCENE_START = 28.0
+VERIFIED_USER_MUSIC_OFFSET = 0.048
 FRAMES = round(RATE * DURATION)
 TAU = 2 * math.pi
 SEED = 20261022
@@ -155,23 +166,43 @@ def write_pcm(path, samples):
         handle.writeframes(pcm.tobytes())
 
 
-def load_reference(source, gain_db):
+def load_music_excerpt(source, start_seconds):
     decoded = subprocess.check_output([
         "ffmpeg", "-hide_banner", "-loglevel", "error", "-nostdin", "-xerror",
-        "-ss", "28", "-i", str(source), "-t", "10", "-map", "0:a:0", "-vn",
+        "-ss", str(start_seconds), "-i", str(source), "-t", str(DURATION), "-map", "0:a:0", "-vn",
         "-ac", "2", "-ar", str(RATE), "-f", "f32le", "pipe:1",
     ])
     result = array("f")
     result.frombytes(decoded)
     if sys.byteorder != "little":
         result.byteswap()
-    assert len(result) == FRAMES * CHANNELS, "Reference excerpt must decode to exactly ten seconds"
-    gain = 10 ** (gain_db / 20)
+    assert len(result) == FRAMES * CHANNELS, "Music excerpt must decode to exactly ten seconds"
     for i in range(FRAMES):
         env = edge(i / RATE, DURATION, 0.02, 0.08)
-        result[2 * i] *= gain * env
-        result[2 * i + 1] *= gain * env
+        result[2 * i] *= env
+        result[2 * i + 1] *= env
     return result
+
+
+def parse_loudness(stderr):
+    summary = stderr.rsplit("Summary:", 1)[-1]
+    return {
+        "integratedLoudnessLUFS": float(re.search(r"I:\s+([-\d.]+) LUFS", summary).group(1)),
+        "truePeakDbTP": float(re.search(r"Peak:\s+([-\d.]+) dBFS", summary).group(1)),
+    }
+
+
+def measure_float_audio(samples):
+    """Measure the exact ten-second resampled excerpt, including edge fades."""
+    data = array("f", samples)
+    if sys.byteorder != "little":
+        data.byteswap()
+    run = subprocess.run([
+        "ffmpeg", "-hide_banner", "-nostdin", "-xerror", "-f", "f32le",
+        "-ar", str(RATE), "-ac", str(CHANNELS), "-i", "pipe:0",
+        "-af", "ebur128=peak=true", "-f", "null", "-",
+    ], input=data.tobytes(), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    return parse_loudness(run.stderr.decode())
 
 
 def measure(path):
@@ -184,9 +215,7 @@ def measure(path):
         "ffmpeg", "-hide_banner", "-nostdin", "-xerror", "-i", str(path),
         "-af", "ebur128=peak=true", "-f", "null", "-",
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True)
-    summary = run.stderr.rsplit("Summary:", 1)[-1]
-    integrated = float(re.search(r"I:\s+([-\d.]+) LUFS", summary).group(1))
-    true_peak = float(re.search(r"Peak:\s+([-\d.]+) dBFS", summary).group(1))
+    loudness = parse_loudness(run.stderr)
     with wave.open(str(path), "rb") as handle:
         frames = handle.getnframes()
         pcm = array("h")
@@ -200,8 +229,7 @@ def measure(path):
         **metadata,
         "frames": frames,
         "samplePeakDbFS": round(20 * math.log10(sample_peak), 4),
-        "integratedLoudnessLUFS": integrated,
-        "truePeakDbTP": true_peak,
+        **loudness,
         "firstAndLastStereoFrameZero": True,
         "fullDecode": "passed",
         "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
@@ -210,10 +238,29 @@ def measure(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--reference", type=Path, default=DEFAULT_REFERENCE)
-    parser.add_argument("--music-gain-db", type=float, default=-10.0)
+    source_options = parser.add_mutually_exclusive_group()
+    source_options.add_argument("--music-input", type=Path, help="User-supplied BGM media file")
+    source_options.add_argument("--reference", type=Path, help="Legacy reference-film mixed-audio input")
+    parser.add_argument("--music-start-seconds", type=float, help="Defaults to 28.048 for user BGM, aligned to reference scene 28s")
+    parser.add_argument("--target-music-lufs", type=float, default=-18.0)
+    parser.add_argument("--music-gain-db", type=float, help="Optional measured-gain override; peak headroom still applies")
     args = parser.parse_args()
-    source = args.reference.resolve(strict=True)
+    if args.music_start_seconds is not None and (not math.isfinite(args.music_start_seconds) or args.music_start_seconds < 0):
+        parser.error("--music-start-seconds must be a finite nonnegative number")
+    if not math.isfinite(args.target_music_lufs):
+        parser.error("--target-music-lufs must be finite")
+    if args.music_gain_db is not None and not math.isfinite(args.music_gain_db):
+        parser.error("--music-gain-db must be finite")
+    source = (args.music_input or args.reference or DEFAULT_USER_MUSIC).resolve(strict=True)
+    # An explicit --reference pointing at the known user BGM must not relabel
+    # that file as reference-film mixed audio.
+    user_supplied_bgm = args.reference is None or source == DEFAULT_USER_MUSIC.resolve()
+    if args.music_start_seconds is None:
+        args.music_start_seconds = REFERENCE_SCENE_START + (VERIFIED_USER_MUSIC_OFFSET if user_supplied_bgm else 0)
+    source_metadata = json.loads(subprocess.check_output([
+        "ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries",
+        "stream=codec_name,sample_rate,channels,duration", "-of", "json", str(source),
+    ]))["streams"][0]
     DEST.mkdir(parents=True, exist_ok=True)
     (DEST / "sfx").mkdir(exist_ok=True)
 
@@ -244,8 +291,18 @@ def main():
             "measurement": measure(path),
         })
 
-    reference = load_reference(source, args.music_gain_db)
-    final_mix = array("f", (bed + effect for bed, effect in zip(reference, sfx_only)))
+    music = load_music_excerpt(source, args.music_start_seconds)
+    source_excerpt_measurement = measure_float_audio(music)
+    target_gain = args.target_music_lufs - source_excerpt_measurement["integratedLoudnessLUFS"]
+    requested_gain = target_gain if args.music_gain_db is None else args.music_gain_db
+    # Keep the music's true peak <= -4dBTP before the sparse added material SFX.
+    # No limiter/compression is needed for the selected source, preserving shape.
+    gain_db = min(requested_gain, -4.0 - source_excerpt_measurement["truePeakDbTP"])
+    gain = 10 ** (gain_db / 20)
+    for i in range(len(music)):
+        music[i] *= gain
+    music_measurement = measure_float_audio(music)
+    final_mix = array("f", (bed + effect for bed, effect in zip(music, sfx_only)))
     sfx_path = DEST / "trial-sfx-only.wav"
     mix_path = DEST / "trial-mix.wav"
     write_pcm(sfx_path, sfx_only)
@@ -256,22 +313,43 @@ def main():
     assert mix_stats["truePeakDbTP"] < -1.0
 
     manifest = {
-        "status": "Style review only: temporary mixed reference bed, not the final film",
+        "manifestVersion": 2,
+        "status": "Style review only: user-supplied BGM with original added SFX; not the final film" if user_supplied_bgm else "Style review only: legacy reference-film mixed-audio bed; not the final film",
         "noVoiceover": True,
         "durationSeconds": DURATION,
         "sampleRate": RATE,
         "channels": CHANNELS,
-        "referenceBed": {
+        "musicBed": {
+            "sourceType": "user-supplied-bgm-file" if user_supplied_bgm else "reference-film-mixed-audio",
             "sourceFile": str(source),
             "sourceFileSha256": hashlib.sha256(source.read_bytes()).hexdigest(),
-            "sourceExcerptSeconds": [28, 38],
-            "gainDb": args.music_gain_db,
+            "sourceAudioMetadata": source_metadata,
+            "sourceChannels": int(source_metadata["channels"]),
+            "outputChannels": CHANNELS,
+            "sourceExcerptSeconds": [args.music_start_seconds, args.music_start_seconds + DURATION],
+            "referenceSync": {
+                "referenceSceneSeconds": [REFERENCE_SCENE_START, REFERENCE_SCENE_START + DURATION],
+                "verifiedUserBgmOffsetSeconds": VERIFIED_USER_MUSIC_OFFSET,
+                "selectedExcerptMatchesVerifiedAlignment": user_supplied_bgm and abs(args.music_start_seconds - (REFERENCE_SCENE_START + VERIFIED_USER_MUSIC_OFFSET)) < 0.000001,
+                "analysisMethod": "Full-length normalized cross-correlation, checked in three separate twenty-second windows",
+                "reportedCorrelation": 0.9889,
+                "reportedDriftObserved": False,
+                "evidenceSource": "Reference-video analysis reported by coordinating agent",
+            } if user_supplied_bgm else None,
+            "sourceExcerptMeasurementAfterResamplingAndFades": source_excerpt_measurement,
+            "targetMusicLoudnessLUFS": args.target_music_lufs,
+            "requestedGainDb": round(requested_gain, 4),
+            "gainDb": round(gain_db, 4),
+            "peakHeadroomLimitedGain": gain_db < requested_gain,
+            "musicOnlyMeasurementAfterGain": music_measurement,
             "fadeInSeconds": 0.02,
             "fadeOutSeconds": 0.08,
-            "isIndependentBgm": False,
-            "mayContainReferenceFilmSoundEffects": True,
-            "requestedIndependentMusicUrl": "https://music.163.com/song?id=3451028893",
-            "independentMusicStatus": "Not acquired by this generator; do not describe this mixed excerpt as pure BGM",
+            "sourceIsReferenceFilmMix": not user_supplied_bgm,
+            "musicSourceAvailable": True,
+            "networkMusicSourceRequired": False,
+            "purityOrVocalContentAssessed": False,
+            "individualStemsAvailable": False,
+            "provenanceNote": "BGM file supplied directly by the user; no claim of purity, absence of vocals or independent stems" if user_supplied_bgm else "Legacy reference-film audio may contain that film's sound effects; do not describe it as pure BGM",
         },
         "generator": {
             "file": str(Path(__file__).resolve().relative_to(ROOT)),

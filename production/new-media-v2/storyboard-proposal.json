@@ -61,7 +61,10 @@
     "videoSeconds": 130,
     "audioSeconds": 130.007007,
     "independentMusicStemAvailable": false,
-    "userIdentifiedOriginalMusicUrl": "https://music.163.com/song?id=3451028893"
+    "userIdentifiedOriginalMusicUrl": "https://music.163.com/song?id=3451028893",
+    "userSuppliedMusicAssetAvailable": true,
+    "userSuppliedMusicSha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+    "referenceTimeToMusicTimeOffsetSeconds": 0.048
   },
   "timingNotes": "All timings are editorial proposals, not rendered or exact verified music beat markers. The approved screen copy is unchanged.",
   "literalPause": {

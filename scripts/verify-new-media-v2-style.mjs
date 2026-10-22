@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {execFileSync, spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-import {readFileSync, rmSync, writeFileSync} from 'node:fs';
+import {existsSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 
@@ -10,8 +10,8 @@ const reportFile = 'output/new-media-v2-style-review.json';
 const videoFile = 'output/new-media-v2-style-trial.mp4';
 const imageFiles = ['cat', 'river', 'loop'].map((name) => `output/new-media-v2-style-${name}.jpg`);
 const manifestFile = 'public/audio/new-media-v2/style-review/audio-manifest.json';
-const expectedMusicUrl = 'https://music.163.com/song?id=3451028893';
-const absolute = (file) => path.join(root, file);
+const expectedMusicSha256 = 'd275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59';
+const absolute = (file) => path.isAbsolute(file) ? file : path.join(root, file);
 const json = (file) => JSON.parse(readFileSync(absolute(file), 'utf8'));
 const sha256 = (file) => createHash('sha256').update(readFileSync(absolute(file))).digest('hex');
 const capture = (command, args) => execFileSync(command, args, {
@@ -46,19 +46,47 @@ try {
 
   const manifest = json(manifestFile);
   const musicReference = json('production/new-media-v2/music-reference.json');
-  const bed = manifest.referenceBed;
+  const bed = manifest.musicBed;
+  const activeMusic = musicReference.activeSource;
   assert.equal(manifest.noVoiceover, true, 'The audio manifest must declare no newly added voiceover');
   assert.equal(manifest.durationSeconds, 10);
   assert.equal(manifest.sampleRate, 48000);
   assert.equal(manifest.channels, 2);
-  assert.deepEqual(bed.sourceExcerptSeconds, [28, 38], 'Use the disclosed reference-film excerpt');
-  assert.equal(bed.sourceFileSha256, state.referenceSha256, 'Reference source identity must match');
-  assert.equal(bed.isIndependentBgm, false, 'The temporary reference bed is not isolated music');
-  assert.equal(bed.mayContainReferenceFilmSoundEffects, true);
-  assert.equal(bed.requestedIndependentMusicUrl, expectedMusicUrl);
-  assert.equal(musicReference.canonicalUrl, expectedMusicUrl);
-  assert.equal(musicReference.independentAudioAcquired, false, 'Independent music has not been acquired');
-  assert.equal(state.backgroundMusic.independentAudioAcquired, false);
+  assert.equal(bed.sourceType, 'user-supplied-bgm-file', 'Use the user-provided BGM, not the old temporary reference mix');
+  assert.equal(bed.sourceFileSha256, expectedMusicSha256, 'Uploaded BGM identity must match');
+  assert.notEqual(bed.sourceFileSha256, state.referenceSha256, 'Music and the original visual reference are distinct sources');
+  assert.deepEqual(bed.sourceExcerptSeconds, [28.048, 38.048], 'Use the aligned ten-second BGM excerpt');
+  assert.equal(bed.sourceChannels, 1);
+  assert.equal(bed.outputChannels, 2);
+  assert.equal(bed.sourceAudioMetadata.codec_name, 'aac');
+  assert.equal(Number(bed.sourceAudioMetadata.sample_rate), 44100);
+  assert.equal(bed.sourceAudioMetadata.channels, 1);
+  near(bed.sourceAudioMetadata.duration, 133.07356, 0.001, 'Unexpected source BGM duration');
+  assert.equal(bed.sourceIsReferenceFilmMix, false);
+  assert.equal(bed.musicSourceAvailable, true);
+  assert.equal(bed.networkMusicSourceRequired, false);
+  assert.equal(bed.purityOrVocalContentAssessed, false, 'Do not infer vocal absence from source identity or technical measurements');
+  assert.equal(bed.individualStemsAvailable, false);
+  assert.deepEqual(bed.referenceSync.referenceSceneSeconds, [28, 38]);
+  near(bed.referenceSync.verifiedUserBgmOffsetSeconds, 0.048, 0.000001, 'Unexpected music alignment offset');
+  assert.equal(bed.referenceSync.selectedExcerptMatchesVerifiedAlignment, true);
+  assert.equal(activeMusic.type, 'user-upload');
+  assert.equal(activeMusic.fileName, 'bgm.mp4');
+  assert.equal(activeMusic.sha256, expectedMusicSha256);
+  assert.equal(activeMusic.acquired, true);
+  assert.equal(activeMusic.audioChannels, 1);
+  near(activeMusic.durationSeconds, 133.07356, 0.001, 'Active source duration must match the uploaded music');
+  near(activeMusic.referenceAlignmentSeconds, 0.048, 0.000001, 'Active music alignment must match');
+  assert.equal(musicReference.independentAudioAcquired, true);
+  assert.equal(state.backgroundMusic.independentAudioAcquired, true);
+  assert.equal(state.backgroundMusic.activeSource, 'user-upload');
+  assert.equal(state.backgroundMusic.sourceFileSha256, expectedMusicSha256);
+  // A new checkout may retain the rendered mix without the privately uploaded source.
+  // Rehash the actual upload when available; otherwise report only its recorded identity.
+  const originalMusicAvailableLocally = existsSync(absolute(bed.sourceFile));
+  if (originalMusicAvailableLocally) {
+    assert.equal(sha256(bed.sourceFile), expectedMusicSha256, 'Actual uploaded BGM does not match its manifest');
+  }
 
   const sourceMixFile = 'public/audio/new-media-v2/style-review/trial-mix.wav';
   const sourceMixSha256 = sha256(sourceMixFile);
@@ -146,16 +174,20 @@ try {
       durationSeconds: Number(audio.duration), samplePeakDbFS, meanVolumeDb,
       sourceManifest: manifestFile, sourceManifestSha256: sha256(manifestFile),
       sourceMixFile, sourceMixSha256,
-      referenceSourceSha256: bed.sourceFileSha256,
-      referenceExcerptSeconds: bed.sourceExcerptSeconds,
-      bedType: 'mixed-reference-film-excerpt',
-      isIndependentBgm: false, mayContainReferenceFilmSoundEffects: true,
-      independentMusic: {
-        requestedUrl: expectedMusicUrl, acquired: false,
-        observedAccessStatus: state.backgroundMusic.publicAccessStatus,
-        observedPublicCheckResult: musicReference.publicCheckResult,
-        additionalPublicSources: musicReference.alternativeSources ?? [],
-        limitation: 'The production record reports proxy CONNECT 403 before reaching the service; independent music is still unavailable. This verifier makes no network request.',
+      bedType: 'user-supplied-bgm-file',
+      musicSource: {
+        fileName: activeMusic.fileName, sha256: bed.sourceFileSha256,
+        acquired: true, sourceChannels: bed.sourceChannels,
+        sourceSampleRate: Number(bed.sourceAudioMetadata.sample_rate),
+        sourceDurationSeconds: Number(bed.sourceAudioMetadata.duration),
+        sourceExcerptSeconds: bed.sourceExcerptSeconds,
+        referenceSceneSeconds: bed.referenceSync.referenceSceneSeconds,
+        referenceAlignmentSeconds: bed.referenceSync.verifiedUserBgmOffsetSeconds,
+        alignmentEvidence: bed.referenceSync,
+        originalMusicAvailableLocally,
+        originalUploadHashRechecked: originalMusicAvailableLocally,
+        networkMusicSourceRequired: false,
+        sourceIsReferenceFilmMix: false,
       },
       productionIntent: {
         addNewVoiceover: false,
@@ -163,13 +195,15 @@ try {
       },
       humanListeningPerformedByThisVerifier: false,
       absenceOfAllSpeechVerified: false,
-      warning: 'The bed is the uploaded reference film\'s mixed stereo track from 28–38 seconds. It is not a clean independent BGM stem. Technical checks do not prove absence of original speech or sound effects.',
+      purityOrVocalContentAssessed: false,
+      individualStemsAvailable: false,
+      warning: 'Music was supplied directly by the user as bgm.mp4. The trial uses its aligned 28.048–38.048-second excerpt plus original added SFX. Technical checks establish neither vocal absence nor clean isolated stems.',
     },
   };
   writeFileSync(absolute(reportFile), `${JSON.stringify(report, null, 2)}\n`);
   console.log('PASS: three full-HD JPEGs and a ten-second, 600-frame 1080p/60fps H.264/AAC stereo style trial.');
   console.log('PASS: complete media decode, three distinct animation frames, audible audio with sample-peak headroom.');
-  console.log(`Status: ${report.status}; independent BGM remains unavailable; user style approval is still required.`);
+  console.log(`Status: ${report.status}; user-supplied BGM is available; user style approval is still required.`);
   console.log(`Report: ${reportFile}`);
 } catch (error) {
   console.error('New media v2 style verification failed:', error.message);

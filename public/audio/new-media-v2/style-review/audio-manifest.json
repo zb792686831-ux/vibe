@@ -1,27 +1,62 @@
 {
-  "status": "Style review only: temporary mixed reference bed, not the final film",
+  "manifestVersion": 2,
+  "status": "Style review only: user-supplied BGM with original added SFX; not the final film",
   "noVoiceover": true,
   "durationSeconds": 10.0,
   "sampleRate": 48000,
   "channels": 2,
-  "referenceBed": {
-    "sourceFile": "/workspace/attachments/f7520f7f-5c3d-45d5-8f5d-ae06a3b8092f/Iwanau-Vibe知识大赏_《运气的形状》本视...-20261022_092444.mp4",
-    "sourceFileSha256": "31444f8f66fd764c608ed393a6d2e54e62d3ade1925c3b9d2d482d0461ebd3dd",
+  "musicBed": {
+    "sourceType": "user-supplied-bgm-file",
+    "sourceFile": "/workspace/attachments/fbe8109f-0ab9-4284-ac06-71a509607930/bgm.mp4",
+    "sourceFileSha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+    "sourceAudioMetadata": {
+      "codec_name": "aac",
+      "sample_rate": "44100",
+      "channels": 1,
+      "duration": "133.073560"
+    },
+    "sourceChannels": 1,
+    "outputChannels": 2,
     "sourceExcerptSeconds": [
-      28,
-      38
+      28.048,
+      38.048
     ],
-    "gainDb": -10.0,
+    "referenceSync": {
+      "referenceSceneSeconds": [
+        28.0,
+        38.0
+      ],
+      "verifiedUserBgmOffsetSeconds": 0.048,
+      "selectedExcerptMatchesVerifiedAlignment": true,
+      "analysisMethod": "Full-length normalized cross-correlation, checked in three separate twenty-second windows",
+      "reportedCorrelation": 0.9889,
+      "reportedDriftObserved": false,
+      "evidenceSource": "Reference-video analysis reported by coordinating agent"
+    },
+    "sourceExcerptMeasurementAfterResamplingAndFades": {
+      "integratedLoudnessLUFS": -8.5,
+      "truePeakDbTP": 1.4
+    },
+    "targetMusicLoudnessLUFS": -18.0,
+    "requestedGainDb": -9.5,
+    "gainDb": -9.5,
+    "peakHeadroomLimitedGain": false,
+    "musicOnlyMeasurementAfterGain": {
+      "integratedLoudnessLUFS": -18.0,
+      "truePeakDbTP": -8.1
+    },
     "fadeInSeconds": 0.02,
     "fadeOutSeconds": 0.08,
-    "isIndependentBgm": false,
-    "mayContainReferenceFilmSoundEffects": true,
-    "requestedIndependentMusicUrl": "https://music.163.com/song?id=3451028893",
-    "independentMusicStatus": "Not acquired by this generator; do not describe this mixed excerpt as pure BGM"
+    "sourceIsReferenceFilmMix": false,
+    "musicSourceAvailable": true,
+    "networkMusicSourceRequired": false,
+    "purityOrVocalContentAssessed": false,
+    "individualStemsAvailable": false,
+    "provenanceNote": "BGM file supplied directly by the user; no claim of purity, absence of vocals or independent stems"
   },
   "generator": {
     "file": "scripts/generate-new-media-v2-review-sfx.py",
-    "sha256": "fc8122251baadfdcafd0d83535ffd5bee7cdb4a477ee281687ccf40258cd5112",
+    "sha256": "fcaa8d56f05a8c2e8f3f4e53c49525e44b3cb529c7c66f1a42524e56b56b3564",
     "seed": 20261022,
     "dependencies": "Python standard library and system ffmpeg/ffprobe",
     "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
@@ -128,12 +163,12 @@
       "channels": 2,
       "duration": "10.000000",
       "frames": 480000,
-      "samplePeakDbFS": -9.1602,
-      "integratedLoudnessLUFS": -18.2,
-      "truePeakDbTP": -9.1,
+      "samplePeakDbFS": -8.1141,
+      "integratedLoudnessLUFS": -18.0,
+      "truePeakDbTP": -8.1,
       "firstAndLastStereoFrameZero": true,
       "fullDecode": "passed",
-      "sha256": "560917ebdd43cce7afd7d0c84f200796192ab144ce4ea699a870efa2050dcd68"
+      "sha256": "5e55b8e9fbb29c3678491cb25fb0a577e6ebef74c629689b075fe3c69db210a1"
     },
     "public/audio/new-media-v2/style-review/trial-sfx-only.wav": {
       "codec_name": "pcm_s16le",

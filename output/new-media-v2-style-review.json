@@ -2,7 +2,7 @@
   "passed": true,
   "status": "style-review-awaiting-user-approval",
   "isFinalFilm": false,
-  "checkedAt": "2026-10-22T02:43:02.748Z",
+  "checkedAt": "2026-10-22T02:53:25.771Z",
   "approvals": {
     "copy": true,
     "script": true,
@@ -40,7 +40,7 @@
   ],
   "video": {
     "file": "output/new-media-v2-style-trial.mp4",
-    "sha256": "b7a12f5850e67262425d304b90fcdf54b2e5efb9c0a70e36b3d189cbf285a446",
+    "sha256": "dbb165d61d486ead41e9c55f847f62824406e80766e8c048bff00558be99ec95",
     "durationSeconds": 10,
     "frames": 600,
     "decodedFrames": 600,
@@ -66,41 +66,46 @@
     "codec": "aac",
     "sampleRate": 48000,
     "channels": 2,
-    "durationSeconds": 10.005,
-    "samplePeakDbFS": -9.3,
-    "meanVolumeDb": -17.6,
+    "durationSeconds": 10,
+    "samplePeakDbFS": -8.1,
+    "meanVolumeDb": -17.4,
     "sourceManifest": "public/audio/new-media-v2/style-review/audio-manifest.json",
-    "sourceManifestSha256": "dbfb06a6d02437f17bdcb930dc0415541c8527c9e777be0069b3d090c5787060",
+    "sourceManifestSha256": "f10be73e077fe84f3b4bdc72f3186bab94539adc09bcff702c660b07ae303f0a",
     "sourceMixFile": "public/audio/new-media-v2/style-review/trial-mix.wav",
-    "sourceMixSha256": "560917ebdd43cce7afd7d0c84f200796192ab144ce4ea699a870efa2050dcd68",
-    "referenceSourceSha256": "31444f8f66fd764c608ed393a6d2e54e62d3ade1925c3b9d2d482d0461ebd3dd",
-    "referenceExcerptSeconds": [
-      28,
-      38
-    ],
-    "bedType": "mixed-reference-film-excerpt",
-    "isIndependentBgm": false,
-    "mayContainReferenceFilmSoundEffects": true,
-    "independentMusic": {
-      "requestedUrl": "https://music.163.com/song?id=3451028893",
-      "acquired": false,
-      "observedAccessStatus": "connection-failed-before-http-response",
-      "observedPublicCheckResult": "Official NetEase page and metadata endpoint: curl 56 / CONNECT tunnel failed response 403 / HTTP status 0 / zero body before reaching service.",
-      "additionalPublicSources": [
-        {
-          "canonicalUrl": "https://www.bilibili.com/video/BV134Ho6qENu/",
-          "bvid": "BV134Ho6qENu",
-          "identifiedByUserAsBackgroundMusic": true,
-          "requiredObservedHosts": [
-            "www.bilibili.com",
-            "api.bilibili.com"
-          ],
-          "publicCheckResult": "Official page and metadata endpoint both curl56 / proxy CONNECT403 before reaching Bilibili",
-          "metadataAcquired": false,
-          "independentAudioAcquired": false
-        }
+    "sourceMixSha256": "5e55b8e9fbb29c3678491cb25fb0a577e6ebef74c629689b075fe3c69db210a1",
+    "bedType": "user-supplied-bgm-file",
+    "musicSource": {
+      "fileName": "bgm.mp4",
+      "sha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+      "acquired": true,
+      "sourceChannels": 1,
+      "sourceSampleRate": 44100,
+      "sourceDurationSeconds": 133.07356,
+      "sourceExcerptSeconds": [
+        28.048,
+        38.048
       ],
-      "limitation": "The production record reports proxy CONNECT 403 before reaching the service; independent music is still unavailable. This verifier makes no network request."
+      "referenceSceneSeconds": [
+        28,
+        38
+      ],
+      "referenceAlignmentSeconds": 0.048,
+      "alignmentEvidence": {
+        "referenceSceneSeconds": [
+          28,
+          38
+        ],
+        "verifiedUserBgmOffsetSeconds": 0.048,
+        "selectedExcerptMatchesVerifiedAlignment": true,
+        "analysisMethod": "Full-length normalized cross-correlation, checked in three separate twenty-second windows",
+        "reportedCorrelation": 0.9889,
+        "reportedDriftObserved": false,
+        "evidenceSource": "Reference-video analysis reported by coordinating agent"
+      },
+      "originalMusicAvailableLocally": true,
+      "originalUploadHashRechecked": true,
+      "networkMusicSourceRequired": false,
+      "sourceIsReferenceFilmMix": false
     },
     "productionIntent": {
       "addNewVoiceover": false,
@@ -108,6 +113,8 @@
     },
     "humanListeningPerformedByThisVerifier": false,
     "absenceOfAllSpeechVerified": false,
-    "warning": "The bed is the uploaded reference film's mixed stereo track from 28–38 seconds. It is not a clean independent BGM stem. Technical checks do not prove absence of original speech or sound effects."
+    "purityOrVocalContentAssessed": false,
+    "individualStemsAvailable": false,
+    "warning": "Music was supplied directly by the user as bgm.mp4. The trial uses its aligned 28.048–38.048-second excerpt plus original added SFX. Technical checks establish neither vocal absence nor clean isolated stems."
   }
 }

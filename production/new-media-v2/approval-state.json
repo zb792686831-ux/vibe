@@ -32,11 +32,12 @@
         "output/new-media-v2-style-loop.jpg"
       ],
       "mediaVerification": "passed: 3 JPEGs and 10-second/600-frame 1080p60 H264/AAC trial, full decode and changing frames",
-      "verificationReport": "output/new-media-v2-style-review.json"
+      "verificationReport": "output/new-media-v2-style-review.json",
+      "musicUpdate": "Updated to user-supplied bgm.mp4, source28.048–38.048s, preserving the original SFX and video payload."
     }
   },
   "fullEditStarted": false,
-  "nextStep": "Ask the user to review the actual three keyframes and ten-second style-and-audio trial. Do not start the full 130-second edit before style feedback. Independent music links remain blocked by runtime network egress.",
+  "nextStep": "Verify and deliver the updated style trial, then obtain asset/style feedback. User BGM is available; no network step is required. Full 130-second edit is still unstarted.",
   "currentCopyRevision": 2,
   "referenceFileBytes": 11767133,
   "referenceLocalPath": "/workspace/attachments/f7520f7f-5c3d-45d5-8f5d-ae06a3b8092f/Iwanau-Vibe知识大赏_《运气的形状》本视...-20261022_092444.mp4",
@@ -48,11 +49,16 @@
     "service": "NetEase Cloud Music",
     "songId": "3451028893",
     "identifiedByUserAsOriginalBgm": true,
-    "independentAudioAcquired": false,
-    "metadataVerified": false,
-    "publicAccessStatus": "connection-failed-before-http-response",
+    "independentAudioAcquired": true,
+    "metadataVerified": true,
+    "publicAccessStatus": "not-required-user-upload-acquired",
     "originalSfxRequested": true,
     "alternativeSourceUrl": "https://www.bilibili.com/video/BV134Ho6qENu/",
-    "bilibiliPublicAccessStatus": "proxy-CONNECT-403-before-reaching-service"
+    "bilibiliPublicAccessStatus": "proxy-CONNECT-403-before-reaching-service",
+    "activeSource": "user-upload",
+    "sourceFileName": "bgm.mp4",
+    "sourceFilePath": "/workspace/attachments/fbe8109f-0ab9-4284-ac06-71a509607930/bgm.mp4",
+    "sourceFileSha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+    "referenceAlignmentSeconds": 0.048
   }
 }

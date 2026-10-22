@@ -1,14 +1,14 @@
 {
-  "status": "user-identified-source-awaiting-public-retrieval",
+  "status": "user-supplied-bgm-acquired",
   "canonicalUrl": "https://music.163.com/song?id=3451028893",
   "songId": "3451028893",
   "identifiedByUserAsOriginalBgm": true,
   "titleVerified": false,
   "artistVerified": false,
-  "independentAudioAcquired": false,
+  "independentAudioAcquired": true,
   "observedRequiredHost": "music.163.com",
   "publicCheckResult": "Official NetEase page and metadata endpoint: curl 56 / CONNECT tunnel failed response 403 / HTTP status 0 / zero body before reaching service.",
-  "temporaryTrialFallback": "Provided reference-video stereo mix, explicitly not an isolated clean music stem.",
+  "temporaryTrialFallback": "No longer used. The trial now uses the uploaded bgm.mp4 audio with original generated SFX.",
   "sfx": "original synthesis requested by user",
   "alternativeSources": [
     {
@@ -29,5 +29,30 @@
     "www.bilibili.com",
     "api.bilibili.com"
   ],
-  "networkDraftAppliedToRuntime": false
+  "networkDraftAppliedToRuntime": false,
+  "activeSource": {
+    "type": "user-upload",
+    "fileName": "bgm.mp4",
+    "fileId": "file_00000000b8c481fd9f108d145de242a3",
+    "localPath": "/workspace/attachments/fbe8109f-0ab9-4284-ac06-71a509607930/bgm.mp4",
+    "sha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+    "sizeBytes": 14489917,
+    "durationSeconds": 133.07356,
+    "audioCodec": "aac",
+    "audioSampleRate": 44100,
+    "audioChannels": 1,
+    "referenceAlignmentSeconds": 0.048,
+    "alignmentFullWaveformCorrelation": 0.9889,
+    "acquired": true
+  },
+  "previousOnlineSourcesSupersededByUserUpload": true,
+  "onlineAccessRequiredForCurrentProduction": false,
+  "retainedDecodedAudio": {
+    "localPath": ".cache/reference-v2/music-source/user-bgm.flac",
+    "codec": "flac",
+    "sampleRate": 44100,
+    "channels": 1,
+    "sha256": "937264adae4c6c920f4280ca13f65afb0f2fb6a5ec1a41afedbc6546ebdeca9f",
+    "purpose": "Local lossless decoded backup; not uploaded to GitHub"
+  }
 }
