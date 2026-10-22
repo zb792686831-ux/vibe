@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "audience": "所有观众，介绍新媒体运营这个职位",
+  "voiceover": false,
+  "durationLimitSeconds": 180,
+  "referenceFileId": "file_000000001d7081fd9d65952c18ef97fb",
+  "referenceAccess": "downloaded-and-analyzed",
+  "referenceActuallyViewed": true,
+  "gates": {
+    "copy": {
+      "status": "approved",
+      "artifact": "copy-draft-r2.md",
+      "approved": true,
+      "userConfirmation": "可以",
+      "approvedTextSha256": "9325dc02fb91a2bbc993e52b24372c2a17cb8eb9ff6b6d7673fce9e4b4d60773"
+    },
+    "script": {
+      "status": "awaiting-user-review",
+      "approved": false,
+      "artifact": "script.md",
+      "dataArtifact": "storyboard-proposal.json"
+    },
+    "assetsAndStyle": {
+      "status": "not-started",
+      "approved": false
+    }
+  },
+  "fullEditStarted": false,
+  "nextStep": "Obtain explicit script feedback. Only then produce font/material/asset samples and a short style-and-audio trial for the third review gate. No full edit before all gates are approved.",
+  "currentCopyRevision": 2,
+  "referenceFileBytes": 11767133,
+  "referenceLocalPath": "/workspace/attachments/f7520f7f-5c3d-45d5-8f5d-ae06a3b8092f/Iwanau-Vibe知识大赏_《运气的形状》本视...-20261022_092444.mp4",
+  "referenceSha256": "31444f8f66fd764c608ed393a6d2e54e62d3ade1925c3b9d2d482d0461ebd3dd",
+  "scriptDurationSeconds": 130,
+  "scriptDurationInFrames": 7800
+}
