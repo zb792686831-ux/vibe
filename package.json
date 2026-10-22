@@ -23,11 +23,20 @@
     "video:legacy:build": "node scripts/render-new-media.mjs && node scripts/verify-new-media.mjs",
     "style:r2:render": "remotion render src/index.ts NewMediaV2StyleTrialR2 output/new-media-v2-style-r2-trial.mp4 --concurrency=1 --gl=swangle --x264-preset=fast",
     "style:r2:frames": "node scripts/extract-new-media-v2-r2-frames.mjs",
-    "style:r2:verify": "node scripts/verify-new-media-v2-style-r2.mjs"
+    "style:r2:verify": "node scripts/verify-new-media-v2-style-r2.mjs",
+    "motion:geometry": "node scripts/generate-motion-lab-geometry.mjs",
+    "motion:audio": "python3 scripts/generate-motion-lab-audio.py",
+    "motion:prepare": "node scripts/render-motion-lab.mjs --prepare-only",
+    "motion:render": "node scripts/render-motion-lab.mjs",
+    "motion:verify": "node scripts/verify-motion-lab.mjs",
+    "motion:build": "npm run motion:input:check && npm run motion:geometry && npm run motion:audio && npm run motion:render && npm run motion:verify",
+    "motion:input": "node scripts/prepare-motion-lab-input.mjs",
+    "motion:input:check": "node scripts/prepare-motion-lab-input.mjs --check"
   },
   "dependencies": {
     "@remotion/fonts": "4.0.537",
     "@remotion/media": "4.0.537",
+    "@remotion/paths": "4.0.537",
     "@remotion/transitions": "4.0.537",
     "react": "19.3.1",
     "react-dom": "19.3.1",
@@ -38,6 +47,8 @@
     "@types/node": "24.10.1",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
+    "gsap": "3.14.2",
+    "hyperframes": "0.8.185",
     "typescript": "5.9.3"
   }
 }

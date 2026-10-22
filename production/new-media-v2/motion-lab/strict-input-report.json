@@ -1,0 +1,2407 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-22T07:26:51.888Z",
+  "inputPackage": "production/new-media-v2/motion-lab/codegen-input.json",
+  "inputSha256": "289244627ad202c9e0c3711dd328b747224bbc4cd0ad2105df732867466bc593",
+  "browserInput": "src/new-media-v2/motion-lab/hyperframes/input.js",
+  "validationScope": [
+    "Missing fields, null, blank strings, empty arrays/objects in source JSON are errors; numeric zero and boolean false remain valid when allowed by their field rule.",
+    "All 16 shots and every original field must match the complete storyboard JSON; 40 exact copy units use a fixed SHA-256 of UTF-8 newline-joined text.",
+    "Sources retain exact original bytes (base64), complete decoded UTF-8 text, byte count and SHA-256. No source document is shortened or normalized.",
+    "Eight sample captions, three inputs, named numeric events, complete manifests, refinements, user directives and every explicitly required runtime material are mandatory. Provenance cache absence never supplies a replacement asset or default parameter.",
+    "This contract checks the explicitly declared fields and byte-level preservation. It does not claim semantic detection of every unspecified parameter in unrestricted natural-language prose.",
+    "Author-authored SPEC/refinement numeric values are retained verbatim; they are not represented as individually approved user parameters."
+  ],
+  "counts": {
+    "sourceDocuments": 10,
+    "fullShots": 16,
+    "approvedCopyUnits": 40,
+    "sampleCaptions": 8,
+    "sampleInputs": 3,
+    "originalSfxEvents": 9,
+    "populationBeads": 24,
+    "referencedFiles": 138
+  },
+  "sourceHashes": {
+    "storyboard": {
+      "path": "production/new-media-v2/storyboard-proposal.json",
+      "sha256": "771163101d37990c58bea9bc6ea5d27d4ae92b9aec6325e696f254a6cbf1b018",
+      "byteLength": 14298
+    },
+    "script": {
+      "path": "production/new-media-v2/script.md",
+      "sha256": "f507b5341398b24846ac6e067d34547b1ebd397c96443020a78be254a257a3a6",
+      "byteLength": 11763
+    },
+    "approvedCopy": {
+      "path": "production/new-media-v2/copy-draft-r2.md",
+      "sha256": "2614e80a44f7269ef05c9de839226afff64ff88e2fed2b41ff5fc96ec51aa139",
+      "byteLength": 2705
+    },
+    "finalProduction": {
+      "path": "production/new-media-v2/final-production.md",
+      "sha256": "5351cc18aab223916dfee0f133793ad9e61adcf4b92e3e775ab66b7361381dee",
+      "byteLength": 4980
+    },
+    "sampleSpec": {
+      "path": "production/new-media-v2/motion-lab/SPEC.md",
+      "sha256": "4896be2ef870e092526789510b98bcad499ab8f3b7376737f427634cd89fe917",
+      "byteLength": 2015
+    },
+    "referenceMotionSpec": {
+      "path": "production/new-media-v2/motion-lab/reference-motion-spec.md",
+      "sha256": "715d8d8e423da5da89e1ad0b90cd717f1ba311c92a2ca8ca67c8a0b4f96d7ebc",
+      "byteLength": 13948
+    },
+    "timeline": {
+      "path": "src/new-media-v2/motion-lab/hyperframes/timeline.json",
+      "sha256": "05dbe360adfc10286cd49d51497c3c067920a285f0d29cbd61a66f5e04f45d8e",
+      "byteLength": 1622
+    },
+    "assetsManifest": {
+      "path": "production/new-media-v2/motion-lab/assets-manifest.json",
+      "sha256": "c63bd009d18ac905f5b3cc94b9fbd58033bb930d7b5e27050cc6040c5c71e5da",
+      "byteLength": 19329
+    },
+    "audioManifest": {
+      "path": "production/new-media-v2/motion-lab/audio-manifest.json",
+      "sha256": "e00b08e3fb3efe5adfa744c6b24067067025fc24f18f8c272681c1b92d01984a",
+      "byteLength": 7837
+    },
+    "refinements": {
+      "path": "production/new-media-v2/motion-lab/refinements.json",
+      "sha256": "bc6d27429be42bc117d696866c269ea1a4883816e17445ac20dfb8e058f4bd43",
+      "byteLength": 6768
+    }
+  },
+  "approvedCopySha256": "9325dc02fb91a2bbc993e52b24372c2a17cb8eb9ff6b6d7673fce9e4b4d60773",
+  "noDefaultsSubstituted": true,
+  "originalSourcesModified": false,
+  "requiredFieldContract": {
+    "schemaDialect": "JSON Schema 2020-12 structural subset; supported keywords are enforced by this validator",
+    "validationSchema": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "const": "motion-lab-lossless-codegen-input-v1"
+        },
+        "requiredFieldContract": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "userDirectives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "textBase64": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "textBase64",
+              "sha256"
+            ],
+            "additionalProperties": true
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "sources": {
+          "type": "object",
+          "properties": {
+            "storyboard": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "script": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "approvedCopy": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "finalProduction": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "sampleSpec": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "referenceMotionSpec": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "timeline": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "assetsManifest": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "audioManifest": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            },
+            "refinements": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "mediaType": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "byteLength": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "bytesBase64": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "path",
+                "mediaType",
+                "byteLength",
+                "sha256",
+                "text",
+                "bytesBase64"
+              ],
+              "additionalProperties": true
+            }
+          },
+          "required": [
+            "storyboard",
+            "script",
+            "approvedCopy",
+            "finalProduction",
+            "sampleSpec",
+            "referenceMotionSpec",
+            "timeline",
+            "assetsManifest",
+            "audioManifest",
+            "refinements"
+          ],
+          "additionalProperties": true
+        },
+        "film": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "fps": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "durationInFrames": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "durationSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "voiceover": {
+              "const": false
+            },
+            "approvedCopyUnits": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "minItems": 40,
+              "maxItems": 40
+            },
+            "shots": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "start": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "end": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "from": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "durationInFrames": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "copy": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "minItems": 1
+                  },
+                  "visual": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "sound": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "screenText": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "minItems": 1
+                  },
+                  "textTreatment": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                },
+                "required": [
+                  "id",
+                  "start",
+                  "end",
+                  "from",
+                  "durationInFrames",
+                  "copy",
+                  "visual",
+                  "sound",
+                  "screenText",
+                  "textTreatment"
+                ],
+                "additionalProperties": true
+              },
+              "minItems": 16,
+              "maxItems": 16
+            }
+          },
+          "required": [
+            "title",
+            "fps",
+            "width",
+            "height",
+            "durationInFrames",
+            "durationSeconds",
+            "voiceover",
+            "approvedCopyUnits",
+            "shots"
+          ],
+          "additionalProperties": true
+        },
+        "sample": {
+          "type": "object",
+          "properties": {
+            "timeline": {
+              "type": "object",
+              "properties": {
+                "durationSeconds": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "fps": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "width": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "height": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "globalRange": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "voiceover": {
+                  "const": false
+                },
+                "captions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "unit": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "start": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "end": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      }
+                    },
+                    "required": [
+                      "unit",
+                      "start",
+                      "end",
+                      "text"
+                    ],
+                    "additionalProperties": true
+                  },
+                  "minItems": 8,
+                  "maxItems": 8
+                },
+                "inputs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "launch": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "arrival": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "recordAt": {
+                        "type": "number",
+                        "minimum": 0
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "launch",
+                      "arrival",
+                      "recordAt"
+                    ],
+                    "additionalProperties": true
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "recordActivation": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "outputStart": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "outputSettled": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "runtimeDom": {
+                  "type": "object",
+                  "properties": {
+                    "record": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "output": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "record",
+                    "output"
+                  ],
+                  "additionalProperties": true
+                },
+                "musicGlobalOffsetSeconds": {
+                  "type": "number"
+                },
+                "renderer": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "durationSeconds",
+                "fps",
+                "width",
+                "height",
+                "globalRange",
+                "voiceover",
+                "captions",
+                "inputs",
+                "recordActivation",
+                "outputStart",
+                "outputSettled",
+                "runtimeDom",
+                "musicGlobalOffsetSeconds",
+                "renderer"
+              ],
+              "additionalProperties": true
+            },
+            "assets": {
+              "type": "object",
+              "properties": {
+                "assets": {
+                  "type": "object",
+                  "properties": {
+                    "hero": {
+                      "type": "object",
+                      "properties": {
+                        "path": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "size": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        "blendCache": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "renderSeconds": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "sha256",
+                        "size",
+                        "blendCache",
+                        "renderSeconds"
+                      ],
+                      "additionalProperties": true
+                    },
+                    "edge": {
+                      "type": "object",
+                      "properties": {
+                        "path": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "size": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        "blendCache": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "renderSeconds": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "sha256",
+                        "size",
+                        "blendCache",
+                        "renderSeconds"
+                      ],
+                      "additionalProperties": true
+                    },
+                    "heart": {
+                      "type": "object",
+                      "properties": {
+                        "path": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "size": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        "blendCache": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "renderSeconds": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "sha256",
+                        "size",
+                        "blendCache",
+                        "renderSeconds"
+                      ],
+                      "additionalProperties": true
+                    },
+                    "bead": {
+                      "type": "object",
+                      "properties": {
+                        "path": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "size": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        "blendCache": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "renderSeconds": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "sha256",
+                        "size",
+                        "blendCache",
+                        "renderSeconds"
+                      ],
+                      "additionalProperties": true
+                    },
+                    "morph": {
+                      "type": "object",
+                      "properties": {
+                        "pathPattern": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "size": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        "frames": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "fps": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "durationSeconds": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
+                        "samples": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "denoise": {
+                          "type": "boolean"
+                        },
+                        "renderSeconds": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
+                        "method": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "material": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "blendCache": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "frameHashes": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "frame": {
+                                "type": "integer",
+                                "minimum": 0
+                              },
+                              "sha256": {
+                                "type": "string",
+                                "pattern": "^[a-f0-9]{64}$"
+                              }
+                            },
+                            "required": [
+                              "frame",
+                              "sha256"
+                            ],
+                            "additionalProperties": true
+                          },
+                          "minItems": 1
+                        }
+                      },
+                      "required": [
+                        "pathPattern",
+                        "size",
+                        "frames",
+                        "fps",
+                        "durationSeconds",
+                        "samples",
+                        "denoise",
+                        "renderSeconds",
+                        "method",
+                        "material",
+                        "blendCache",
+                        "frameHashes"
+                      ],
+                      "additionalProperties": true
+                    }
+                  },
+                  "required": [
+                    "hero",
+                    "edge",
+                    "heart",
+                    "bead",
+                    "morph"
+                  ],
+                  "additionalProperties": true
+                },
+                "generator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "generatorSha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "blenderVersion": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "blenderPythonVersion": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "renderEngine": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "threads": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "samples": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "seed": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "denoise": {
+                  "type": "boolean"
+                },
+                "transparentFilm": {
+                  "type": "boolean"
+                },
+                "output": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "denoiseUnavailableReason": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "colorManagement": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "lighting": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "catSource": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "sha256"
+                  ],
+                  "additionalProperties": true
+                },
+                "notes": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "assets",
+                "generator",
+                "generatorSha256",
+                "blenderVersion",
+                "blenderPythonVersion",
+                "renderEngine",
+                "threads",
+                "samples",
+                "seed",
+                "denoise",
+                "transparentFilm",
+                "output",
+                "denoiseUnavailableReason",
+                "colorManagement",
+                "lighting",
+                "catSource",
+                "notes"
+              ],
+              "additionalProperties": true
+            },
+            "audio": {
+              "type": "object",
+              "properties": {
+                "schema": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "status": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "durationSeconds": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "sampleRate": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "channels": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "addedVoiceover": {
+                  "const": false
+                },
+                "sourcePurityOrVocalContentAssessed": {
+                  "type": "boolean"
+                },
+                "musicBed": {
+                  "type": "object",
+                  "properties": {
+                    "sourceType": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "sourceFile": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "sourceFileSha256": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "originalUserUploadSha256": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "sourceAudioMetadata": {
+                      "type": "object",
+                      "properties": {
+                        "codec_name": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "sample_rate": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "channels": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "duration": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        }
+                      },
+                      "required": [
+                        "codec_name",
+                        "sample_rate",
+                        "channels",
+                        "duration"
+                      ],
+                      "additionalProperties": true
+                    },
+                    "sourceChannels": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "outputChannels": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "referenceSceneSeconds": {
+                      "type": "array",
+                      "items": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "minItems": 2,
+                      "maxItems": 2
+                    },
+                    "referenceToMusicOffsetSeconds": {
+                      "type": "number"
+                    },
+                    "sourceExcerptSeconds": {
+                      "type": "array",
+                      "items": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "minItems": 2,
+                      "maxItems": 2
+                    },
+                    "gainDb": {
+                      "type": "number"
+                    },
+                    "fadeInSeconds": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "fadeOutSeconds": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "looping": {
+                      "const": false
+                    },
+                    "tempoChanged": {
+                      "const": false
+                    },
+                    "eqOrCompressionApplied": {
+                      "type": "boolean"
+                    },
+                    "localDuckingApplied": {
+                      "type": "boolean"
+                    },
+                    "measurementAfterFixedGainAndFades": {
+                      "type": "object",
+                      "properties": {
+                        "integratedLoudnessLUFS": {
+                          "type": "number"
+                        },
+                        "truePeakDbTP": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "integratedLoudnessLUFS",
+                        "truePeakDbTP"
+                      ],
+                      "additionalProperties": true
+                    }
+                  },
+                  "required": [
+                    "sourceType",
+                    "sourceFile",
+                    "sourceFileSha256",
+                    "originalUserUploadSha256",
+                    "sourceAudioMetadata",
+                    "sourceChannels",
+                    "outputChannels",
+                    "referenceSceneSeconds",
+                    "referenceToMusicOffsetSeconds",
+                    "sourceExcerptSeconds",
+                    "gainDb",
+                    "fadeInSeconds",
+                    "fadeOutSeconds",
+                    "looping",
+                    "tempoChanged",
+                    "eqOrCompressionApplied",
+                    "localDuckingApplied",
+                    "measurementAfterFixedGainAndFades"
+                  ],
+                  "additionalProperties": true
+                },
+                "originalSfx": {
+                  "type": "object",
+                  "properties": {
+                    "seed": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "downloadedSamplesUsed": {
+                      "const": false
+                    },
+                    "eventCount": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "events": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          },
+                          "sourceType": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          },
+                          "sourceFile": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          },
+                          "sourceFileSha256": {
+                            "type": "string",
+                            "pattern": "^[a-f0-9]{64}$"
+                          },
+                          "startSeconds": {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          "endSeconds": {
+                            "type": "number",
+                            "exclusiveMinimum": 0
+                          },
+                          "durationSeconds": {
+                            "type": "number",
+                            "exclusiveMinimum": 0
+                          },
+                          "requestedPeakDbFS": {
+                            "type": "number"
+                          },
+                          "purpose": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "sourceType",
+                          "sourceFile",
+                          "sourceFileSha256",
+                          "startSeconds",
+                          "endSeconds",
+                          "durationSeconds",
+                          "requestedPeakDbFS",
+                          "purpose"
+                        ],
+                        "additionalProperties": true
+                      },
+                      "minItems": 1
+                    },
+                    "sfxMasterGainLinear": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "sfxMasterGainDb": {
+                      "type": "number"
+                    },
+                    "peakManagement": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "quietWindows": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "fromSeconds": {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          "toSeconds": {
+                            "type": "number",
+                            "exclusiveMinimum": 0
+                          },
+                          "reason": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          },
+                          "actualPcmAllZero": {
+                            "const": true
+                          }
+                        },
+                        "required": [
+                          "fromSeconds",
+                          "toSeconds",
+                          "reason",
+                          "actualPcmAllZero"
+                        ],
+                        "additionalProperties": true
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "seed",
+                    "downloadedSamplesUsed",
+                    "eventCount",
+                    "events",
+                    "sfxMasterGainLinear",
+                    "sfxMasterGainDb",
+                    "peakManagement",
+                    "quietWindows"
+                  ],
+                  "additionalProperties": true
+                },
+                "generator": {
+                  "type": "object",
+                  "properties": {
+                    "file": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "measurementHelper": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "measurementHelperSha256": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "dependencies": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "file",
+                    "sha256",
+                    "measurementHelper",
+                    "measurementHelperSha256",
+                    "dependencies"
+                  ],
+                  "additionalProperties": true
+                },
+                "outputs": {
+                  "type": "object",
+                  "minProperties": 1
+                },
+                "standaloneMusicPublished": {
+                  "type": "boolean"
+                },
+                "generatedAudioDirectoryGitIgnored": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "schema",
+                "status",
+                "durationSeconds",
+                "sampleRate",
+                "channels",
+                "addedVoiceover",
+                "sourcePurityOrVocalContentAssessed",
+                "musicBed",
+                "originalSfx",
+                "generator",
+                "outputs",
+                "standaloneMusicPublished",
+                "generatedAudioDirectoryGitIgnored"
+              ],
+              "additionalProperties": true
+            },
+            "refinements": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "userApprovalOfEachNumericValue": {
+                  "const": false
+                },
+                "originalStoryboardMutated": {
+                  "const": false
+                },
+                "reviewEvidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "minItems": 1
+                },
+                "refinements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      }
+                    },
+                    "required": [
+                      "id"
+                    ],
+                    "additionalProperties": true
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                }
+              },
+              "required": [
+                "status",
+                "userApprovalOfEachNumericValue",
+                "originalStoryboardMutated",
+                "reviewEvidence",
+                "refinements"
+              ],
+              "additionalProperties": true
+            },
+            "events": {
+              "type": "object",
+              "properties": {
+                "inputs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "launch": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "arrival": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "recordAt": {
+                        "type": "number",
+                        "minimum": 0
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "launch",
+                      "arrival",
+                      "recordAt"
+                    ],
+                    "additionalProperties": true
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "recordActivation": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "outputStart": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "outputSettled": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "originalSfx": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "sourceType": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "sourceFile": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "sourceFileSha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      "startSeconds": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "endSeconds": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "durationSeconds": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "requestedPeakDbFS": {
+                        "type": "number"
+                      },
+                      "purpose": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "sourceType",
+                      "sourceFile",
+                      "sourceFileSha256",
+                      "startSeconds",
+                      "endSeconds",
+                      "durationSeconds",
+                      "requestedPeakDbFS",
+                      "purpose"
+                    ],
+                    "additionalProperties": true
+                  },
+                  "minItems": 1
+                },
+                "quietWindows": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "fromSeconds": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "toSeconds": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "reason": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "actualPcmAllZero": {
+                        "const": true
+                      }
+                    },
+                    "required": [
+                      "fromSeconds",
+                      "toSeconds",
+                      "reason",
+                      "actualPcmAllZero"
+                    ],
+                    "additionalProperties": true
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "inputs",
+                "recordActivation",
+                "outputStart",
+                "outputSettled",
+                "originalSfx",
+                "quietWindows"
+              ],
+              "additionalProperties": true
+            }
+          },
+          "required": [
+            "timeline",
+            "assets",
+            "audio",
+            "refinements",
+            "events"
+          ],
+          "additionalProperties": true
+        },
+        "integrity": {
+          "type": "object",
+          "properties": {
+            "approvedCopyAlgorithm": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "approvedCopySha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "sourceDocumentCount": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "approvedCopyAlgorithm",
+            "approvedCopySha256",
+            "sourceDocumentCount"
+          ],
+          "additionalProperties": true
+        },
+        "assetInventory": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sourceJsonPath": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "logicalPath": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "byteLength": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "sourceJsonPath",
+              "logicalPath",
+              "byteLength",
+              "sha256"
+            ],
+            "additionalProperties": true
+          },
+          "minItems": 1
+        },
+        "provenanceInventory": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sourceJsonPath": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "logicalPath": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "requiredForRuntime": {
+                "const": false
+              },
+              "presentAtPackaging": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "sourceJsonPath",
+              "logicalPath",
+              "requiredForRuntime",
+              "presentAtPackaging"
+            ],
+            "additionalProperties": true
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "format",
+        "requiredFieldContract",
+        "userDirectives",
+        "sources",
+        "film",
+        "sample",
+        "integrity",
+        "assetInventory",
+        "provenanceInventory"
+      ],
+      "additionalProperties": true
+    },
+    "refinementSchemasById": {
+      "single-board-projection": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "method": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "heroOpacity": {
+            "type": "number",
+            "minimum": 0
+          },
+          "edgeOpacity": {
+            "type": "number",
+            "minimum": 0
+          },
+          "perspectivePx": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "rotationYDegreesAtExit": {
+            "type": "number"
+          },
+          "rotationZDegrees": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "localRangeSeconds": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "exitDistancePx": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "required": [
+          "id",
+          "reason",
+          "method",
+          "heroOpacity",
+          "edgeOpacity",
+          "perspectivePx",
+          "rotationYDegreesAtExit",
+          "rotationZDegrees",
+          "localRangeSeconds",
+          "exitDistancePx"
+        ],
+        "additionalProperties": true
+      },
+      "retained-stay-orbit": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "centerPx": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "radiusPx": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "startDegrees": {
+            "type": "number"
+          },
+          "sweepDegrees": {
+            "type": "number"
+          },
+          "strokePx": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "strokeColor": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "maxOpacity": {
+            "type": "number",
+            "minimum": 0
+          },
+          "revealSeconds": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "retireSeconds": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "questionCameraScaleFromTo": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "questionCameraMoveSeconds": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "questionCameraReturnSeconds": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "required": [
+          "id",
+          "reason",
+          "centerPx",
+          "radiusPx",
+          "startDegrees",
+          "sweepDegrees",
+          "strokePx",
+          "strokeColor",
+          "maxOpacity",
+          "revealSeconds",
+          "retireSeconds",
+          "questionCameraScaleFromTo",
+          "questionCameraMoveSeconds",
+          "questionCameraReturnSeconds"
+        ],
+        "additionalProperties": true
+      },
+      "existing-aggregate-depth": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "geometry": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "revealSeconds": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "beads": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "rail": {
+                  "enum": [
+                    "top",
+                    "bottom"
+                  ]
+                },
+                "arcFraction": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "radiusPx": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "opacity": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "id",
+                "rail",
+                "arcFraction",
+                "radiusPx",
+                "opacity"
+              ],
+              "additionalProperties": true
+            },
+            "minItems": 24,
+            "maxItems": 24
+          },
+          "depthStrokeWidthPx": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "edgeStrokeWidthPx": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "primaryRailStrokeWidthPx": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "fixedBranchPaths": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "branchStrokePx": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "branchOpacity": {
+            "type": "number",
+            "minimum": 0
+          },
+          "outputBranchRevealAfterSeconds": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "id",
+          "reason",
+          "geometry",
+          "revealSeconds",
+          "beads",
+          "depthStrokeWidthPx",
+          "edgeStrokeWidthPx",
+          "primaryRailStrokeWidthPx",
+          "fixedBranchPaths",
+          "branchStrokePx",
+          "branchOpacity",
+          "outputBranchRevealAfterSeconds"
+        ],
+        "additionalProperties": true
+      },
+      "source-legibility": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sourceLabelExitSeconds": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "replayArrowPath": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "arcRevealBeforeSemanticActivation": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "sourceLabelExitSeconds",
+          "replayArrowPath",
+          "arcRevealBeforeSemanticActivation"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "sourceDocumentKeys": [
+      "storyboard",
+      "script",
+      "approvedCopy",
+      "finalProduction",
+      "sampleSpec",
+      "referenceMotionSpec",
+      "timeline",
+      "assetsManifest",
+      "audioManifest",
+      "refinements"
+    ],
+    "runtimeMaterialRequirements": {
+      "fontFiles": [
+        "public/fonts/new-media-v2/style-review/NotoSerifCJKSC-Regular.subset.woff",
+        "public/fonts/new-media-v2/style-review/NotoSerifCJKSC-Bold.subset.woff"
+      ],
+      "required": "Declared PNG frames/images, exact uploaded source music, generated audio mix and SFX files, and the actual two local browser fonts.",
+      "provenanceOnly": "Blender editable caches, generator programs, source illustration and cached review evidence are recorded as provenance, not mandatory browser-loadable material. Their presence snapshot is not a fresh-clone runtime prerequisite."
+    },
+    "semantics": [
+      "Missing fields, null, blank strings, empty arrays/objects in source JSON are errors; numeric zero and boolean false remain valid when allowed by their field rule.",
+      "All 16 shots and every original field must match the complete storyboard JSON; 40 exact copy units use a fixed SHA-256 of UTF-8 newline-joined text.",
+      "Sources retain exact original bytes (base64), complete decoded UTF-8 text, byte count and SHA-256. No source document is shortened or normalized.",
+      "Eight sample captions, three inputs, named numeric events, complete manifests, refinements, user directives and every explicitly required runtime material are mandatory. Provenance cache absence never supplies a replacement asset or default parameter.",
+      "This contract checks the explicitly declared fields and byte-level preservation. It does not claim semantic detection of every unspecified parameter in unrestricted natural-language prose.",
+      "Author-authored SPEC/refinement numeric values are retained verbatim; they are not represented as individually approved user parameters."
+    ]
+  },
+  "negativeTests": [
+    {
+      "name": "missing-shot-visual",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/vibe/scripts/prepare-motion-lab-input.mjs",
+        "--check",
+        "--input",
+        "/tmp/motion-lab-strict-HxfFEF/missing-shot-visual.json"
+      ],
+      "exitCode": 1,
+      "expectedPath": "$.film.shots[0].visual",
+      "actualPath": "$.film.shots[0].visual",
+      "diagnostic": "$.film.shots[0].visual: required field missing; no default is substituted",
+      "passed": true
+    },
+    {
+      "name": "null-duration",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/vibe/scripts/prepare-motion-lab-input.mjs",
+        "--check",
+        "--input",
+        "/tmp/motion-lab-strict-HxfFEF/null-duration.json"
+      ],
+      "exitCode": 1,
+      "expectedPath": "$.film.shots[2].durationInFrames",
+      "actualPath": "$.film.shots[2].durationInFrames",
+      "diagnostic": "$.film.shots[2].durationInFrames: null/undefined is not an input value",
+      "passed": true
+    },
+    {
+      "name": "blank-text-treatment",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/vibe/scripts/prepare-motion-lab-input.mjs",
+        "--check",
+        "--input",
+        "/tmp/motion-lab-strict-HxfFEF/blank-text-treatment.json"
+      ],
+      "exitCode": 1,
+      "expectedPath": "$.film.shots[1].textTreatment",
+      "actualPath": "$.film.shots[1].textTreatment",
+      "diagnostic": "$.film.shots[1].textTreatment: does not match required string pattern",
+      "passed": true
+    },
+    {
+      "name": "missing-input-arrival",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/vibe/scripts/prepare-motion-lab-input.mjs",
+        "--check",
+        "--input",
+        "/tmp/motion-lab-strict-HxfFEF/missing-input-arrival.json"
+      ],
+      "exitCode": 1,
+      "expectedPath": "$.sample.timeline.inputs[1].arrival",
+      "actualPath": "$.sample.timeline.inputs[1].arrival",
+      "diagnostic": "$.sample.timeline.inputs[1].arrival: required field missing; no default is substituted",
+      "passed": true
+    },
+    {
+      "name": "missing-complete-source-text",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/vibe/scripts/prepare-motion-lab-input.mjs",
+        "--check",
+        "--input",
+        "/tmp/motion-lab-strict-HxfFEF/missing-complete-source-text.json"
+      ],
+      "exitCode": 1,
+      "expectedPath": "$.sources.script.text",
+      "actualPath": "$.sources.script.text",
+      "diagnostic": "$.sources.script.text: required field missing; no default is substituted",
+      "passed": true
+    },
+    {
+      "name": "missing-asset-file",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/vibe/scripts/prepare-motion-lab-input.mjs",
+        "--check",
+        "--input",
+        "/tmp/motion-lab-strict-HxfFEF/missing-asset-file.json"
+      ],
+      "exitCode": 1,
+      "expectedPath": "$.assetInventory[0].logicalPath",
+      "actualPath": "$.assetInventory[0].logicalPath",
+      "diagnostic": "$.assetInventory[0].logicalPath: required local file missing/unreadable: /tmp/motion-lab-strict-HxfFEF/does-not-exist.png",
+      "passed": true
+    },
+    {
+      "name": "edited-caption",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/vibe/scripts/prepare-motion-lab-input.mjs",
+        "--check",
+        "--input",
+        "/tmp/motion-lab-strict-HxfFEF/edited-caption.json"
+      ],
+      "exitCode": 1,
+      "expectedPath": "$.sample.timeline.captions[0].text",
+      "actualPath": "$.sample.timeline.captions[0].text",
+      "diagnostic": "$.sample.timeline.captions[0].text: value differs from complete original input",
+      "passed": true
+    },
+    {
+      "name": "missing-refinement-parameter",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/vibe/scripts/prepare-motion-lab-input.mjs",
+        "--check",
+        "--input",
+        "/tmp/motion-lab-strict-HxfFEF/missing-refinement-parameter.json"
+      ],
+      "exitCode": 1,
+      "expectedPath": "$.sample.refinements.refinements[2].beads[0].radiusPx",
+      "actualPath": "$.sample.refinements.refinements[2].beads[0].radiusPx",
+      "diagnostic": "$.sample.refinements.refinements[2].beads[0].radiusPx: original field was omitted",
+      "passed": true
+    }
+  ]
+}

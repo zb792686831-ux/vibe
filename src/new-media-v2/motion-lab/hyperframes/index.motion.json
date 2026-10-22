@@ -1,0 +1,13 @@
+{
+  "duration": 20,
+  "assertions": [
+    {"kind": "appearsBy", "selector": "#reaction", "bySec": 0.1},
+    {"kind": "appearsBy", "selector": "#pause-bars", "bySec": 11.6},
+    {"kind": "appearsBy", "selector": "#replay-arrow", "bySec": 12.7},
+    {"kind": "before", "a": "#pause-pulse", "b": "#record-gate-back"},
+    {"kind": "before", "a": "#record-gate-back", "b": "#recommendation"},
+    {"kind": "staysInFrame", "selector": "#reaction"},
+    {"kind": "staysInFrame", "selector": "#caption-16"},
+    {"kind": "staysInFrame", "selector": "#caption-17"}
+  ]
+}

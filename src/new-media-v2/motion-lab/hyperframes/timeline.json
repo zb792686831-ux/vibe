@@ -1,0 +1,90 @@
+{
+  "durationSeconds": 20,
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "globalRange": [
+    28,
+    48
+  ],
+  "voiceover": false,
+  "captions": [
+    {
+      "unit": 10,
+      "start": 0,
+      "end": 3,
+      "text": "顺手，点亮一颗红心。"
+    },
+    {
+      "unit": 11,
+      "start": 3,
+      "end": 4.45,
+      "text": "然后，划走。"
+    },
+    {
+      "unit": 12,
+      "start": 4.45,
+      "end": 6.1,
+      "text": "视频过去了。"
+    },
+    {
+      "unit": 13,
+      "start": 6.1,
+      "end": 8.3,
+      "text": "你的反应，留下了。"
+    },
+    {
+      "unit": 14,
+      "start": 8.3,
+      "end": 11,
+      "text": "刚才那几秒，去了哪里？"
+    },
+    {
+      "unit": 15,
+      "start": 11,
+      "end": 14,
+      "text": "停留、重看、点赞……"
+    },
+    {
+      "unit": 16,
+      "start": 14,
+      "end": 17.5,
+      "text": "它们被平台记录，变成信号。"
+    },
+    {
+      "unit": 17,
+      "start": 17.5,
+      "end": 20,
+      "text": "成为推荐的参考。"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "pause",
+      "launch": 14.3,
+      "arrival": 16.1,
+      "recordAt": 16.1
+    },
+    {
+      "id": "replay",
+      "launch": 14.7,
+      "arrival": 16.6,
+      "recordAt": 16.6
+    },
+    {
+      "id": "like",
+      "launch": 15.5,
+      "arrival": 17.25,
+      "recordAt": 17.25
+    }
+  ],
+  "recordActivation": 16.1,
+  "outputStart": 17.5,
+  "outputSettled": 19.13,
+  "runtimeDom": {
+    "record": "record-gate-back",
+    "output": "recommendation"
+  },
+  "musicGlobalOffsetSeconds": 0.048,
+  "renderer": "hyperframes@0.8.185"
+}

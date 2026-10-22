@@ -1,0 +1,203 @@
+{
+  "schema": "motion-lab-audio-v1",
+  "status": "generated-and-verified",
+  "durationSeconds": 20.0,
+  "sampleRate": 48000,
+  "channels": 2,
+  "addedVoiceover": false,
+  "sourcePurityOrVocalContentAssessed": false,
+  "musicBed": {
+    "sourceType": "user-supplied-bgm-file",
+    "sourceFile": "/workspace/attachments/fbe8109f-0ab9-4284-ac06-71a509607930/bgm.mp4",
+    "sourceFileSha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+    "originalUserUploadSha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+    "sourceAudioMetadata": {
+      "codec_name": "aac",
+      "sample_rate": "44100",
+      "channels": 1,
+      "duration": "133.073560"
+    },
+    "sourceChannels": 1,
+    "outputChannels": 2,
+    "referenceSceneSeconds": [
+      28.0,
+      48.0
+    ],
+    "referenceToMusicOffsetSeconds": 0.048,
+    "sourceExcerptSeconds": [
+      28.048,
+      48.048
+    ],
+    "gainDb": -7.7,
+    "fadeInSeconds": 0.06,
+    "fadeOutSeconds": 0.06,
+    "looping": false,
+    "tempoChanged": false,
+    "eqOrCompressionApplied": false,
+    "localDuckingApplied": false,
+    "measurementAfterFixedGainAndFades": {
+      "integratedLoudnessLUFS": -16.5,
+      "truePeakDbTP": -6.3
+    }
+  },
+  "originalSfx": {
+    "seed": 2026102203,
+    "downloadedSamplesUsed": false,
+    "eventCount": 9,
+    "events": [
+      {
+        "name": "ceramic-heart",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/ceramic-heart.wav",
+        "sourceFileSha256": "33936aaf9e6b08ce101ae8e6169f691830946b678f613104fbe92afecdcb1818",
+        "startSeconds": 0.65,
+        "endSeconds": 0.91,
+        "durationSeconds": 0.26,
+        "requestedPeakDbFS": -24.0,
+        "purpose": "One light ceramic contact as the heart lands"
+      },
+      {
+        "name": "paper-air-arc",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/paper-air-arc.wav",
+        "sourceFileSha256": "e56cfd50c5662a4d13db1f929636c25ceed51df3b9a38c088b5af8013f100f4d",
+        "startSeconds": 3.15,
+        "endSeconds": 5.2,
+        "durationSeconds": 2.05,
+        "requestedPeakDbFS": -28.0,
+        "purpose": "Soft paper/air arc while the cat display leaves"
+      },
+      {
+        "name": "bead-gather",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/bead-gather.wav",
+        "sourceFileSha256": "67c202fbb919962b3049a972bc997c4dd0dbcf70aed1e64fd127c9ddfd18c3fc",
+        "startSeconds": 6.1,
+        "endSeconds": 8.1,
+        "durationSeconds": 2.0,
+        "requestedPeakDbFS": -28.0,
+        "purpose": "Fine particles converge as the heart becomes a bead"
+      },
+      {
+        "name": "pause-contact",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/pause-contact.wav",
+        "sourceFileSha256": "9681a1037ebdf2ccee2310bedaba07a697e69657e2585f27753bfeaf1897b075",
+        "startSeconds": 11.25,
+        "endSeconds": 11.43,
+        "durationSeconds": 0.18,
+        "requestedPeakDbFS": -27.0,
+        "purpose": "A small pause trigger, not a per-character accent"
+      },
+      {
+        "name": "replay-brush",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/replay-brush.wav",
+        "sourceFileSha256": "88396d8171526e33ddcd261c23a672f952c12a983c40dfd7430944a77c966a6b",
+        "startSeconds": 12.2,
+        "endSeconds": 12.47,
+        "durationSeconds": 0.27,
+        "requestedPeakDbFS": -30.0,
+        "purpose": "A small replay brush"
+      },
+      {
+        "name": "like-contact",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/like-contact.wav",
+        "sourceFileSha256": "e1478b6b5ba2bbda234efd8501d385ad79674bf26f8e9e220c6c42815b48be8b",
+        "startSeconds": 13.1,
+        "endSeconds": 13.33,
+        "durationSeconds": 0.23,
+        "requestedPeakDbFS": -27.0,
+        "purpose": "A small like trigger related to the opening heart"
+      },
+      {
+        "name": "bead-travel",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/bead-travel.wav",
+        "sourceFileSha256": "639f2cb546f9cb3ed378cdbdfe5cafe93cfa4d4acecca9f9aa303b685e8641dd",
+        "startSeconds": 14.2,
+        "endSeconds": 17.3,
+        "durationSeconds": 3.1,
+        "requestedPeakDbFS": -30.0,
+        "purpose": "Sparse rolling grains as the bead enters the record band"
+      },
+      {
+        "name": "record-arrival",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/record-arrival.wav",
+        "sourceFileSha256": "4c950121f23c772e06d07e2687785bc36654880e3a38f0b4693f3294c55ef295",
+        "startSeconds": 17.3,
+        "endSeconds": 17.6,
+        "durationSeconds": 0.3,
+        "requestedPeakDbFS": -25.0,
+        "purpose": "Warm tactile arrival, without a success cue"
+      },
+      {
+        "name": "branch-air",
+        "sourceType": "original-deterministic-programmatic-material-synthesis",
+        "sourceFile": "public/audio/new-media-v2/motion-lab/sfx/branch-air.wav",
+        "sourceFileSha256": "97d93b1506e4c4542b838e84843c1a4452c93eec4cf768265c6706ad949a5daa",
+        "startSeconds": 17.8,
+        "endSeconds": 19.1,
+        "durationSeconds": 1.3,
+        "requestedPeakDbFS": -32.0,
+        "purpose": "A small amount of air in the branching outflow"
+      }
+    ],
+    "sfxMasterGainLinear": 1.0,
+    "sfxMasterGainDb": 0.0,
+    "peakManagement": "Only added SFX may be attenuated statically; BGM fixed gain is preserved",
+    "quietWindows": [
+      {
+        "fromSeconds": 8.3,
+        "toSeconds": 11.0,
+        "reason": "Question segment: strictly no added SFX",
+        "actualPcmAllZero": true
+      },
+      {
+        "fromSeconds": 19.1,
+        "toSeconds": 20.0,
+        "reason": "Stable final hold: strictly no added SFX",
+        "actualPcmAllZero": true
+      }
+    ]
+  },
+  "generator": {
+    "file": "scripts/generate-motion-lab-audio.py",
+    "sha256": "a0f68b1b8879cf64e3369a8cc3f82f1e0bf0bd007a3ae9994af6e108b36686ac",
+    "measurementHelper": "scripts/generate-new-media-v2-review-sfx.py",
+    "measurementHelperSha256": "fcaa8d56f05a8c2e8f3f4e53c49525e44b3cb529c7c66f1a42524e56b56b3564",
+    "dependencies": "Python standard library and system FFmpeg/ffprobe; no paid services"
+  },
+  "outputs": {
+    "public/audio/new-media-v2/motion-lab/mix.wav": {
+      "codec_name": "pcm_s16le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "20.000000",
+      "frames": 960000,
+      "samplePeakDbFS": -6.3139,
+      "integratedLoudnessLUFS": -16.5,
+      "truePeakDbTP": -6.3,
+      "firstAndLastStereoFrameZero": true,
+      "fullDecode": "passed",
+      "sha256": "ca54a4a13b87cbe1b66f7920c4f1b3c74e2a3a3b4a5268228682c73d8f13e47e"
+    },
+    "public/audio/new-media-v2/motion-lab/sfx-only.wav": {
+      "codec_name": "pcm_s16le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "20.000000",
+      "frames": 960000,
+      "samplePeakDbFS": -24.0022,
+      "integratedLoudnessLUFS": -40.4,
+      "truePeakDbTP": -24.0,
+      "firstAndLastStereoFrameZero": true,
+      "fullDecode": "passed",
+      "sha256": "cedcc4b9a4adb17469e316f931f5882e86cc26788ac63ad44e21a9afa5983ea5"
+    }
+  },
+  "standaloneMusicPublished": false,
+  "generatedAudioDirectoryGitIgnored": true
+}

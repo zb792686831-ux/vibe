@@ -1,0 +1,272 @@
+{
+  "status": "authored-refinement-parameters-after-actual-snapshot-review",
+  "userApprovalOfEachNumericValue": false,
+  "originalStoryboardMutated": false,
+  "reviewEvidence": [
+    ".cache/motion-lab/review/review-beats.jpg",
+    ".cache/motion-lab/exit-review/contact-sheet-1.jpg",
+    ".cache/motion-lab/exit-review/contact-sheet-2.jpg"
+  ],
+  "refinements": [
+    {
+      "id": "single-board-projection",
+      "reason": "3.433–3.6s actual crossfade shows double cats and frame edges",
+      "method": "Use only rendered hero board; one perspective-projected image. Do not present as full 3D turntable. Edge still retained as unused authored asset.",
+      "heroOpacity": 1,
+      "edgeOpacity": 0,
+      "perspectivePx": 1100,
+      "rotationYDegreesAtExit": -24,
+      "rotationZDegrees": "-3*peel-16*peel^2.15",
+      "localRangeSeconds": [
+        3.15,
+        4.4
+      ],
+      "exitDistancePx": [
+        -420,
+        -1145
+      ]
+    },
+    {
+      "id": "retained-stay-orbit",
+      "reason": "10s actual frame lacks inherited spatial reference",
+      "centerPx": [
+        960,
+        430
+      ],
+      "radiusPx": 215,
+      "startDegrees": -65,
+      "sweepDegrees": 287,
+      "strokePx": 8,
+      "strokeColor": "#809887",
+      "maxOpacity": 0.38,
+      "revealSeconds": [
+        6.1,
+        8.1
+      ],
+      "retireSeconds": [
+        11.5,
+        13.8
+      ],
+      "questionCameraScaleFromTo": [
+        1,
+        1.08
+      ],
+      "questionCameraMoveSeconds": [
+        8.3,
+        9.3
+      ],
+      "questionCameraReturnSeconds": [
+        10.7,
+        11.6
+      ]
+    },
+    {
+      "id": "existing-aggregate-depth",
+      "reason": "18s actual frame has two lone paths and too few population signals",
+      "geometry": "Retained top/bottom rails, equal arc-length. All population beads follow current morphing rail.",
+      "revealSeconds": [
+        14.8,
+        15.8
+      ],
+      "beads": [
+        {
+          "id": "population-00",
+          "rail": "top",
+          "arcFraction": 0.06,
+          "radiusPx": 8,
+          "opacity": 0.32
+        },
+        {
+          "id": "population-01",
+          "rail": "bottom",
+          "arcFraction": 0.06,
+          "radiusPx": 11,
+          "opacity": 0.52
+        },
+        {
+          "id": "population-02",
+          "rail": "top",
+          "arcFraction": 0.129,
+          "radiusPx": 15,
+          "opacity": 0.78
+        },
+        {
+          "id": "population-03",
+          "rail": "bottom",
+          "arcFraction": 0.129,
+          "radiusPx": 10,
+          "opacity": 0.4
+        },
+        {
+          "id": "population-04",
+          "rail": "top",
+          "arcFraction": 0.198,
+          "radiusPx": 13,
+          "opacity": 0.32
+        },
+        {
+          "id": "population-05",
+          "rail": "bottom",
+          "arcFraction": 0.198,
+          "radiusPx": 17,
+          "opacity": 0.52
+        },
+        {
+          "id": "population-06",
+          "rail": "top",
+          "arcFraction": 0.267,
+          "radiusPx": 8,
+          "opacity": 0.78
+        },
+        {
+          "id": "population-07",
+          "rail": "bottom",
+          "arcFraction": 0.267,
+          "radiusPx": 11,
+          "opacity": 0.4
+        },
+        {
+          "id": "population-08",
+          "rail": "top",
+          "arcFraction": 0.336,
+          "radiusPx": 15,
+          "opacity": 0.32
+        },
+        {
+          "id": "population-09",
+          "rail": "bottom",
+          "arcFraction": 0.336,
+          "radiusPx": 10,
+          "opacity": 0.52
+        },
+        {
+          "id": "population-10",
+          "rail": "top",
+          "arcFraction": 0.405,
+          "radiusPx": 13,
+          "opacity": 0.78
+        },
+        {
+          "id": "population-11",
+          "rail": "bottom",
+          "arcFraction": 0.405,
+          "radiusPx": 17,
+          "opacity": 0.4
+        },
+        {
+          "id": "population-12",
+          "rail": "top",
+          "arcFraction": 0.474,
+          "radiusPx": 8,
+          "opacity": 0.32
+        },
+        {
+          "id": "population-13",
+          "rail": "bottom",
+          "arcFraction": 0.474,
+          "radiusPx": 11,
+          "opacity": 0.52
+        },
+        {
+          "id": "population-14",
+          "rail": "top",
+          "arcFraction": 0.543,
+          "radiusPx": 15,
+          "opacity": 0.78
+        },
+        {
+          "id": "population-15",
+          "rail": "bottom",
+          "arcFraction": 0.543,
+          "radiusPx": 10,
+          "opacity": 0.4
+        },
+        {
+          "id": "population-16",
+          "rail": "top",
+          "arcFraction": 0.612,
+          "radiusPx": 13,
+          "opacity": 0.32
+        },
+        {
+          "id": "population-17",
+          "rail": "bottom",
+          "arcFraction": 0.612,
+          "radiusPx": 17,
+          "opacity": 0.52
+        },
+        {
+          "id": "population-18",
+          "rail": "top",
+          "arcFraction": 0.681,
+          "radiusPx": 8,
+          "opacity": 0.78
+        },
+        {
+          "id": "population-19",
+          "rail": "bottom",
+          "arcFraction": 0.681,
+          "radiusPx": 11,
+          "opacity": 0.4
+        },
+        {
+          "id": "population-20",
+          "rail": "top",
+          "arcFraction": 0.75,
+          "radiusPx": 15,
+          "opacity": 0.32
+        },
+        {
+          "id": "population-21",
+          "rail": "bottom",
+          "arcFraction": 0.75,
+          "radiusPx": 10,
+          "opacity": 0.52
+        },
+        {
+          "id": "population-22",
+          "rail": "top",
+          "arcFraction": 0.819,
+          "radiusPx": 13,
+          "opacity": 0.78
+        },
+        {
+          "id": "population-23",
+          "rail": "bottom",
+          "arcFraction": 0.819,
+          "radiusPx": 17,
+          "opacity": 0.4
+        }
+      ],
+      "depthStrokeWidthPx": 18,
+      "edgeStrokeWidthPx": 2.8,
+      "primaryRailStrokeWidthPx": 9,
+      "fixedBranchPaths": [
+        "M245 260 C365 260 390 355 485.255 329.704",
+        "M280 650 C410 650 445 580 563.393 574.293",
+        "M1568.752 312.897 C1680 305 1700 220 1770 220",
+        "M1568.655 552.852 C1670 560 1700 675 1770 675"
+      ],
+      "branchStrokePx": 7,
+      "branchOpacity": 0.32,
+      "outputBranchRevealAfterSeconds": 18.15,
+      "branchAttachment": {
+        "inputArcSampleIndices": [
+          29,
+          38
+        ],
+        "outputArcSampleIndex": 90,
+        "followDeformingParent": true
+      }
+    },
+    {
+      "id": "source-legibility",
+      "sourceLabelExitSeconds": [
+        14.55,
+        15.05
+      ],
+      "replayArrowPath": "M1290 337 L1317 345 L1307 373",
+      "arcRevealBeforeSemanticActivation": false
+    }
+  ]
+}

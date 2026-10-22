@@ -34,3 +34,14 @@ public/audio/new-media-v2/final/
 !output/new-media-v2-final-signals.jpg
 !output/new-media-v2-final-loop.jpg
 !output/new-media-v2-final-validation.json
+
+# HyperFrames review artifacts; source uploads and separate mixes remain local.
+.hyperframes/
+!output/new-media-v2-motion-lab.mp4
+!output/new-media-v2-motion-lab-preview.jpg
+!output/new-media-v2-motion-lab-question.jpg
+!output/new-media-v2-motion-lab-flow.jpg
+!output/new-media-v2-motion-lab-validation.json
+!output/new-media-v2-motion-lab-object.jpg
+!output/new-media-v2-motion-lab-bridge.jpg
+!output/new-media-v2-motion-lab-causality.jpg

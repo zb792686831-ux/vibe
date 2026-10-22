@@ -1,0 +1,1300 @@
+{
+  "passed": true,
+  "status": "representative-20-second-motion-lab-technical-validation-passed",
+  "checkedAt": "2026-10-22T07:26:43.395Z",
+  "isFinalFilm": false,
+  "fullFilmReplaced": false,
+  "userAcceptanceAssessed": false,
+  "renderer": {
+    "name": "HyperFrames",
+    "version": "0.8.185",
+    "native": true,
+    "manifest": ".cache/motion-lab/render-manifest.json",
+    "fingerprint": "b5b432395e85852c50a56c919bb1569768a57b26fef0b891fec1b6e4ec5839b5",
+    "nativeCommand": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/vibe/node_modules/hyperframes/bin/hyperframes.mjs",
+      "render",
+      "/workspace/vibe/.cache/motion-lab/hyperframes",
+      "--fps=60",
+      "--workers=2",
+      "--quality=looks",
+      "--crf=18",
+      "--resolution=landscape",
+      "--no-best-effort",
+      "--strict",
+      "-o",
+      "/workspace/vibe/.cache/motion-lab/picture.mp4"
+    ]
+  },
+  "completeScriptInput": {
+    "file": "production/new-media-v2/motion-lab/codegen-input.json",
+    "sha256": "289244627ad202c9e0c3711dd328b747224bbc4cd0ad2105df732867466bc593",
+    "allShotsRetained": 16,
+    "allCopyUnitsRetained": 40,
+    "losslessSourceKeys": [
+      "storyboard",
+      "script",
+      "approvedCopy",
+      "finalProduction",
+      "sampleSpec",
+      "referenceMotionSpec",
+      "timeline",
+      "assetsManifest",
+      "audioManifest",
+      "refinements"
+    ],
+    "missingRequiredParametersAreErrors": true,
+    "originalStoryboardRewritten": false,
+    "check": "scripts/prepare-motion-lab-input.mjs --check"
+  },
+  "copy": {
+    "approved40UnitSha256": "9325dc02fb91a2bbc993e52b24372c2a17cb8eb9ff6b6d7673fce9e4b4d60773",
+    "unchangedSampleUnits": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "globalRange": [
+      28,
+      48
+    ],
+    "authoringTimeline": "src/new-media-v2/motion-lab/hyperframes/timeline.json",
+    "authoringTimelineSha256": "05dbe360adfc10286cd49d51497c3c067920a285f0d29cbd61a66f5e04f45d8e"
+  },
+  "causality": {
+    "inputs": [
+      {
+        "id": "pause",
+        "launch": 14.3,
+        "arrival": 16.1,
+        "recordAt": 16.1
+      },
+      {
+        "id": "replay",
+        "launch": 14.7,
+        "arrival": 16.6,
+        "recordAt": 16.6
+      },
+      {
+        "id": "like",
+        "launch": 15.5,
+        "arrival": 17.25,
+        "recordAt": 17.25
+      }
+    ],
+    "recordActivation": 16.1,
+    "outputStart": 17.5,
+    "authoredEventOrder": "passed",
+    "actualRuntime": {
+      "passed": true,
+      "method": "Real Chromium page; hf-seek before and after each arrival; DOM record/output states inspected",
+      "samples": [
+        {
+          "time": 0,
+          "documentTime": 0,
+          "state": {
+            "time": 0,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": false,
+            "recordCount": 0,
+            "outputProgress": 0,
+            "morphFrame": 0
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "false",
+            "count": 0,
+            "opacity": "0"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 2,
+          "documentTime": 2,
+          "state": {
+            "time": 2,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": false,
+            "recordCount": 0,
+            "outputProgress": 0,
+            "morphFrame": 0
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "false",
+            "count": 0,
+            "opacity": "0"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 9,
+          "documentTime": 9,
+          "state": {
+            "time": 9,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": false,
+            "recordCount": 0,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "false",
+            "count": 0,
+            "opacity": "0"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 11,
+          "documentTime": 11,
+          "state": {
+            "time": 11,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": false,
+            "recordCount": 0,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "false",
+            "count": 0,
+            "opacity": "0"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 14.283333333333333,
+          "documentTime": 14.283333,
+          "state": {
+            "time": 14.283333333333333,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": false,
+            "recordCount": 0,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "false",
+            "count": 0,
+            "opacity": "0.0614"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 14.683333333333332,
+          "documentTime": 14.683333,
+          "state": {
+            "time": 14.683333333333332,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 0.21296296296296163,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": false,
+            "recordCount": 0,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "false",
+            "count": 0,
+            "opacity": "0.3771"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 15.483333333333333,
+          "documentTime": 15.483333,
+          "state": {
+            "time": 15.483333333333333,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 0.6574074074074063,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0.4122807017543854,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": false,
+            "recordCount": 0,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "false",
+            "count": 0,
+            "opacity": "0.46"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 16.083333333333336,
+          "documentTime": 16.083333,
+          "state": {
+            "time": 16.083333333333336,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 0.9907407407407413,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0.7280701754385973,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0.3333333333333347,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": false,
+            "recordCount": 0,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "false",
+            "count": 0,
+            "opacity": "0.46"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 16.116666666666667,
+          "documentTime": 16.116667,
+          "state": {
+            "time": 16.116666666666667,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0.7456140350877191,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0.35238095238095263,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 1,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 1,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 16.583333333333336,
+          "documentTime": 16.583333,
+          "state": {
+            "time": 16.583333333333336,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 0.9912280701754391,
+                "arrived": false,
+                "recorded": false
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0.6190476190476204,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 1,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 1,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 16.616666666666667,
+          "documentTime": 16.616667,
+          "state": {
+            "time": 16.616666666666667,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0.6380952380952384,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 2,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 2,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 17.233333333333334,
+          "documentTime": 17.233333,
+          "state": {
+            "time": 17.233333333333334,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 0.9904761904761911,
+                "arrived": false,
+                "recorded": false
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 2,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 2,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 17.266666666666666,
+          "documentTime": 17.266667,
+          "state": {
+            "time": 17.266666666666666,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 3,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 3,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 17.483333333333334,
+          "documentTime": 17.483333,
+          "state": {
+            "time": 17.483333333333334,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 3,
+            "outputProgress": 0,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 3,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000000",
+            "opacity": "0"
+          }
+        },
+        {
+          "time": 17.516666666666666,
+          "documentTime": 17.516667,
+          "state": {
+            "time": 17.516666666666666,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 3,
+            "outputProgress": 0.0003115107102940723,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 3,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.000312",
+            "opacity": "1"
+          }
+        },
+        {
+          "time": 18.9,
+          "documentTime": 18.9,
+          "state": {
+            "time": 18.9,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 3,
+            "outputProgress": 0.9458876263148134,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 3,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "0.945888",
+            "opacity": "1"
+          }
+        },
+        {
+          "time": 19.983333333333334,
+          "documentTime": 19.983333,
+          "state": {
+            "time": 19.983333333333334,
+            "inputs": [
+              {
+                "id": "pause",
+                "launch": 14.3,
+                "arrival": 16.1,
+                "recordAt": 16.1,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "replay",
+                "launch": 14.7,
+                "arrival": 16.6,
+                "recordAt": 16.6,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              },
+              {
+                "id": "like",
+                "launch": 15.5,
+                "arrival": 17.25,
+                "recordAt": 17.25,
+                "progress": 1,
+                "arrived": true,
+                "recorded": true
+              }
+            ],
+            "recordActive": true,
+            "recordCount": 3,
+            "outputProgress": 1,
+            "morphFrame": 119
+          },
+          "record": {
+            "id": "record-gate-back",
+            "active": "true",
+            "count": 3,
+            "opacity": "1"
+          },
+          "outputs": {
+            "id": "recommendation",
+            "progress": "1.000000",
+            "opacity": "1"
+          }
+        }
+      ]
+    }
+  },
+  "gates": {
+    "lint": {
+      "exitCode": 0,
+      "log": ".cache/motion-lab/lint.log",
+      "result": {
+        "ok": true,
+        "errorCount": 0,
+        "warningCount": 2,
+        "infoCount": 0,
+        "findings": [
+          {
+            "code": "nested_structure_needs_subcomposition",
+            "severity": "warning",
+            "message": "<div id=\"story\"> is a timeline element that contains nested <div id=\"black-ground\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+            "elementId": "story",
+            "fixHint": "Move <div id=\"story\"> and its contents into a sub-composition file and mount it with data-composition-src.",
+            "file": "/workspace/vibe/.cache/motion-lab/hyperframes/index.html",
+            "line": 46,
+            "column": 5
+          },
+          {
+            "code": "nested_structure_needs_subcomposition",
+            "severity": "warning",
+            "message": "<div id=\"captions\"> is a timeline element that contains nested <div id=\"caption-10\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+            "elementId": "captions",
+            "fixHint": "Move <div id=\"captions\"> and its contents into a sub-composition file and mount it with data-composition-src.",
+            "file": "/workspace/vibe/.cache/motion-lab/hyperframes/index.html",
+            "line": 87,
+            "column": 5
+          }
+        ],
+        "filesScanned": 1,
+        "_meta": {
+          "version": "0.8.185",
+          "updateAvailable": false
+        }
+      }
+    },
+    "check": {
+      "exitCode": 0,
+      "log": ".cache/motion-lab/check.log",
+      "result": {
+        "ok": true,
+        "strict": false,
+        "browserSkipped": false,
+        "lint": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 2,
+          "infoCount": 0,
+          "findings": [
+            {
+              "code": "nested_structure_needs_subcomposition",
+              "severity": "warning",
+              "message": "<div id=\"story\"> is a timeline element that contains nested <div id=\"black-ground\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+              "selector": "#story",
+              "dataAttributes": {},
+              "sourceFile": "/workspace/vibe/.cache/motion-lab/hyperframes/index.html",
+              "bbox": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              },
+              "time": 0,
+              "fixHint": "Move <div id=\"story\"> and its contents into a sub-composition file and mount it with data-composition-src."
+            },
+            {
+              "code": "nested_structure_needs_subcomposition",
+              "severity": "warning",
+              "message": "<div id=\"captions\"> is a timeline element that contains nested <div id=\"caption-10\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+              "selector": "#captions",
+              "dataAttributes": {},
+              "sourceFile": "/workspace/vibe/.cache/motion-lab/hyperframes/index.html",
+              "bbox": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              },
+              "time": 0,
+              "fixHint": "Move <div id=\"captions\"> and its contents into a sub-composition file and mount it with data-composition-src."
+            }
+          ],
+          "filesScanned": 1
+        },
+        "runtime": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": []
+        },
+        "layout": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 1,
+          "findings": [
+            {
+              "code": "container_overflow",
+              "severity": "info",
+              "time": 9,
+              "selector": "#dots",
+              "message": "Element extends outside a clipping layout container.",
+              "rect": {
+                "left": -52.94,
+                "top": -54.74,
+                "right": 1987.06,
+                "bottom": 1145.26,
+                "width": 2040,
+                "height": 1200
+              },
+              "containerSelector": "#pattern-ground",
+              "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+              "containerRect": {
+                "left": 0,
+                "top": 0,
+                "right": 1920,
+                "bottom": 1080,
+                "width": 1920,
+                "height": 1080
+              },
+              "overflow": {
+                "left": 52.94,
+                "right": 67.06,
+                "top": 54.74,
+                "bottom": 65.26
+              },
+              "dataAttributes": {},
+              "sourceFile": "index.html",
+              "bbox": {
+                "x": -52.94,
+                "y": -54.74,
+                "width": 2040,
+                "height": 1200
+              },
+              "firstSeen": 9,
+              "lastSeen": 14.5,
+              "occurrences": 3,
+              "heldMs": 0,
+              "times": [
+                9,
+                11.5,
+                14.5
+              ]
+            }
+          ],
+          "duration": 20,
+          "samples": [
+            0,
+            2,
+            5,
+            9,
+            11.5,
+            14.5,
+            16.1,
+            16.6,
+            17.25,
+            17.5,
+            18.9,
+            19.983
+          ],
+          "transitionSamples": [],
+          "transitionSamplesDropped": 0,
+          "tolerance": 2,
+          "totalIssueCount": 1,
+          "truncated": false
+        },
+        "motion": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "enabled": true,
+          "specPath": "/workspace/vibe/.cache/motion-lab/hyperframes/index.motion.json",
+          "samples": 300
+        },
+        "contrast": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "enabled": true,
+          "samples": [
+            0,
+            5,
+            14.5,
+            17.25,
+            19.983
+          ],
+          "checked": 11,
+          "passed": 11
+        },
+        "craft": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "enabled": true,
+          "step": 0.125,
+          "samples": 160
+        },
+        "hdr": {
+          "autoPromotion": null,
+          "inspection": "available"
+        },
+        "snapshots": {
+          "enabled": false,
+          "files": [],
+          "times": [],
+          "findingFiles": []
+        },
+        "saved": {
+          "id": "a3acd3a4-88eb-4038-8bac-4bed7cc5481c",
+          "revision": null,
+          "report": "/workspace/vibe/.cache/motion-lab/hyperframes/.hyperframes/artifacts/checks/a3acd3a4-88eb-4038-8bac-4bed7cc5481c.json",
+          "attribution": "unversioned"
+        },
+        "_meta": {
+          "version": "0.8.185",
+          "updateAvailable": false
+        }
+      }
+    },
+    "nativeRenderWarningsLog": ".cache/motion-lab/native-render.log"
+  },
+  "video": {
+    "file": "output/new-media-v2-motion-lab.mp4",
+    "sha256": "01c869a07669d1cc78847517e36c0a3ed4f66019b8c3bcc2e37dbe6a227d09c7",
+    "frames": 1200,
+    "decodedFrames": 1200,
+    "durationSeconds": 20,
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "colorSpace": "bt709",
+    "fullAudioVideoDecode": "passed"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSeconds": 20,
+    "meanDbFS": -15.6,
+    "peakDbFS": -6.3,
+    "silenceIntervals": [],
+    "sourceMix": {
+      "file": "public/audio/new-media-v2/motion-lab/mix.wav",
+      "sha256": "ca54a4a13b87cbe1b66f7920c4f1b3c74e2a3a3b4a5268228682c73d8f13e47e"
+    },
+    "sourceManifest": "production/new-media-v2/motion-lab/audio-manifest.json",
+    "sourceManifestSha256": "e00b08e3fb3efe5adfa744c6b24067067025fc24f18f8c272681c1b92d01984a",
+    "userMusic": {
+      "sha256": "d275bb7a26d1755e6b193d97056343498051e37dc685c233d3c7ea241912dc59",
+      "excerptSeconds": [
+        28.048,
+        48.048
+      ],
+      "originalMusicHashRechecked": true,
+      "tempoChanged": false,
+      "looping": false
+    },
+    "quietWindows": [
+      {
+        "fromSeconds": 8.3,
+        "toSeconds": 11,
+        "sourcePcmAllZero": true
+      },
+      {
+        "fromSeconds": 19.1,
+        "toSeconds": 20,
+        "sourcePcmAllZero": true
+      }
+    ],
+    "newVoiceover": false,
+    "humanListeningPerformedByVerifier": false,
+    "absenceOfAllSpeechVerified": false
+  },
+  "images": [
+    {
+      "file": "output/new-media-v2-motion-lab-object.jpg",
+      "second": 2,
+      "frame": 120,
+      "sha256": "43fc445c55087b7eba70e522835519a16555fb165c7ff627bfae2e20cac9bc90",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 98161,
+      "ssim": 0.994092,
+      "encoding": "JPEG",
+      "colorConversion": "BT.709 TV-range video → BT.601 full-range JPEG",
+      "mimeDelivery": "not-applicable-local-artifact; no HTTP image MIME claim",
+      "fullDecode": "passed"
+    },
+    {
+      "file": "output/new-media-v2-motion-lab-bridge.jpg",
+      "second": 9,
+      "frame": 540,
+      "sha256": "9ed9dadf1d03e0707ea1da22e78224b90a0b3d67565e34f27e4df1fd4b13bcf5",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 98143,
+      "ssim": 0.99475,
+      "encoding": "JPEG",
+      "colorConversion": "BT.709 TV-range video → BT.601 full-range JPEG",
+      "mimeDelivery": "not-applicable-local-artifact; no HTTP image MIME claim",
+      "fullDecode": "passed"
+    },
+    {
+      "file": "output/new-media-v2-motion-lab-causality.jpg",
+      "second": 18.9,
+      "frame": 1134,
+      "sha256": "56c7ca95a7448cb764df33222e645c57a09128083b566ee03cb236b44f6e82c0",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 83121,
+      "ssim": 0.994972,
+      "encoding": "JPEG",
+      "colorConversion": "BT.709 TV-range video → BT.601 full-range JPEG",
+      "mimeDelivery": "not-applicable-local-artifact; no HTTP image MIME claim",
+      "fullDecode": "passed"
+    }
+  ],
+  "limitations": [
+    "Native runtime and decoded-frame checks do not establish subjective motion quality or user approval.",
+    "JPEG files were decoded and compared against actual MP4 frames; no remote image delivery was assessed."
+  ]
+}

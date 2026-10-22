@@ -2,6 +2,12 @@
 
 ## 最新用户修订（2026-10-22，优先于旧版制作记录）
 
+- 最新严格传参规则：禁止对输入分镜脚本做任何摘要、精简、改写，所有细节参数完整传递给代码生成步骤；缺失参数直接报错，不得使用默认值替代。保留原始脚本完整内容与原字节哈希，生产流程先严格输入校验；若必填项缺失或哈希不一致即停止并报告字段路径。不可仅保证文案40句而丢掉visual/sound/textTreatment等分镜字段。
+
+- 用户明确新增工具 HyperFrames，本轮20秒样片实际用官方 `hyperframes@0.8.185` 原生HTML/GSAP逐帧渲染，配Blender形变素材及FFmpeg；原完整Remotion影片保留。官方随包Skill安装在 `.agents/skills/hyperframes/` 与 `hyperframes-cli/`，源版本固定0.8.185。HTML时间轴允许按HyperFrames规范用GSAP和hf-seek，不套用下方只适用于Remotion的逐帧API约定。样片源 `src/new-media-v2/motion-lab/hyperframes/`；`HYPERFRAMES_NO_TELEMETRY=1`。
+
+- 本轮最新用户同意先试新的制作与动态验收方法：“可以，你试一下，该装的装”。当前制作20秒代表性样片（全片28–48秒），重新拆解参考、补三维素材、连续动作检查与并排对照。保留已交付完整MP4，不立刻覆盖重渲染130秒。沿用40段原文、无配音、原BGM、深色纯黑／浅波点、中心主体与底部宋体。新源`src/new-media-v2/motion-lab/`，资料`production/new-media-v2/motion-lab/`；只有实际渲染和连续动作对照完成后才交付。安装工具应针对明确缺口，不以堆依赖代替打磨。
+
 - 本轮完整成片已导出并验证：`output/new-media-v2-final.mp4`，130秒／7800帧／1080p60，无新增配音，使用用户上传BGM。完整解码与实际JPEG对应检查报告为`output/new-media-v2-final-validation.json`。以后修改从当前完整版本继续，默认`npm run video:build`已指向此版本。
 - 最新且覆盖前述门禁：用户已明确“动画节奏还是有点快，排版还是按照原来那样吧，背景只要深色背景，但是要纯黑与波点交替，动效背景，这次你直接生成成片”。现已授权带修订完成130秒整片，无需再问风格确认。排版回首轮中心主体／下方居中文字，动作放慢、稳定阅读；只纯黑与深色浅波点交替。保留40短段与原BGM，无配音，主线6–9px与克制光效。新整片源码`src/new-media-v2/final/`，成片`output/new-media-v2-final.mp4`。R2浅色拼贴并未获认可。
 

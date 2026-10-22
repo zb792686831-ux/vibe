@@ -137,5 +137,40 @@
     "validationPassed": true,
     "decodedFrames": 7800
   },
-  "fullEditCompleted": true
+  "fullEditCompleted": true,
+  "activeIteration": {
+    "name": "motion-lab",
+    "status": "20-second-HyperFrames-sample-rendered-and-technically-validated",
+    "userInstruction": "可以，你试一下，该装的装",
+    "scope": "20-second representative segment, global28–48s, new reference-driven motion workflow; preserve prior complete film",
+    "referenceSource": "original-user-upload",
+    "selectedCopyUnits": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "keepOriginalBgm": true,
+    "voiceover": false,
+    "nextStep": "Deliver the actual20-second nativeHyperFrames sample and actualMP4 JPEGs; user can assess the improved motion before any full-film replacement.",
+    "tools": {
+      "authoringAndRenderer": "hyperframes@0.8.185",
+      "animation": "gsap@3.14.2",
+      "threeDimensionalAssets": "Blender4.3.2/CyclesCPU",
+      "pathSampling": "@remotion/paths@4.0.537",
+      "audioAndMux": "FFmpeg7.1.5"
+    },
+    "sampleVideo": "output/new-media-v2-motion-lab.mp4",
+    "sampleVideoSha256": "01c869a07669d1cc78847517e36c0a3ed4f66019b8c3bcc2e37dbe6a227d09c7",
+    "verificationReport": "output/new-media-v2-motion-lab-validation.json",
+    "completeInput": "production/new-media-v2/motion-lab/codegen-input.json",
+    "strictInputCheck": "node scripts/prepare-motion-lab-input.mjs --check",
+    "original16ShotScriptRewritten": false,
+    "fullFilmReplaced": false,
+    "userAestheticAcceptanceAssessed": false
+  }
 }
