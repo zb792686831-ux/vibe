@@ -2,11 +2,11 @@
 
 这是用于 AI 辅助视频制作的 Remotion + FFmpeg 项目。环境及 5 秒测试已验证，当前正在按用户反馈重做无配音的新媒体运营介绍短片。
 
-## 当前第二版：文案已确认，脚本待确认
+## 当前第二版：文案与脚本已确认，风格候选待确认
 
-新版从观众刷到小猫、停留与点赞出发，进入信号汇流与内容反馈；面向所有观众，纯文字动画、贴图、音乐和音效，无配音。拟定2分10秒、1920×1080／60fps。参考片已成功读取并分析，具体素材、字体和动态样片须经后续节点确认。
+新版从观众刷到小猫、停留与点赞出发，进入信号汇流与内容反馈；面向所有观众，纯文字动画、贴图、音乐和音效，无配音。文案与2分10秒脚本已确认；目前有三张关键帧和10秒／1080p／60fps的风格试片，等待素材与剪辑风格确认。
 
-[查看逐镜脚本提案](production/new-media-v2/script.md) · [已确认文案](production/new-media-v2/copy-draft-r2.md) · [当前确认状态](production/new-media-v2/approval-state.json)
+[观看风格候选与声音说明](production/new-media-v2/style-review.md) · [下载10秒动态试片](https://github.com/zb792686831-ux/vibe/raw/refs/heads/main/output/new-media-v2-style-trial.mp4) · [已确认脚本](production/new-media-v2/script.md) · [当前确认状态](production/new-media-v2/approval-state.json)
 
 下方第一版样片保留作历史版本，不代表用户认可的最终风格。新版尚未开始整片剪辑。
 

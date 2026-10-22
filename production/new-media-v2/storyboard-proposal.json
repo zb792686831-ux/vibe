@@ -1,7 +1,7 @@
 {
-  "status": "awaiting-script-review",
+  "status": "approved-script-awaiting-style-review",
   "copyApproved": true,
-  "scriptApproved": false,
+  "scriptApproved": true,
   "assetsAndStyleApproved": false,
   "fullEditStarted": false,
   "title": "一颗红心，去了哪里？",
@@ -60,7 +60,8 @@
     "sizeBytes": 11767133,
     "videoSeconds": 130,
     "audioSeconds": 130.007007,
-    "independentMusicStemAvailable": false
+    "independentMusicStemAvailable": false,
+    "userIdentifiedOriginalMusicUrl": "https://music.163.com/song?id=3451028893"
   },
   "timingNotes": "All timings are editorial proposals, not rendered or exact verified music beat markers. The approved screen copy is unchanged.",
   "literalPause": {

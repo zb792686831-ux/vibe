@@ -1,0 +1,16 @@
+[
+  {
+    "file": "NotoSerifCJKSC-Regular.subset.woff",
+    "source": "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+    "collectionIndex": 2,
+    "bytes": 182172,
+    "upstreamCopyright": "© 2017-2024 Adobe (http://www.adobe.com/)."
+  },
+  {
+    "file": "NotoSerifCJKSC-Bold.subset.woff",
+    "source": "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",
+    "collectionIndex": 2,
+    "bytes": 186844,
+    "upstreamCopyright": "© 2017-2024 Adobe (http://www.adobe.com/)."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "file": "kitten-study.png",
+  "origin": "Generated for this project with the image_gen tool",
+  "generationDate": "2026-10-22",
+  "inputImagesUsed": false,
+  "transparentBackgroundRequested": true,
+  "actualMode": "RGBA",
+  "width": 1145,
+  "height": 1374,
+  "sha256": "c9323eafa7cec497714b16f57ffeeade8c0cf86ea817cd55236b350f6cb6ee70",
+  "promptSummary": "A full-body seated cream short-haired kitten, gently curious tilted head, natural proportions and realistic fur, warm ivory key light and soft gold rim light, isolated transparent cutout, no text or border.",
+  "originalGeneratedFilePreserved": "/workspace/generated_images/exec-939c1054-48fb-4de5-9d3a-7c6039b824c7.png",
+  "copiedWithoutImageModification": true,
+  "approvalStatus": "asset-style-review-pending"
+}

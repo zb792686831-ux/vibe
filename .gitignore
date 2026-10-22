@@ -16,3 +16,8 @@ output/*
 !output/new-media-intro.mp4
 !output/new-media-cover.jpg
 !output/new-media-validation.json
+!output/new-media-v2-style-cat.jpg
+!output/new-media-v2-style-river.jpg
+!output/new-media-v2-style-loop.jpg
+!output/new-media-v2-style-trial.mp4
+!output/new-media-v2-style-review.json

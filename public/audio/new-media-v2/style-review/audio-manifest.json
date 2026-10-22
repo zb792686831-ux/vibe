@@ -1,0 +1,152 @@
+{
+  "status": "Style review only: temporary mixed reference bed, not the final film",
+  "noVoiceover": true,
+  "durationSeconds": 10.0,
+  "sampleRate": 48000,
+  "channels": 2,
+  "referenceBed": {
+    "sourceFile": "/workspace/attachments/f7520f7f-5c3d-45d5-8f5d-ae06a3b8092f/Iwanau-Vibe知识大赏_《运气的形状》本视...-20261022_092444.mp4",
+    "sourceFileSha256": "31444f8f66fd764c608ed393a6d2e54e62d3ade1925c3b9d2d482d0461ebd3dd",
+    "sourceExcerptSeconds": [
+      28,
+      38
+    ],
+    "gainDb": -10.0,
+    "fadeInSeconds": 0.02,
+    "fadeOutSeconds": 0.08,
+    "isIndependentBgm": false,
+    "mayContainReferenceFilmSoundEffects": true,
+    "requestedIndependentMusicUrl": "https://music.163.com/song?id=3451028893",
+    "independentMusicStatus": "Not acquired by this generator; do not describe this mixed excerpt as pure BGM"
+  },
+  "generator": {
+    "file": "scripts/generate-new-media-v2-review-sfx.py",
+    "sha256": "fc8122251baadfdcafd0d83535ffd5bee7cdb4a477ee281687ccf40258cd5112",
+    "seed": 20261022,
+    "dependencies": "Python standard library and system ffmpeg/ffprobe",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "events": [
+    {
+      "name": "airy-reverse",
+      "source": "Original deterministic synthesis; no downloaded samples",
+      "file": "public/audio/new-media-v2/style-review/sfx/airy-reverse.wav",
+      "startSeconds": 0.15,
+      "startFrame60fps": 9,
+      "durationSeconds": 0.5,
+      "intention": "Subtle breath leading into the heart contact",
+      "measurement": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "0.500000",
+        "frames": 24000,
+        "samplePeakDbFS": -26.0015,
+        "integratedLoudnessLUFS": -36.2,
+        "truePeakDbTP": -25.8,
+        "firstAndLastStereoFrameZero": true,
+        "fullDecode": "passed",
+        "sha256": "fd4802819135dba4c7aabe7697b22ab5296288824afcf5bcd10a85d0b9bf39bb"
+      }
+    },
+    {
+      "name": "soft-heart",
+      "source": "Original deterministic synthesis; no downloaded samples",
+      "file": "public/audio/new-media-v2/style-review/sfx/soft-heart.wav",
+      "startSeconds": 0.65,
+      "startFrame60fps": 39,
+      "durationSeconds": 0.34,
+      "intention": "Rounded felt contact at the red-heart landing",
+      "measurement": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "0.340000",
+        "frames": 16320,
+        "samplePeakDbFS": -19.9995,
+        "integratedLoudnessLUFS": -70.0,
+        "truePeakDbTP": -20.0,
+        "firstAndLastStereoFrameZero": true,
+        "fullDecode": "passed",
+        "sha256": "f7013c9b32dd5d3e02a30e23667d94c342e15a4a0dc6d34d8881a121ab787152"
+      }
+    },
+    {
+      "name": "paper-swipe",
+      "source": "Original deterministic synthesis; no downloaded samples",
+      "file": "public/audio/new-media-v2/style-review/sfx/paper-swipe.wav",
+      "startSeconds": 3.2,
+      "startFrame60fps": 192,
+      "durationSeconds": 0.42,
+      "intention": "Quiet paper friction aligned to the upward swipe",
+      "measurement": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "0.420000",
+        "frames": 20160,
+        "samplePeakDbFS": -21.9995,
+        "integratedLoudnessLUFS": -29.7,
+        "truePeakDbTP": -21.8,
+        "firstAndLastStereoFrameZero": true,
+        "fullDecode": "passed",
+        "sha256": "6bb44d496ccd5d70cc175135536bea89ccd3a614c07476d047c9e542a4f06db3"
+      }
+    },
+    {
+      "name": "dust-gather",
+      "source": "Original deterministic synthesis; no downloaded samples",
+      "file": "public/audio/new-media-v2/style-review/sfx/dust-gather.wav",
+      "startSeconds": 5.72,
+      "startFrame60fps": 343,
+      "durationSeconds": 1.02,
+      "intention": "Fine particles converging as the reaction remains",
+      "measurement": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "1.020000",
+        "frames": 48960,
+        "samplePeakDbFS": -24.0022,
+        "integratedLoudnessLUFS": -34.2,
+        "truePeakDbTP": -23.9,
+        "firstAndLastStereoFrameZero": true,
+        "fullDecode": "passed",
+        "sha256": "835fd6b36a7c6900cda5f5a244a100a6309c017b7f235992f329b870c3e8089e"
+      }
+    }
+  ],
+  "quietTail": {
+    "fromSeconds": 7.6,
+    "toSeconds": 10,
+    "addedSfx": false
+  },
+  "outputs": {
+    "public/audio/new-media-v2/style-review/trial-mix.wav": {
+      "codec_name": "pcm_s16le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "10.000000",
+      "frames": 480000,
+      "samplePeakDbFS": -9.1602,
+      "integratedLoudnessLUFS": -18.2,
+      "truePeakDbTP": -9.1,
+      "firstAndLastStereoFrameZero": true,
+      "fullDecode": "passed",
+      "sha256": "560917ebdd43cce7afd7d0c84f200796192ab144ce4ea699a870efa2050dcd68"
+    },
+    "public/audio/new-media-v2/style-review/trial-sfx-only.wav": {
+      "codec_name": "pcm_s16le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "10.000000",
+      "frames": 480000,
+      "samplePeakDbFS": -19.9995,
+      "integratedLoudnessLUFS": -33.6,
+      "truePeakDbTP": -20.0,
+      "firstAndLastStereoFrameZero": true,
+      "fullDecode": "passed",
+      "sha256": "eee42daec7f5f19a83d26a43bdb9b378fecb8682252fc63f577c5dca11b82048"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "status": "style-review-awaiting-user-approval",
+  "isFinalFilm": false,
+  "checkedAt": "2026-10-22T02:43:02.748Z",
+  "approvals": {
+    "copy": true,
+    "script": true,
+    "assetsAndStyle": false,
+    "fullEditStarted": false
+  },
+  "images": [
+    {
+      "file": "output/new-media-v2-style-cat.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 181211,
+      "sha256": "ee8aa2c48896b46453e229082cd01c6e4d801c2a3b3eda6f6e1396bf9596fc7d",
+      "fullDecode": "passed"
+    },
+    {
+      "file": "output/new-media-v2-style-river.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 204516,
+      "sha256": "65cabb7c044e820bdab813a57686ad0f525d5f856f0a32ccdf36793642814ff6",
+      "fullDecode": "passed"
+    },
+    {
+      "file": "output/new-media-v2-style-loop.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 198539,
+      "sha256": "858f83b0571539146506cce000ccf972e9f77c4d97dca31ed859edd1e144fa24",
+      "fullDecode": "passed"
+    }
+  ],
+  "video": {
+    "file": "output/new-media-v2-style-trial.mp4",
+    "sha256": "b7a12f5850e67262425d304b90fcdf54b2e5efb9c0a70e36b3d189cbf285a446",
+    "durationSeconds": 10,
+    "frames": 600,
+    "decodedFrames": 600,
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "colorSpace": "bt709",
+    "fullAudioVideoDecode": "passed",
+    "sampledFrames": [
+      0,
+      180,
+      599
+    ],
+    "frameChecksums": [
+      "3b066a2e4a313c151be238bf6598641d",
+      "1cf693bf8f14befec2adeda58c4973c9",
+      "7c7898d659510d66682e22247ff0d6ad"
+    ]
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSeconds": 10.005,
+    "samplePeakDbFS": -9.3,
+    "meanVolumeDb": -17.6,
+    "sourceManifest": "public/audio/new-media-v2/style-review/audio-manifest.json",
+    "sourceManifestSha256": "dbfb06a6d02437f17bdcb930dc0415541c8527c9e777be0069b3d090c5787060",
+    "sourceMixFile": "public/audio/new-media-v2/style-review/trial-mix.wav",
+    "sourceMixSha256": "560917ebdd43cce7afd7d0c84f200796192ab144ce4ea699a870efa2050dcd68",
+    "referenceSourceSha256": "31444f8f66fd764c608ed393a6d2e54e62d3ade1925c3b9d2d482d0461ebd3dd",
+    "referenceExcerptSeconds": [
+      28,
+      38
+    ],
+    "bedType": "mixed-reference-film-excerpt",
+    "isIndependentBgm": false,
+    "mayContainReferenceFilmSoundEffects": true,
+    "independentMusic": {
+      "requestedUrl": "https://music.163.com/song?id=3451028893",
+      "acquired": false,
+      "observedAccessStatus": "connection-failed-before-http-response",
+      "observedPublicCheckResult": "Official NetEase page and metadata endpoint: curl 56 / CONNECT tunnel failed response 403 / HTTP status 0 / zero body before reaching service.",
+      "additionalPublicSources": [
+        {
+          "canonicalUrl": "https://www.bilibili.com/video/BV134Ho6qENu/",
+          "bvid": "BV134Ho6qENu",
+          "identifiedByUserAsBackgroundMusic": true,
+          "requiredObservedHosts": [
+            "www.bilibili.com",
+            "api.bilibili.com"
+          ],
+          "publicCheckResult": "Official page and metadata endpoint both curl56 / proxy CONNECT403 before reaching Bilibili",
+          "metadataAcquired": false,
+          "independentAudioAcquired": false
+        }
+      ],
+      "limitation": "The production record reports proxy CONNECT 403 before reaching the service; independent music is still unavailable. This verifier makes no network request."
+    },
+    "productionIntent": {
+      "addNewVoiceover": false,
+      "basis": "Declared production intent and the audio manifest, not speech detection or human listening."
+    },
+    "humanListeningPerformedByThisVerifier": false,
+    "absenceOfAllSpeechVerified": false,
+    "warning": "The bed is the uploaded reference film's mixed stereo track from 28–38 seconds. It is not a clean independent BGM stem. Technical checks do not prove absence of original speech or sound effects."
+  }
+}

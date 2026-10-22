@@ -15,22 +15,44 @@
       "approvedTextSha256": "9325dc02fb91a2bbc993e52b24372c2a17cb8eb9ff6b6d7673fce9e4b4d60773"
     },
     "script": {
-      "status": "awaiting-user-review",
-      "approved": false,
+      "status": "approved",
+      "approved": true,
       "artifact": "script.md",
-      "dataArtifact": "storyboard-proposal.json"
+      "dataArtifact": "storyboard-proposal.json",
+      "userConfirmation": "脚本通过，进入素材与风格确认"
     },
     "assetsAndStyle": {
-      "status": "not-started",
-      "approved": false
+      "status": "awaiting-user-review",
+      "approved": false,
+      "artifact": "style-review.md",
+      "previewVideo": "output/new-media-v2-style-trial.mp4",
+      "keyframes": [
+        "output/new-media-v2-style-cat.jpg",
+        "output/new-media-v2-style-river.jpg",
+        "output/new-media-v2-style-loop.jpg"
+      ],
+      "mediaVerification": "passed: 3 JPEGs and 10-second/600-frame 1080p60 H264/AAC trial, full decode and changing frames",
+      "verificationReport": "output/new-media-v2-style-review.json"
     }
   },
   "fullEditStarted": false,
-  "nextStep": "Obtain explicit script feedback. Only then produce font/material/asset samples and a short style-and-audio trial for the third review gate. No full edit before all gates are approved.",
+  "nextStep": "Ask the user to review the actual three keyframes and ten-second style-and-audio trial. Do not start the full 130-second edit before style feedback. Independent music links remain blocked by runtime network egress.",
   "currentCopyRevision": 2,
   "referenceFileBytes": 11767133,
   "referenceLocalPath": "/workspace/attachments/f7520f7f-5c3d-45d5-8f5d-ae06a3b8092f/Iwanau-Vibe知识大赏_《运气的形状》本视...-20261022_092444.mp4",
   "referenceSha256": "31444f8f66fd764c608ed393a6d2e54e62d3ade1925c3b9d2d482d0461ebd3dd",
   "scriptDurationSeconds": 130,
-  "scriptDurationInFrames": 7800
+  "scriptDurationInFrames": 7800,
+  "backgroundMusic": {
+    "canonicalUrl": "https://music.163.com/song?id=3451028893",
+    "service": "NetEase Cloud Music",
+    "songId": "3451028893",
+    "identifiedByUserAsOriginalBgm": true,
+    "independentAudioAcquired": false,
+    "metadataVerified": false,
+    "publicAccessStatus": "connection-failed-before-http-response",
+    "originalSfxRequested": true,
+    "alternativeSourceUrl": "https://www.bilibili.com/video/BV134Ho6qENu/",
+    "bilibiliPublicAccessStatus": "proxy-CONNECT-403-before-reaching-service"
+  }
 }

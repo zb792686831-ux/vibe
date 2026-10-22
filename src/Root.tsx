@@ -1,6 +1,7 @@
 import {Composition} from 'remotion';
 import {SetupTest} from './SetupTest';
 import {NewMediaRegistration} from './new-media/Registration.generated';
+import {NewMediaV2StyleRegistration} from './new-media-v2/style-review/Registration';
 
 export const RemotionRoot = () => (
   <>
@@ -14,5 +15,6 @@ export const RemotionRoot = () => (
     defaultProps={{title: 'VIDEO WORKSPACE'}}
   />
   <NewMediaRegistration />
+  <NewMediaV2StyleRegistration />
   </>
 );

@@ -1,0 +1,33 @@
+{
+  "status": "user-identified-source-awaiting-public-retrieval",
+  "canonicalUrl": "https://music.163.com/song?id=3451028893",
+  "songId": "3451028893",
+  "identifiedByUserAsOriginalBgm": true,
+  "titleVerified": false,
+  "artistVerified": false,
+  "independentAudioAcquired": false,
+  "observedRequiredHost": "music.163.com",
+  "publicCheckResult": "Official NetEase page and metadata endpoint: curl 56 / CONNECT tunnel failed response 403 / HTTP status 0 / zero body before reaching service.",
+  "temporaryTrialFallback": "Provided reference-video stereo mix, explicitly not an isolated clean music stem.",
+  "sfx": "original synthesis requested by user",
+  "alternativeSources": [
+    {
+      "canonicalUrl": "https://www.bilibili.com/video/BV134Ho6qENu/",
+      "bvid": "BV134Ho6qENu",
+      "identifiedByUserAsBackgroundMusic": true,
+      "requiredObservedHosts": [
+        "www.bilibili.com",
+        "api.bilibili.com"
+      ],
+      "publicCheckResult": "Official page and metadata endpoint both curl56 / proxy CONNECT403 before reaching Bilibili",
+      "metadataAcquired": false,
+      "independentAudioAcquired": false
+    }
+  ],
+  "networkDraftCustomHostsAdded": [
+    "music.163.com",
+    "www.bilibili.com",
+    "api.bilibili.com"
+  ],
+  "networkDraftAppliedToRuntime": false
+}
