@@ -1,0 +1,495 @@
+{
+  "passed": true,
+  "deliveryStatus": "preview-missing-reference-bgm",
+  "file": "output/new-media-intro-preview.mp4",
+  "durationSeconds": 170.766667,
+  "frames": 10246,
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "videoCodec": "h264",
+  "pixelFormat": "yuv420p",
+  "colorSpace": "bt709",
+  "audioCodec": "aac",
+  "sampleRate": 48000,
+  "scenes": 17,
+  "narrationSentences": 49,
+  "narrationValidation": {
+    "checkedAt": "2026-10-21T10:21:33.214480+00:00",
+    "scope": "49 complete per-sentence narration WAV files; not the music/final mix",
+    "passedTechnicalChecks": true,
+    "sampleRate": 44100,
+    "channels": 1,
+    "format": "PCM_16",
+    "clips": 49,
+    "narrationChineseCharacters": 732,
+    "totalNarrationSeconds": 148.01308390022675,
+    "repairs": [
+      {
+        "id": "definition-01",
+        "before": {
+          "text": "新媒体运营，不是把东西发出去。",
+          "durationSeconds": 1.1682086167800454,
+          "sha256": "d621939f993211dd501221f2d72be1c26bea2efc943f8663d220815bf152eef7"
+        },
+        "after": {
+          "text": "新媒体运营，不等于把内容发布出去。",
+          "durationSeconds": 2.710090702947846,
+          "asrTranscript": "新媒体运营我等于把内容发布出去",
+          "sha256": "dda7e1821d50abae8b1645efc0371ed1d8311b518bb3a885844be90569479990"
+        },
+        "status": "repaired",
+        "diagnosis": "Original TTS omitted a clause; definition-03 also incorrectly grouped 成行 as cheng-hang. Spacing and separate synthesis did not fix it; equivalent wording did."
+      },
+      {
+        "id": "definition-03",
+        "before": {
+          "text": "让一次看见，变成信任，再变成行动。",
+          "durationSeconds": 2.304036281179138,
+          "sha256": "48f40550ca998564d096ca13d9b3042291c618de9bb32d42c8b5936d577f00d8"
+        },
+        "after": {
+          "text": "让一次看见，变成信任，再走向行动。",
+          "durationSeconds": 3.5526530612244898,
+          "asrTranscript": "让依次看见变成信任在走向行动",
+          "sha256": "f516fc61c5f307c79e5b9ae1da93c5bfec235fedbda8a831837a8e7d90483c71"
+        },
+        "status": "repaired",
+        "diagnosis": "Original TTS omitted a clause; definition-03 also incorrectly grouped 成行 as cheng-hang. Spacing and separate synthesis did not fix it; equivalent wording did."
+      }
+    ],
+    "unresolvedConfirmedOmissions": [],
+    "recognitionMethod": {
+      "engine": "sherpa-onnx paraformer Chinese small int8",
+      "modelSource": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-small-2024-03-09.tar.bz2",
+      "archiveSha256": "da92b3db5218c5be53aad53e57d1b6e63e7fc98a0e054fbdd6dbe18e9c6b1450"
+    },
+    "interpretation": "ASR is a secondary automated review, not word-perfect ground truth. Homophone substitutions and lower similarity do not establish actual omitted speech. Only two clear clause omissions were confirmed and repaired; low-similarity homophone results are explicitly distinguished below. No human listening claim is made.",
+    "statusCounts": {
+      "passed_asr_review": 32,
+      "suspected_asr_confusion": 15,
+      "repaired_then_reviewed": 2
+    },
+    "results": [
+      {
+        "id": "hook-01",
+        "text": "你每天更新，为什么还是没人看？",
+        "durationSeconds": 2.681904761904762,
+        "status": "passed_asr_review",
+        "asrTranscript": "你每天更新为什么还是没人看",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "treadmill-01",
+        "text": "追热点，改封面，熬夜剪片。",
+        "durationSeconds": 2.6843537414965986,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "追热点 f 封面熬一剪片",
+        "originalAsrSimilarity": 0.8
+      },
+      {
+        "id": "treadmill-02",
+        "text": "你以为差一条爆款，可真正卡住你的，也许是从来没想清楚：",
+        "durationSeconds": 4.690430839002268,
+        "status": "passed_asr_review",
+        "asrTranscript": "你以为差一条爆款可真正卡住你的也许是从来没想清楚",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "treadmill-03",
+        "text": "这条内容，究竟在帮谁？",
+        "durationSeconds": 2.2523356009070294,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "这条内容又近在绑谁",
+        "originalAsrSimilarity": 0.6666666666666666
+      },
+      {
+        "id": "definition-01",
+        "text": "新媒体运营，不等于把内容发布出去。",
+        "durationSeconds": 2.710090702947846,
+        "status": "repaired_then_reviewed",
+        "asrTranscript": "新媒体运营我等于把内容发布出去",
+        "originalAsrSimilarity": 0.4444444444444444
+      },
+      {
+        "id": "definition-02",
+        "text": "而是找到一群人，持续解决他们的问题，",
+        "durationSeconds": 2.9605442176870747,
+        "status": "passed_asr_review",
+        "asrTranscript": "而是找到一群人持续解决他们的问题",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "definition-03",
+        "text": "让一次看见，变成信任，再走向行动。",
+        "durationSeconds": 3.5526530612244898,
+        "status": "repaired_then_reviewed",
+        "asrTranscript": "让依次看见变成信任在走向行动",
+        "originalAsrSimilarity": 0.782608695652174
+      },
+      {
+        "id": "six-loop-01",
+        "text": "记住六个动作：定位，选题，表达，分发，互动，复盘。",
+        "durationSeconds": 4.233990929705215,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "记住六个动作定位剪辑到到分分发了自弹",
+        "originalAsrSimilarity": 0.5555555555555556
+      },
+      {
+        "id": "six-loop-02",
+        "text": "它们不是六份作业，而是一条会越跑越顺的循环。",
+        "durationSeconds": 3.81968253968254,
+        "status": "passed_asr_review",
+        "asrTranscript": "他们不是六份作业我是一条会越考越顺的循环",
+        "originalAsrSimilarity": 0.85
+      },
+      {
+        "id": "coffee-audience-01",
+        "text": "假设你在帮一家街角咖啡店做账号。",
+        "durationSeconds": 2.8908843537414968,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "假设你在榜一嫁接角咖啡店做账号",
+        "originalAsrSimilarity": 0.8
+      },
+      {
+        "id": "coffee-audience-02",
+        "text": "先别急着晒拉花。",
+        "durationSeconds": 1.486077097505669,
+        "status": "passed_asr_review",
+        "asrTranscript": "先别急着晒拉花",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "coffee-audience-03",
+        "text": "你要吸引的是赶时间的上班族，还是愿意坐一下午的附近居民？",
+        "durationSeconds": 4.400181405895691,
+        "status": "passed_asr_review",
+        "asrTranscript": "你要吸引的是赶时间的上班族还是愿意坐一下午的附近居民",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "positioning-01",
+        "text": "人不同，内容就不同。",
+        "durationSeconds": 1.7647165532879818,
+        "status": "passed_asr_review",
+        "asrTranscript": "人不同内容就不同",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "positioning-02",
+        "text": "上班族关心出杯快不快，附近居民在意坐着舒不舒服。",
+        "durationSeconds": 4.133151927437642,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "上班主官新出没快不快附近居民在意做的舒不舒服",
+        "originalAsrSimilarity": 0.7272727272727273
+      },
+      {
+        "id": "positioning-03",
+        "text": "定位，就是决定先为谁，解决什么问题。",
+        "durationSeconds": 3.1911337868480727,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "因为就是举例先喂水解决什么问题",
+        "originalAsrSimilarity": 0.6
+      },
+      {
+        "id": "topic-01",
+        "text": "选题从真实问题里长出来。",
+        "durationSeconds": 2.1130158730158732,
+        "status": "passed_asr_review",
+        "asrTranscript": "卷题从真实问题里长出来",
+        "originalAsrSimilarity": 0.9090909090909091
+      },
+      {
+        "id": "topic-02",
+        "text": "比如：早高峰，怎么买咖啡不迟到？",
+        "durationSeconds": 2.6654421768707484,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "比如早高峰怎么买咖啡不知道",
+        "originalAsrSimilarity": 0.8461538461538461
+      },
+      {
+        "id": "topic-03",
+        "text": "这比“今天又上新品了”，更容易让人停下来。",
+        "durationSeconds": 3.1821315192743764,
+        "status": "passed_asr_review",
+        "asrTranscript": "这笔今天又上新品了不容易让人停下来",
+        "originalAsrSimilarity": 0.8823529411764706
+      },
+      {
+        "id": "content-01",
+        "text": "内容的顺序也要换。",
+        "durationSeconds": 1.6137868480725623,
+        "status": "passed_asr_review",
+        "asrTranscript": "内容的顺序也要换",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "content-02",
+        "text": "先给观众一个留下来的理由，再用画面和细节证明，",
+        "durationSeconds": 3.924172335600907,
+        "status": "passed_asr_review",
+        "asrTranscript": "先给观众一个留下来的理由但用画面和细节证明",
+        "originalAsrSimilarity": 0.9523809523809523
+      },
+      {
+        "id": "content-03",
+        "text": "最后告诉他下一步怎么做。",
+        "durationSeconds": 2.066575963718821,
+        "status": "passed_asr_review",
+        "asrTranscript": "最后告诉他下一步怎么做",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "content-04",
+        "text": "一条内容，只讲透一件事。",
+        "durationSeconds": 2.336621315192744,
+        "status": "passed_asr_review",
+        "asrTranscript": "一条内容只想透一件事",
+        "originalAsrSimilarity": 0.9
+      },
+      {
+        "id": "proof-01",
+        "text": "计时器、取餐动线、预约入口，比一句“我们很专业”，更有说服力。",
+        "durationSeconds": 4.77968253968254,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "第时器去参洞线预约入口以依据我们很专业更有说服力",
+        "originalAsrSimilarity": 0.7083333333333334
+      },
+      {
+        "id": "proof-02",
+        "text": "运营不是把卖点喊大声，而是把用户关心的证据，摆到眼前。",
+        "durationSeconds": 4.780748299319728,
+        "status": "passed_asr_review",
+        "asrTranscript": "运营不是把卖点喊大声而是把用户关心的证据摆到眼前",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "distribution-01",
+        "text": "分发，不是所有平台复制一遍。",
+        "durationSeconds": 2.4916099773242633,
+        "status": "passed_asr_review",
+        "asrTranscript": "分发我是所有平台复制一遍",
+        "originalAsrSimilarity": 0.9166666666666666
+      },
+      {
+        "id": "distribution-02",
+        "text": "短视频负责让人看见，图文方便收藏，",
+        "durationSeconds": 3.1927437641723357,
+        "status": "passed_asr_review",
+        "asrTranscript": "短视频负责让人看见图文方便收藏",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "distribution-03",
+        "text": "直播适合解释，社群接住后续问题。",
+        "durationSeconds": 3.076643990929705,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "只播适合解释社群建筑后续问题",
+        "originalAsrSimilarity": 0.7857142857142857
+      },
+      {
+        "id": "distribution-04",
+        "text": "形式跟着目标走。",
+        "durationSeconds": 1.486077097505669,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "于是跟着目标走",
+        "originalAsrSimilarity": 0.7142857142857143
+      },
+      {
+        "id": "interaction-01",
+        "text": "有人留言“附近能停车吗”，别只回一个表情。",
+        "durationSeconds": 3.4133333333333336,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "五人留言附近难停车马也只回一个表情",
+        "originalAsrSimilarity": 0.7647058823529411
+      },
+      {
+        "id": "interaction-02",
+        "text": "这不是打扰，是下一条选题，也是一次真实服务的开始。",
+        "durationSeconds": 4.504671201814059,
+        "status": "passed_asr_review",
+        "asrTranscript": "这不是打扰是下一挑选题也是一次真实服务的开始",
+        "originalAsrSimilarity": 0.9545454545454546
+      },
+      {
+        "id": "interaction-03",
+        "text": "互动，让屏幕那边的人被看见。",
+        "durationSeconds": 2.426485260770975,
+        "status": "passed_asr_review",
+        "asrTranscript": "让屏幕那边的人被看见",
+        "originalAsrSimilarity": 0.9090909090909091
+      },
+      {
+        "id": "review-01",
+        "text": "然后看数据。",
+        "durationSeconds": 1.1377777777777778,
+        "status": "passed_asr_review",
+        "asrTranscript": "然后看数据",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "review-02",
+        "text": "但先别被播放量吓住。",
+        "durationSeconds": 1.6717913832199547,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "但先别被播放量下注",
+        "originalAsrSimilarity": 0.7777777777777778
+      },
+      {
+        "id": "review-03",
+        "text": "开头留不住，就改开头；",
+        "durationSeconds": 1.7398412698412697,
+        "status": "passed_asr_review",
+        "asrTranscript": "开头留不住就点开头",
+        "originalAsrSimilarity": 0.8888888888888888
+      },
+      {
+        "id": "review-04",
+        "text": "有人看完却没行动，就检查你的信息和引导。",
+        "durationSeconds": 3.4917006802721087,
+        "status": "passed_asr_review",
+        "asrTranscript": "古人看完却没行动有检查你的信息和引导",
+        "originalAsrSimilarity": 0.8888888888888888
+      },
+      {
+        "id": "review-05",
+        "text": "每次，只改一个关键变量。",
+        "durationSeconds": 2.164512471655329,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "每次只改一个关键面料",
+        "originalAsrSimilarity": 0.8
+      },
+      {
+        "id": "relief-01",
+        "text": "数据不是给你打分的老师，而是告诉你：",
+        "durationSeconds": 3.1695238095238096,
+        "status": "passed_asr_review",
+        "asrTranscript": "数据不是给你打分的老师我是告诉你",
+        "originalAsrSimilarity": 0.9375
+      },
+      {
+        "id": "relief-02",
+        "text": "哪句话没听懂，哪个问题还没答好。",
+        "durationSeconds": 2.8299319727891157,
+        "status": "passed_asr_review",
+        "asrTranscript": "哪句话没听懂哪个问题还没答好",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "relief-03",
+        "text": "播放量是信号，不是你这个人的价值。",
+        "durationSeconds": 3.1579138321995464,
+        "status": "passed_asr_review",
+        "asrTranscript": "我放量是信号不是你这锅人的价值",
+        "originalAsrSimilarity": 0.8666666666666667
+      },
+      {
+        "id": "tools-01",
+        "text": "新手最容易掉进去的坑，是还没认识用户，就先学了一堆工具。",
+        "durationSeconds": 4.713650793650793,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "你手最容易掉进去的坑是还没认识用户预先选的一堆工具",
+        "originalAsrSimilarity": 0.84
+      },
+      {
+        "id": "tools-02",
+        "text": "工具能让你更快，但方向错了，只会更快地绕远路。",
+        "durationSeconds": 4.2260317460317465,
+        "status": "passed_asr_review",
+        "asrTranscript": "工具能让你更快但方向错了只会更快递让原路",
+        "originalAsrSimilarity": 0.85
+      },
+      {
+        "id": "start-01",
+        "text": "今晚就能开始。",
+        "durationSeconds": 1.190249433106576,
+        "status": "passed_asr_review",
+        "asrTranscript": "今晚就能开始",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "start-02",
+        "text": "选一个具体的人群，记下他们反复问的三个问题，",
+        "durationSeconds": 3.6919727891156464,
+        "status": "passed_asr_review",
+        "asrTranscript": "选一个具体的人群你想他们反复问的三个问题",
+        "originalAsrSimilarity": 0.9
+      },
+      {
+        "id": "start-03",
+        "text": "先做一条最能回答其中一个问题的内容。",
+        "durationSeconds": 2.972154195011338,
+        "status": "passed_asr_review",
+        "asrTranscript": "先做一条最能回答其中一个问题的内容",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "iterate-01",
+        "text": "发出去，认真回复，收集反馈，再做下一条。",
+        "durationSeconds": 4.179591836734694,
+        "status": "passed_asr_review",
+        "asrTranscript": "发出去认真回复着集反馈再做下一条",
+        "originalAsrSimilarity": 0.9375
+      },
+      {
+        "id": "iterate-02",
+        "text": "别承诺七天逆袭，先练会把一个问题讲清，把一个人服务好。",
+        "durationSeconds": 4.539501133786848,
+        "status": "suspected_asr_confusion",
+        "asrTranscript": "别愁冒齐天你喜心量会把一个问题讲清把一个人服务好",
+        "originalAsrSimilarity": 0.7083333333333334
+      },
+      {
+        "id": "ending-01",
+        "text": "新媒体运营的起点，不是你终于被所有人看见。",
+        "durationSeconds": 3.580997732426304,
+        "status": "passed_asr_review",
+        "asrTranscript": "其媒体运营的起点不是你终于被所有人看见",
+        "originalAsrSimilarity": 0.9473684210526315
+      },
+      {
+        "id": "ending-02",
+        "text": "而是有人看完以后说：",
+        "durationSeconds": 1.6950566893424037,
+        "status": "passed_asr_review",
+        "asrTranscript": "而是有人看完以后说",
+        "originalAsrSimilarity": 1
+      },
+      {
+        "id": "ending-03",
+        "text": "这条内容，刚好帮到了我。",
+        "durationSeconds": 2.355011337868481,
+        "status": "passed_asr_review",
+        "asrTranscript": "这条内容刚好帮到了我",
+        "originalAsrSimilarity": 1
+      }
+    ],
+    "passed": true,
+    "reviewedSentences": 49,
+    "repairedSentences": [
+      "definition-01",
+      "definition-03"
+    ],
+    "synthesis": {
+      "engine": {
+        "name": "sherpa-onnx",
+        "version": "1.13.8",
+        "license": "Apache-2.0"
+      },
+      "voice": {
+        "name": "MeloTTS Chinese/English generic female",
+        "speakerId": 0,
+        "license": "MIT (MyShell.ai 2024; included in model archive)",
+        "source": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-melo-tts-zh_en.tar.bz2",
+        "archiveSha256": "e58351ed7149f290a54534538badd4077cdbe6fddc964b24d0bee870415d1514"
+      }
+    }
+  },
+  "fullAudioVideoDecode": "passed",
+  "audioLevels": {
+    "peakDb": -1.5,
+    "meanDb": -16.4
+  },
+  "bgm": "missing-reference-bgm",
+  "checkedAt": "2026-10-22T00:29:59.619Z"
+}

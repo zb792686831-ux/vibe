@@ -1,6 +1,16 @@
 # AI 视频制作环境
 
-这是用于 AI 辅助视频制作的 Remotion + FFmpeg 项目。当前只提供环境配置和一个 5 秒测试动画，尚未开始正式剪辑。
+这是用于 AI 辅助视频制作的 Remotion + FFmpeg 项目。环境及 5 秒测试已验证，现已新增面向入门者的新媒体运营介绍短片。
+
+## 新媒体运营介绍短片
+
+**音画样片，原参考 BGM 待接入**。全片 2 分 50.8 秒、17 场、49 句普通话旁白，使用原创矢量动画和原创合成音效。用户指定的抖音参考音乐尚未取得，没有擅自换曲，也没有把缺音乐的版本标为最终版。
+
+[下载音画样片 MP4](https://github.com/zb792686831-ux/vibe/raw/refs/heads/main/output/new-media-intro-preview.mp4) · [完整脚本](production/new-media/script.md) · [制作与待办](production/new-media/README.md)
+
+![新媒体运营短片画面](output/new-media-cover.jpg)
+
+在根目录执行 `npm run video:build` 可从保留素材重建视频并验证；`npm run video:prepare` 用实测逐句音长重新生成时间轴和混音。详细依赖、音源状态及配音复核见制作目录。
 
 默认规格：**16:9、1920×1080、60fps**。测试组合名为 `SetupTest`，时长 5 秒，共 300 帧；最终视频使用 H.264 / yuv420p、BT.709 色彩空间，附带 AAC 测试音轨。
 

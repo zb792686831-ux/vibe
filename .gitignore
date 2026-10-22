@@ -3,6 +3,7 @@ node_modules/
 build/
 dist/
 *.tsbuildinfo
+__pycache__/
 .env
 .env.*
 !.env.example
@@ -11,3 +12,7 @@ output/*
 !output/test-5s.mp4
 !output/test-5s-preview.jpg
 !output/validation.json
+!output/new-media-intro-preview.mp4
+!output/new-media-intro.mp4
+!output/new-media-cover.jpg
+!output/new-media-validation.json

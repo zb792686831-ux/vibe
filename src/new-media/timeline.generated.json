@@ -1,0 +1,1943 @@
+{
+  "title": "新媒体运营：让内容连接到人",
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 10246,
+  "durationSeconds": 170.76666666666668,
+  "bgmStatus": "missing-reference-bgm",
+  "scenes": [
+    {
+      "id": "hook",
+      "chapter": "01 开场",
+      "narration": "你每天更新，为什么还是没人看？",
+      "sentences": [
+        "你每天更新，为什么还是没人看？"
+      ],
+      "headline": "每天更新，没人看？",
+      "subline": "",
+      "keywords": [
+        "每天更新",
+        "没人看"
+      ],
+      "visualType": "hook",
+      "visual": "暖白空画面只出现一张内容卡，连续复制后塞满画面；卡片瞬间停住，中央留下问号。第一秒就给出矛盾，最后半秒静止。",
+      "pace": "急促后骤停",
+      "emotion": "困惑／刺痛",
+      "estimatedDurationSeconds": 5,
+      "sfx": [
+        {
+          "cue": "内容卡每次复制",
+          "offsetSeconds": 0.25,
+          "type": "tick",
+          "intensity": 0.3
+        },
+        {
+          "cue": "问号落定",
+          "offsetSeconds": 3.8,
+          "type": "impact",
+          "intensity": 0.45
+        }
+      ],
+      "narrationCharacters": 13,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "hook",
+      "estimatedStartSeconds": 0,
+      "estimatedEndSeconds": 5,
+      "index": 0,
+      "from": 0,
+      "captions": [
+        {
+          "text": "你每天更新，为什么还是没人看？",
+          "from": 8,
+          "to": 169
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "你每天更新，为什么还是没人看？",
+          "from": 8,
+          "durationInFrames": 161
+        }
+      ],
+      "durationInFrames": 204,
+      "durationSeconds": 3.4,
+      "visualCues": [
+        8
+      ],
+      "renderSfx": [
+        {
+          "from": 8,
+          "type": "click",
+          "gain": 0.23
+        },
+        {
+          "from": 16,
+          "type": "click",
+          "gain": 0.2
+        },
+        {
+          "from": 23,
+          "type": "click",
+          "gain": 0.18
+        },
+        {
+          "from": 123,
+          "type": "impact",
+          "gain": 0.32
+        }
+      ]
+    },
+    {
+      "id": "treadmill",
+      "chapter": "01 开场",
+      "narration": "追热点，改封面，熬夜剪片。你以为差一条爆款，可真正卡住你的，也许是从来没想清楚：这条内容，究竟在帮谁？",
+      "sentences": [
+        "追热点，改封面，熬夜剪片。",
+        "你以为差一条爆款，可真正卡住你的，也许是从来没想清楚：",
+        "这条内容，究竟在帮谁？"
+      ],
+      "headline": "这条内容，在帮谁？",
+      "subline": "先从一个真实的人开始",
+      "keywords": [
+        "追热点",
+        "改封面",
+        "熬夜剪片",
+        "帮谁"
+      ],
+      "visualType": "tension",
+      "visual": "小人站在由内容卡组成的传送带上，跑得越来越快却没有移动；“帮谁”出现后，整条传送带慢停，镜头留给一个空白人像。",
+      "pace": "前三拍快，后半减速",
+      "emotion": "忙碌焦虑→第一次转念",
+      "estimatedDurationSeconds": 9,
+      "sfx": [
+        {
+          "cue": "三个动作对应三次卡片翻动",
+          "offsetSeconds": 0.2,
+          "type": "paper",
+          "intensity": 0.25
+        },
+        {
+          "cue": "传送带停止",
+          "offsetSeconds": 6.0,
+          "type": "reverse",
+          "intensity": 0.3
+        }
+      ],
+      "narrationCharacters": 43,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "hook",
+      "estimatedStartSeconds": 5,
+      "estimatedEndSeconds": 14,
+      "index": 1,
+      "from": 204,
+      "captions": [
+        {
+          "text": "追热点，改封面，熬夜剪片。",
+          "from": 18,
+          "to": 180
+        },
+        {
+          "text": "你以为差一条爆款，可真正卡住你的，",
+          "from": 190,
+          "to": 368
+        },
+        {
+          "text": "也许是从来没想清楚：",
+          "from": 368,
+          "to": 472
+        },
+        {
+          "text": "这条内容，究竟在帮谁？",
+          "from": 482,
+          "to": 618
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "追热点，改封面，熬夜剪片。",
+          "from": 18,
+          "durationInFrames": 162
+        },
+        {
+          "text": "你以为差一条爆款，可真正卡住你的，也许是从来没想清楚：",
+          "from": 190,
+          "durationInFrames": 282
+        },
+        {
+          "text": "这条内容，究竟在帮谁？",
+          "from": 482,
+          "durationInFrames": 136
+        }
+      ],
+      "durationInFrames": 653,
+      "durationSeconds": 10.883333333333333,
+      "visualCues": [
+        18,
+        190,
+        482
+      ],
+      "renderSfx": [
+        {
+          "from": 7,
+          "type": "whoosh",
+          "gain": 0.17
+        },
+        {
+          "from": 126,
+          "type": "riser",
+          "gain": 0.13
+        }
+      ]
+    },
+    {
+      "id": "definition",
+      "chapter": "02 核心反转",
+      "narration": "新媒体运营，不等于把内容发布出去。而是找到一群人，持续解决他们的问题，让一次看见，变成信任，再走向行动。",
+      "sentences": [
+        "新媒体运营，不等于把内容发布出去。",
+        "而是找到一群人，持续解决他们的问题，",
+        "让一次看见，变成信任，再走向行动。"
+      ],
+      "headline": "让内容，连接到人",
+      "subline": "看见 → 信任 → 行动",
+      "keywords": [
+        "人",
+        "问题",
+        "信任",
+        "行动"
+      ],
+      "visualType": "definition",
+      "visual": "黑底上一条细线从内容卡延伸至人像，再连接到三次逐步放大的同心圆；“看见／信任／行动”依次出现，不堆叠其他信息。",
+      "pace": "清晰舒展",
+      "emotion": "松一口气／获得方向",
+      "estimatedDurationSeconds": 10,
+      "sfx": [
+        {
+          "cue": "三段连接逐一完成",
+          "offsetSeconds": 4.4,
+          "type": "chime",
+          "intensity": 0.32
+        }
+      ],
+      "narrationCharacters": 45,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "bridge",
+      "estimatedStartSeconds": 14,
+      "estimatedEndSeconds": 24,
+      "index": 2,
+      "from": 857,
+      "captions": [
+        {
+          "text": "新媒体运营，不等于把内容发布出去。",
+          "from": 18,
+          "to": 181
+        },
+        {
+          "text": "而是找到一群人，持续解决他们的问题，",
+          "from": 191,
+          "to": 369
+        },
+        {
+          "text": "让一次看见，变成信任，再走向行动。",
+          "from": 379,
+          "to": 593
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "新媒体运营，不等于把内容发布出去。",
+          "from": 18,
+          "durationInFrames": 163
+        },
+        {
+          "text": "而是找到一群人，持续解决他们的问题，",
+          "from": 191,
+          "durationInFrames": 178
+        },
+        {
+          "text": "让一次看见，变成信任，再走向行动。",
+          "from": 379,
+          "durationInFrames": 214
+        }
+      ],
+      "durationInFrames": 628,
+      "durationSeconds": 10.466666666666667,
+      "visualCues": [
+        18,
+        191,
+        379
+      ],
+      "renderSfx": [
+        {
+          "from": 24,
+          "type": "whoosh",
+          "gain": 0.15
+        },
+        {
+          "from": 216,
+          "type": "chime",
+          "gain": 0.18
+        }
+      ]
+    },
+    {
+      "id": "six-loop",
+      "chapter": "02 核心反转",
+      "narration": "记住六个动作：定位，选题，表达，分发，互动，复盘。它们不是六份作业，而是一条会越跑越顺的循环。",
+      "sentences": [
+        "记住六个动作：定位，选题，表达，分发，互动，复盘。",
+        "它们不是六份作业，而是一条会越跑越顺的循环。"
+      ],
+      "headline": "六个动作，一个循环",
+      "subline": "定位 · 选题 · 表达 · 分发 · 互动 · 复盘",
+      "keywords": [
+        "定位",
+        "选题",
+        "表达",
+        "分发",
+        "互动",
+        "复盘"
+      ],
+      "visualType": "loop",
+      "visual": "六个词沿圆周依次点亮，首尾连接成一笔闭环；只在被口播提及的节点加亮，其他节点降低对比。",
+      "pace": "六连拍后放松",
+      "emotion": "秩序感／可掌控",
+      "estimatedDurationSeconds": 8,
+      "sfx": [
+        {
+          "cue": "节点依次点亮",
+          "offsetSeconds": 0.7,
+          "type": "click",
+          "intensity": 0.24
+        },
+        {
+          "cue": "闭环扣合",
+          "offsetSeconds": 6.0,
+          "type": "pop",
+          "intensity": 0.27
+        }
+      ],
+      "narrationCharacters": 38,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "loop",
+      "estimatedStartSeconds": 24,
+      "estimatedEndSeconds": 32,
+      "index": 3,
+      "from": 1485,
+      "captions": [
+        {
+          "text": "记住六个动作：定位，选题，表达，分发，互动，",
+          "from": 18,
+          "to": 242
+        },
+        {
+          "text": "复盘。",
+          "from": 242,
+          "to": 273
+        },
+        {
+          "text": "它们不是六份作业，而是一条会越跑越顺的循环。",
+          "from": 283,
+          "to": 513
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "记住六个动作：定位，选题，表达，分发，互动，复盘。",
+          "from": 18,
+          "durationInFrames": 255
+        },
+        {
+          "text": "它们不是六份作业，而是一条会越跑越顺的循环。",
+          "from": 283,
+          "durationInFrames": 230
+        }
+      ],
+      "durationInFrames": 548,
+      "durationSeconds": 9.133333333333333,
+      "visualCues": [
+        18,
+        283
+      ],
+      "renderSfx": [
+        {
+          "from": 18,
+          "type": "step",
+          "gain": 0.13
+        },
+        {
+          "from": 30,
+          "type": "step",
+          "gain": 0.13
+        },
+        {
+          "from": 42,
+          "type": "step",
+          "gain": 0.13
+        },
+        {
+          "from": 54,
+          "type": "step",
+          "gain": 0.13
+        },
+        {
+          "from": 66,
+          "type": "step",
+          "gain": 0.13
+        },
+        {
+          "from": 78,
+          "type": "step",
+          "gain": 0.13
+        }
+      ]
+    },
+    {
+      "id": "coffee-audience",
+      "chapter": "03 一个例子讲清楚",
+      "narration": "假设你在帮一家街角咖啡店做账号。先别急着晒拉花。你要吸引的是赶时间的上班族，还是愿意坐一下午的附近居民？",
+      "sentences": [
+        "假设你在帮一家街角咖啡店做账号。",
+        "先别急着晒拉花。",
+        "你要吸引的是赶时间的上班族，还是愿意坐一下午的附近居民？"
+      ],
+      "headline": "同一家店，两种需求",
+      "subline": "赶时间的上班族 ／ 想坐一会儿的邻居",
+      "keywords": [
+        "咖啡店",
+        "上班族",
+        "附近居民"
+      ],
+      "visualType": "coffee",
+      "visual": "暖白背景一只极简咖啡杯居中。左侧人像带时钟，右侧人像靠近椅子；用同一杯咖啡横向移位连接两种场景，避免像商品广告。",
+      "pace": "叙事中速",
+      "emotion": "熟悉／代入",
+      "estimatedDurationSeconds": 10,
+      "sfx": [
+        {
+          "cue": "咖啡杯落桌",
+          "offsetSeconds": 1.0,
+          "type": "pop",
+          "intensity": 0.22
+        },
+        {
+          "cue": "左右人物分开",
+          "offsetSeconds": 5.0,
+          "type": "whoosh",
+          "intensity": 0.25
+        }
+      ],
+      "narrationCharacters": 48,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "compass",
+      "estimatedStartSeconds": 32,
+      "estimatedEndSeconds": 42,
+      "index": 4,
+      "from": 2033,
+      "captions": [
+        {
+          "text": "假设你在帮一家街角咖啡店做账号。",
+          "from": 18,
+          "to": 192
+        },
+        {
+          "text": "先别急着晒拉花。",
+          "from": 202,
+          "to": 292
+        },
+        {
+          "text": "你要吸引的是赶时间的上班族，",
+          "from": 302,
+          "to": 434
+        },
+        {
+          "text": "还是愿意坐一下午的附近居民？",
+          "from": 434,
+          "to": 567
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "假设你在帮一家街角咖啡店做账号。",
+          "from": 18,
+          "durationInFrames": 174
+        },
+        {
+          "text": "先别急着晒拉花。",
+          "from": 202,
+          "durationInFrames": 90
+        },
+        {
+          "text": "你要吸引的是赶时间的上班族，还是愿意坐一下午的附近居民？",
+          "from": 302,
+          "durationInFrames": 265
+        }
+      ],
+      "durationInFrames": 602,
+      "durationSeconds": 10.033333333333333,
+      "visualCues": [
+        18,
+        202,
+        302
+      ],
+      "renderSfx": [
+        {
+          "from": 9,
+          "type": "step",
+          "gain": 0.22
+        },
+        {
+          "from": 33,
+          "type": "whoosh",
+          "gain": 0.12
+        }
+      ]
+    },
+    {
+      "id": "positioning",
+      "chapter": "03 一个例子讲清楚",
+      "narration": "人不同，内容就不同。上班族关心出杯快不快，附近居民在意坐着舒不舒服。定位，就是决定先为谁，解决什么问题。",
+      "sentences": [
+        "人不同，内容就不同。",
+        "上班族关心出杯快不快，附近居民在意坐着舒不舒服。",
+        "定位，就是决定先为谁，解决什么问题。"
+      ],
+      "headline": "先为谁，解决什么",
+      "subline": "定位 = 人群 × 问题",
+      "keywords": [
+        "人群",
+        "问题",
+        "快",
+        "舒服"
+      ],
+      "visualType": "audience",
+      "visual": "两个人物的需求分别变成时钟和软椅图标；最后收起人物，只留下“人群 × 问题”一行，乘号与两端短线轻轻合拢。",
+      "pace": "中速到留白",
+      "emotion": "理解／笃定",
+      "estimatedDurationSeconds": 10,
+      "sfx": [
+        {
+          "cue": "需求图标出现",
+          "offsetSeconds": 2.0,
+          "type": "click",
+          "intensity": 0.22
+        },
+        {
+          "cue": "公式合拢",
+          "offsetSeconds": 7.5,
+          "type": "soft-rise",
+          "intensity": 0.25
+        }
+      ],
+      "narrationCharacters": 45,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "compass",
+      "estimatedStartSeconds": 42,
+      "estimatedEndSeconds": 52,
+      "index": 5,
+      "from": 2635,
+      "captions": [
+        {
+          "text": "人不同，内容就不同。",
+          "from": 18,
+          "to": 124
+        },
+        {
+          "text": "上班族关心出杯快不快，附近居民在意坐着舒不舒服。",
+          "from": 134,
+          "to": 382
+        },
+        {
+          "text": "定位，就是决定先为谁，解决什么问题。",
+          "from": 392,
+          "to": 584
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "人不同，内容就不同。",
+          "from": 18,
+          "durationInFrames": 106
+        },
+        {
+          "text": "上班族关心出杯快不快，附近居民在意坐着舒不舒服。",
+          "from": 134,
+          "durationInFrames": 248
+        },
+        {
+          "text": "定位，就是决定先为谁，解决什么问题。",
+          "from": 392,
+          "durationInFrames": 192
+        }
+      ],
+      "durationInFrames": 619,
+      "durationSeconds": 10.316666666666666,
+      "visualCues": [
+        18,
+        134,
+        392
+      ],
+      "renderSfx": [
+        {
+          "from": 18,
+          "type": "click",
+          "gain": 0.13
+        },
+        {
+          "from": 27,
+          "type": "click",
+          "gain": 0.13
+        },
+        {
+          "from": 36,
+          "type": "click",
+          "gain": 0.13
+        },
+        {
+          "from": 45,
+          "type": "click",
+          "gain": 0.13
+        }
+      ]
+    },
+    {
+      "id": "topic",
+      "chapter": "03 一个例子讲清楚",
+      "narration": "选题从真实问题里长出来。比如：早高峰，怎么买咖啡不迟到？这比“今天又上新品了”，更容易让人停下来。",
+      "sentences": [
+        "选题从真实问题里长出来。",
+        "比如：早高峰，怎么买咖啡不迟到？",
+        "这比“今天又上新品了”，更容易让人停下来。"
+      ],
+      "headline": "早高峰，咖啡怎么不迟到",
+      "subline": "从“我想说什么”走向“他想知道什么”",
+      "keywords": [
+        "真实问题",
+        "不迟到"
+      ],
+      "visualType": "question",
+      "visual": "“新品上线”的小卡片退后失焦，前景是一枚有清晰问句的气泡和一只正在走动的时钟；问句出现时动画停止，让观众读完。",
+      "pace": "轻快后停顿",
+      "emotion": "发现／好奇",
+      "estimatedDurationSeconds": 9,
+      "sfx": [
+        {
+          "cue": "旧卡片滑走",
+          "offsetSeconds": 1.9,
+          "type": "whoosh",
+          "intensity": 0.25
+        },
+        {
+          "cue": "问句打中画心",
+          "offsetSeconds": 3.4,
+          "type": "pop",
+          "intensity": 0.35
+        }
+      ],
+      "narrationCharacters": 41,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "question",
+      "estimatedStartSeconds": 52,
+      "estimatedEndSeconds": 61,
+      "index": 6,
+      "from": 3254,
+      "captions": [
+        {
+          "text": "选题从真实问题里长出来。",
+          "from": 18,
+          "to": 145
+        },
+        {
+          "text": "比如：早高峰，怎么买咖啡不迟到？",
+          "from": 155,
+          "to": 315
+        },
+        {
+          "text": "这比“今天又上新品了”，更容易让人停下来。",
+          "from": 325,
+          "to": 516
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "选题从真实问题里长出来。",
+          "from": 18,
+          "durationInFrames": 127
+        },
+        {
+          "text": "比如：早高峰，怎么买咖啡不迟到？",
+          "from": 155,
+          "durationInFrames": 160
+        },
+        {
+          "text": "这比“今天又上新品了”，更容易让人停下来。",
+          "from": 325,
+          "durationInFrames": 191
+        }
+      ],
+      "durationInFrames": 551,
+      "durationSeconds": 9.183333333333334,
+      "visualCues": [
+        18,
+        155,
+        325
+      ],
+      "renderSfx": [
+        {
+          "from": 7,
+          "type": "whoosh",
+          "gain": 0.14
+        },
+        {
+          "from": 138,
+          "type": "chime",
+          "gain": 0.16
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "chapter": "03 一个例子讲清楚",
+      "narration": "内容的顺序也要换。先给观众一个留下来的理由，再用画面和细节证明，最后告诉他下一步怎么做。一条内容，只讲透一件事。",
+      "sentences": [
+        "内容的顺序也要换。",
+        "先给观众一个留下来的理由，再用画面和细节证明，",
+        "最后告诉他下一步怎么做。",
+        "一条内容，只讲透一件事。"
+      ],
+      "headline": "理由 → 证据 → 下一步",
+      "subline": "一条内容，只讲透一件事",
+      "keywords": [
+        "理由",
+        "证据",
+        "下一步"
+      ],
+      "visualType": "story",
+      "visual": "三张竖长内容卡像接力一样依次交接一束光；镜头最后推近唯一一张卡，另外两张收为细线。每张只保留一个词。",
+      "pace": "三拍推进，末句放慢",
+      "emotion": "清楚／获得方法",
+      "estimatedDurationSeconds": 11,
+      "sfx": [
+        {
+          "cue": "三卡接力",
+          "offsetSeconds": 1.5,
+          "type": "tick",
+          "intensity": 0.26
+        },
+        {
+          "cue": "只留一件事",
+          "offsetSeconds": 8.6,
+          "type": "impact",
+          "intensity": 0.25
+        }
+      ],
+      "narrationCharacters": 50,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "story",
+      "estimatedStartSeconds": 61,
+      "estimatedEndSeconds": 72,
+      "index": 7,
+      "from": 3805,
+      "captions": [
+        {
+          "text": "内容的顺序也要换。",
+          "from": 18,
+          "to": 115
+        },
+        {
+          "text": "先给观众一个留下来的理由，再用画面和细节证明，",
+          "from": 125,
+          "to": 361
+        },
+        {
+          "text": "最后告诉他下一步怎么做。",
+          "from": 371,
+          "to": 495
+        },
+        {
+          "text": "一条内容，只讲透一件事。",
+          "from": 505,
+          "to": 646
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "内容的顺序也要换。",
+          "from": 18,
+          "durationInFrames": 97
+        },
+        {
+          "text": "先给观众一个留下来的理由，再用画面和细节证明，",
+          "from": 125,
+          "durationInFrames": 236
+        },
+        {
+          "text": "最后告诉他下一步怎么做。",
+          "from": 371,
+          "durationInFrames": 124
+        },
+        {
+          "text": "一条内容，只讲透一件事。",
+          "from": 505,
+          "durationInFrames": 141
+        }
+      ],
+      "durationInFrames": 681,
+      "durationSeconds": 11.35,
+      "visualCues": [
+        18,
+        125,
+        371,
+        505
+      ],
+      "renderSfx": [
+        {
+          "from": 18,
+          "type": "step",
+          "gain": 0.18
+        },
+        {
+          "from": 125,
+          "type": "step",
+          "gain": 0.18
+        },
+        {
+          "from": 371,
+          "type": "step",
+          "gain": 0.18
+        }
+      ]
+    },
+    {
+      "id": "proof",
+      "chapter": "03 一个例子讲清楚",
+      "narration": "计时器、取餐动线、预约入口，比一句“我们很专业”，更有说服力。运营不是把卖点喊大声，而是把用户关心的证据，摆到眼前。",
+      "sentences": [
+        "计时器、取餐动线、预约入口，比一句“我们很专业”，更有说服力。",
+        "运营不是把卖点喊大声，而是把用户关心的证据，摆到眼前。"
+      ],
+      "headline": "把证据，摆到眼前",
+      "subline": "计时器 ／ 取餐动线 ／ 预约入口",
+      "keywords": [
+        "计时器",
+        "动线",
+        "入口",
+        "证据"
+      ],
+      "visualType": "evidence",
+      "visual": "三个简洁图标分三次显现：不标具体数值的计时器、通往取餐杯的路线、预约入口按钮。最后图标收拢为一个清晰的对勾。",
+      "pace": "短促三击后舒展",
+      "emotion": "可信／理解加深",
+      "estimatedDurationSeconds": 10,
+      "sfx": [
+        {
+          "cue": "证据逐一落位",
+          "offsetSeconds": 0.35,
+          "type": "click",
+          "intensity": 0.28
+        },
+        {
+          "cue": "对勾完成",
+          "offsetSeconds": 8.0,
+          "type": "chime",
+          "intensity": 0.3
+        }
+      ],
+      "narrationCharacters": 48,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "story",
+      "estimatedStartSeconds": 72,
+      "estimatedEndSeconds": 82,
+      "index": 8,
+      "from": 4486,
+      "captions": [
+        {
+          "text": "计时器、取餐动线、预约入口，",
+          "from": 18,
+          "to": 148
+        },
+        {
+          "text": "比一句“我们很专业”，更有说服力。",
+          "from": 148,
+          "to": 305
+        },
+        {
+          "text": "运营不是把卖点喊大声，而是把用户关心的证据，",
+          "from": 315,
+          "to": 549
+        },
+        {
+          "text": "摆到眼前。",
+          "from": 549,
+          "to": 602
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "计时器、取餐动线、预约入口，比一句“我们很专业”，更有说服力。",
+          "from": 18,
+          "durationInFrames": 287
+        },
+        {
+          "text": "运营不是把卖点喊大声，而是把用户关心的证据，摆到眼前。",
+          "from": 315,
+          "durationInFrames": 287
+        }
+      ],
+      "durationInFrames": 637,
+      "durationSeconds": 10.616666666666667,
+      "visualCues": [
+        18,
+        315
+      ],
+      "renderSfx": [
+        {
+          "from": 3,
+          "type": "click",
+          "gain": 0.16
+        },
+        {
+          "from": 45,
+          "type": "click",
+          "gain": 0.16
+        },
+        {
+          "from": 87,
+          "type": "click",
+          "gain": 0.16
+        },
+        {
+          "from": 198,
+          "type": "chime",
+          "gain": 0.2
+        }
+      ]
+    },
+    {
+      "id": "distribution",
+      "chapter": "03 一个例子讲清楚",
+      "narration": "分发，不是所有平台复制一遍。短视频负责让人看见，图文方便收藏，直播适合解释，社群接住后续问题。形式跟着目标走。",
+      "sentences": [
+        "分发，不是所有平台复制一遍。",
+        "短视频负责让人看见，图文方便收藏，",
+        "直播适合解释，社群接住后续问题。",
+        "形式跟着目标走。"
+      ],
+      "headline": "形式，跟着目标走",
+      "subline": "看见 · 收藏 · 解释 · 连接",
+      "keywords": [
+        "短视频",
+        "图文",
+        "直播",
+        "社群",
+        "目标"
+      ],
+      "visualType": "distribution",
+      "visual": "内容卡在中心分成四条不同方向的路径，变成播放键、书签、直播点和对话气泡；结尾四条路径指向同一枚用户圆点。",
+      "pace": "层次递进",
+      "emotion": "视野打开／完整感",
+      "estimatedDurationSeconds": 10,
+      "sfx": [
+        {
+          "cue": "路径依次展开",
+          "offsetSeconds": 2.0,
+          "type": "whoosh",
+          "intensity": 0.2
+        }
+      ],
+      "narrationCharacters": 48,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "distribution",
+      "estimatedStartSeconds": 82,
+      "estimatedEndSeconds": 92,
+      "index": 9,
+      "from": 5123,
+      "captions": [
+        {
+          "text": "分发，不是所有平台复制一遍。",
+          "from": 18,
+          "to": 168
+        },
+        {
+          "text": "短视频负责让人看见，图文方便收藏，",
+          "from": 178,
+          "to": 370
+        },
+        {
+          "text": "直播适合解释，社群接住后续问题。",
+          "from": 380,
+          "to": 565
+        },
+        {
+          "text": "形式跟着目标走。",
+          "from": 575,
+          "to": 665
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "分发，不是所有平台复制一遍。",
+          "from": 18,
+          "durationInFrames": 150
+        },
+        {
+          "text": "短视频负责让人看见，图文方便收藏，",
+          "from": 178,
+          "durationInFrames": 192
+        },
+        {
+          "text": "直播适合解释，社群接住后续问题。",
+          "from": 380,
+          "durationInFrames": 185
+        },
+        {
+          "text": "形式跟着目标走。",
+          "from": 575,
+          "durationInFrames": 90
+        }
+      ],
+      "durationInFrames": 700,
+      "durationSeconds": 11.666666666666666,
+      "visualCues": [
+        18,
+        178,
+        380,
+        575
+      ],
+      "renderSfx": [
+        {
+          "from": 21,
+          "type": "whoosh",
+          "gain": 0.08
+        },
+        {
+          "from": 32,
+          "type": "whoosh",
+          "gain": 0.08
+        },
+        {
+          "from": 43,
+          "type": "whoosh",
+          "gain": 0.08
+        },
+        {
+          "from": 53,
+          "type": "whoosh",
+          "gain": 0.08
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "chapter": "03 一个例子讲清楚",
+      "narration": "有人留言“附近能停车吗”，别只回一个表情。这不是打扰，是下一条选题，也是一次真实服务的开始。互动，让屏幕那边的人被看见。",
+      "sentences": [
+        "有人留言“附近能停车吗”，别只回一个表情。",
+        "这不是打扰，是下一条选题，也是一次真实服务的开始。",
+        "互动，让屏幕那边的人被看见。"
+      ],
+      "headline": "每个问题后面，都有人",
+      "subline": "“附近能停车吗？”",
+      "keywords": [
+        "留言",
+        "问题",
+        "真实服务"
+      ],
+      "visualType": "comment",
+      "visual": "一枚评论气泡先以极小尺寸出现，随后镜头拉近，气泡转成人像胸前的小灯；返信线与主讲内容连接成下一条选题卡。此处只用温柔的轻动画。",
+      "pace": "放慢，给人味留空间",
+      "emotion": "被理解／温暖",
+      "estimatedDurationSeconds": 11,
+      "sfx": [
+        {
+          "cue": "留言出现",
+          "offsetSeconds": 0.7,
+          "type": "pop",
+          "intensity": 0.18
+        },
+        {
+          "cue": "用户小灯点亮",
+          "offsetSeconds": 8.0,
+          "type": "chime",
+          "intensity": 0.18
+        }
+      ],
+      "narrationCharacters": 51,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "conversation",
+      "estimatedStartSeconds": 92,
+      "estimatedEndSeconds": 103,
+      "index": 10,
+      "from": 5823,
+      "captions": [
+        {
+          "text": "有人留言“附近能停车吗”，别只回一个表情。",
+          "from": 18,
+          "to": 223
+        },
+        {
+          "text": "这不是打扰，是下一条选题，",
+          "from": 233,
+          "to": 374
+        },
+        {
+          "text": "也是一次真实服务的开始。",
+          "from": 374,
+          "to": 504
+        },
+        {
+          "text": "互动，让屏幕那边的人被看见。",
+          "from": 514,
+          "to": 660
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "有人留言“附近能停车吗”，别只回一个表情。",
+          "from": 18,
+          "durationInFrames": 205
+        },
+        {
+          "text": "这不是打扰，是下一条选题，也是一次真实服务的开始。",
+          "from": 233,
+          "durationInFrames": 271
+        },
+        {
+          "text": "互动，让屏幕那边的人被看见。",
+          "from": 514,
+          "durationInFrames": 146
+        }
+      ],
+      "durationInFrames": 695,
+      "durationSeconds": 11.583333333333334,
+      "visualCues": [
+        18,
+        233,
+        514
+      ],
+      "renderSfx": [
+        {
+          "from": 33,
+          "type": "step",
+          "gain": 0.16
+        },
+        {
+          "from": 138,
+          "type": "chime",
+          "gain": 0.11
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "chapter": "04 复盘与释压",
+      "narration": "然后看数据。但先别被播放量吓住。开头留不住，就改开头；有人看完却没行动，就检查你的信息和引导。每次，只改一个关键变量。",
+      "sentences": [
+        "然后看数据。",
+        "但先别被播放量吓住。",
+        "开头留不住，就改开头；",
+        "有人看完却没行动，就检查你的信息和引导。",
+        "每次，只改一个关键变量。"
+      ],
+      "headline": "每次，只改一个变量",
+      "subline": "留不住？改开头。没行动？查信息。",
+      "keywords": [
+        "数据",
+        "开头",
+        "行动",
+        "一个变量"
+      ],
+      "visualType": "metrics",
+      "visual": "抽象折线在画面上轻轻下坠，随后放大其中一个拐点。无任何虚构播放量数字；两个假设开关先同时闪动，再只留一个开关亮起。",
+      "pace": "起初紧，再有序放缓",
+      "emotion": "担忧→可操作",
+      "estimatedDurationSeconds": 11,
+      "sfx": [
+        {
+          "cue": "曲线拐点定位",
+          "offsetSeconds": 3.6,
+          "type": "tick",
+          "intensity": 0.2
+        },
+        {
+          "cue": "只留一个变量",
+          "offsetSeconds": 8.8,
+          "type": "click",
+          "intensity": 0.3
+        }
+      ],
+      "narrationCharacters": 51,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "loop",
+      "estimatedStartSeconds": 103,
+      "estimatedEndSeconds": 114,
+      "index": 11,
+      "from": 6518,
+      "captions": [
+        {
+          "text": "然后看数据。",
+          "from": 18,
+          "to": 87
+        },
+        {
+          "text": "但先别被播放量吓住。",
+          "from": 97,
+          "to": 198
+        },
+        {
+          "text": "开头留不住，就改开头；",
+          "from": 208,
+          "to": 313
+        },
+        {
+          "text": "有人看完却没行动，就检查你的信息和引导。",
+          "from": 323,
+          "to": 533
+        },
+        {
+          "text": "每次，只改一个关键变量。",
+          "from": 543,
+          "to": 673
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "然后看数据。",
+          "from": 18,
+          "durationInFrames": 69
+        },
+        {
+          "text": "但先别被播放量吓住。",
+          "from": 97,
+          "durationInFrames": 101
+        },
+        {
+          "text": "开头留不住，就改开头；",
+          "from": 208,
+          "durationInFrames": 105
+        },
+        {
+          "text": "有人看完却没行动，就检查你的信息和引导。",
+          "from": 323,
+          "durationInFrames": 210
+        },
+        {
+          "text": "每次，只改一个关键变量。",
+          "from": 543,
+          "durationInFrames": 130
+        }
+      ],
+      "durationInFrames": 708,
+      "durationSeconds": 11.8,
+      "visualCues": [
+        18,
+        97,
+        208,
+        323,
+        543
+      ],
+      "renderSfx": [
+        {
+          "from": 102,
+          "type": "step",
+          "gain": 0.14
+        },
+        {
+          "from": 174,
+          "type": "click",
+          "gain": 0.21
+        }
+      ]
+    },
+    {
+      "id": "relief",
+      "chapter": "04 复盘与释压",
+      "narration": "数据不是给你打分的老师，而是告诉你：哪句话没听懂，哪个问题还没答好。播放量是信号，不是你这个人的价值。",
+      "sentences": [
+        "数据不是给你打分的老师，而是告诉你：",
+        "哪句话没听懂，哪个问题还没答好。",
+        "播放量是信号，不是你这个人的价值。"
+      ],
+      "headline": "播放量，不等于你的价值",
+      "subline": "把反馈当线索",
+      "keywords": [
+        "反馈",
+        "线索",
+        "价值"
+      ],
+      "visualType": "relief",
+      "visual": "原本悬在人物头顶的巨大数字框缓缓缩成手中的一个小指南针；暖白画面留出大量空间，只让最后一句停留，镜头几乎不动。",
+      "pace": "全片最慢，末尾留白0.6秒",
+      "emotion": "释压／被接住",
+      "estimatedDurationSeconds": 10,
+      "sfx": [
+        {
+          "cue": "数字框变成指南针",
+          "offsetSeconds": 5.0,
+          "type": "soft-rise",
+          "intensity": 0.12
+        }
+      ],
+      "narrationCharacters": 45,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "bridge",
+      "estimatedStartSeconds": 114,
+      "estimatedEndSeconds": 124,
+      "index": 12,
+      "from": 7226,
+      "captions": [
+        {
+          "text": "数据不是给你打分的老师，而是告诉你：",
+          "from": 26,
+          "to": 217
+        },
+        {
+          "text": "哪句话没听懂，哪个问题还没答好。",
+          "from": 233,
+          "to": 403
+        },
+        {
+          "text": "播放量是信号，不是你这个人的价值。",
+          "from": 419,
+          "to": 609
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "数据不是给你打分的老师，而是告诉你：",
+          "from": 26,
+          "durationInFrames": 191
+        },
+        {
+          "text": "哪句话没听懂，哪个问题还没答好。",
+          "from": 233,
+          "durationInFrames": 170
+        },
+        {
+          "text": "播放量是信号，不是你这个人的价值。",
+          "from": 419,
+          "durationInFrames": 190
+        }
+      ],
+      "durationInFrames": 673,
+      "durationSeconds": 11.216666666666667,
+      "visualCues": [
+        26,
+        233,
+        419
+      ],
+      "renderSfx": [
+        {
+          "from": 48,
+          "type": "riser",
+          "gain": 0.07
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "chapter": "05 从今天开始",
+      "narration": "新手最容易掉进去的坑，是还没认识用户，就先学了一堆工具。工具能让你更快，但方向错了，只会更快地绕远路。",
+      "sentences": [
+        "新手最容易掉进去的坑，是还没认识用户，就先学了一堆工具。",
+        "工具能让你更快，但方向错了，只会更快地绕远路。"
+      ],
+      "headline": "先找到方向，再提速",
+      "subline": "工具服务目标",
+      "keywords": [
+        "工具",
+        "方向",
+        "提速"
+      ],
+      "visualType": "tools",
+      "visual": "几把抽象工具围绕一枚旋转的小轮子，轮子跑出打结路线；一条清楚的目标线从结里延伸出来。用略带幽默的反弹动作，不用浮夸故障效果。",
+      "pace": "重新提速，短暂幽默",
+      "emotion": "警醒／轻松",
+      "estimatedDurationSeconds": 10,
+      "sfx": [
+        {
+          "cue": "工具过载挤在一起",
+          "offsetSeconds": 2.0,
+          "type": "paper",
+          "intensity": 0.26
+        },
+        {
+          "cue": "方向线拉直",
+          "offsetSeconds": 7.2,
+          "type": "whoosh",
+          "intensity": 0.25
+        }
+      ],
+      "narrationCharacters": 45,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "compass",
+      "estimatedStartSeconds": 124,
+      "estimatedEndSeconds": 134,
+      "index": 13,
+      "from": 7899,
+      "captions": [
+        {
+          "text": "新手最容易掉进去的坑，是还没认识用户，",
+          "from": 18,
+          "to": 210
+        },
+        {
+          "text": "就先学了一堆工具。",
+          "from": 210,
+          "to": 301
+        },
+        {
+          "text": "工具能让你更快，但方向错了，只会更快地绕远路。",
+          "from": 311,
+          "to": 565
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "新手最容易掉进去的坑，是还没认识用户，就先学了一堆工具。",
+          "from": 18,
+          "durationInFrames": 283
+        },
+        {
+          "text": "工具能让你更快，但方向错了，只会更快地绕远路。",
+          "from": 311,
+          "durationInFrames": 254
+        }
+      ],
+      "durationInFrames": 600,
+      "durationSeconds": 10.0,
+      "visualCues": [
+        18,
+        311
+      ],
+      "renderSfx": [
+        {
+          "from": 102,
+          "type": "whoosh",
+          "gain": 0.14
+        },
+        {
+          "from": 204,
+          "type": "step",
+          "gain": 0.16
+        }
+      ]
+    },
+    {
+      "id": "start",
+      "chapter": "05 从今天开始",
+      "narration": "今晚就能开始。选一个具体的人群，记下他们反复问的三个问题，先做一条最能回答其中一个问题的内容。",
+      "sentences": [
+        "今晚就能开始。",
+        "选一个具体的人群，记下他们反复问的三个问题，",
+        "先做一条最能回答其中一个问题的内容。"
+      ],
+      "headline": "1 类人 · 3 个问题 · 1 条内容",
+      "subline": "今晚就能开始",
+      "keywords": [
+        "1类人",
+        "3个问题",
+        "1条内容"
+      ],
+      "visualType": "plan",
+      "visual": "黑底上用巨大数字1、3、1建立清楚的节拍；每个数字由上一场图形连续变形而来。最后只保留一张已写好标题的内容卡。",
+      "pace": "节奏回升，明确三拍",
+      "emotion": "有行动感／愿意试试",
+      "estimatedDurationSeconds": 9,
+      "sfx": [
+        {
+          "cue": "1、3、1逐个落位",
+          "offsetSeconds": 1.1,
+          "type": "impact",
+          "intensity": 0.32
+        }
+      ],
+      "narrationCharacters": 43,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "action",
+      "estimatedStartSeconds": 134,
+      "estimatedEndSeconds": 143,
+      "index": 14,
+      "from": 8499,
+      "captions": [
+        {
+          "text": "今晚就能开始。",
+          "from": 18,
+          "to": 90
+        },
+        {
+          "text": "选一个具体的人群，记下他们反复问的三个问题，",
+          "from": 100,
+          "to": 322
+        },
+        {
+          "text": "先做一条最能回答其中一个问题的内容。",
+          "from": 332,
+          "to": 511
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "今晚就能开始。",
+          "from": 18,
+          "durationInFrames": 72
+        },
+        {
+          "text": "选一个具体的人群，记下他们反复问的三个问题，",
+          "from": 100,
+          "durationInFrames": 222
+        },
+        {
+          "text": "先做一条最能回答其中一个问题的内容。",
+          "from": 332,
+          "durationInFrames": 179
+        }
+      ],
+      "durationInFrames": 546,
+      "durationSeconds": 9.1,
+      "visualCues": [
+        18,
+        100,
+        332
+      ],
+      "renderSfx": [
+        {
+          "from": 9,
+          "type": "impact",
+          "gain": 0.18
+        },
+        {
+          "from": 33,
+          "type": "impact",
+          "gain": 0.18
+        },
+        {
+          "from": 57,
+          "type": "impact",
+          "gain": 0.18
+        }
+      ]
+    },
+    {
+      "id": "iterate",
+      "chapter": "05 从今天开始",
+      "narration": "发出去，认真回复，收集反馈，再做下一条。别承诺七天逆袭，先练会把一个问题讲清，把一个人服务好。",
+      "sentences": [
+        "发出去，认真回复，收集反馈，再做下一条。",
+        "别承诺七天逆袭，先练会把一个问题讲清，把一个人服务好。"
+      ],
+      "headline": "讲清一个问题，帮到一个人",
+      "subline": "发布 → 回复 → 反馈 → 再做",
+      "keywords": [
+        "发布",
+        "回复",
+        "反馈",
+        "再做"
+      ],
+      "visualType": "iterate",
+      "visual": "一张卡片经过四个简单节点，回到起点后长出一片新叶；小循环与六环呼应，但不重复完整六个词，保持画面轻盈。",
+      "pace": "稳定推进，逐渐放松",
+      "emotion": "踏实／持续",
+      "estimatedDurationSeconds": 9,
+      "sfx": [
+        {
+          "cue": "一次小循环完成",
+          "offsetSeconds": 6.2,
+          "type": "chime",
+          "intensity": 0.24
+        }
+      ],
+      "narrationCharacters": 40,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "action",
+      "estimatedStartSeconds": 143,
+      "estimatedEndSeconds": 152,
+      "index": 15,
+      "from": 9045,
+      "captions": [
+        {
+          "text": "发出去，认真回复，收集反馈，再做下一条。",
+          "from": 18,
+          "to": 269
+        },
+        {
+          "text": "别承诺七天逆袭，先练会把一个问题讲清，",
+          "from": 279,
+          "to": 471
+        },
+        {
+          "text": "把一个人服务好。",
+          "from": 471,
+          "to": 552
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "发出去，认真回复，收集反馈，再做下一条。",
+          "from": 18,
+          "durationInFrames": 251
+        },
+        {
+          "text": "别承诺七天逆袭，先练会把一个问题讲清，把一个人服务好。",
+          "from": 279,
+          "durationInFrames": 273
+        }
+      ],
+      "durationInFrames": 587,
+      "durationSeconds": 9.783333333333333,
+      "visualCues": [
+        18,
+        279
+      ],
+      "renderSfx": [
+        {
+          "from": 18,
+          "type": "step",
+          "gain": 0.12
+        },
+        {
+          "from": 30,
+          "type": "step",
+          "gain": 0.12
+        },
+        {
+          "from": 42,
+          "type": "step",
+          "gain": 0.12
+        },
+        {
+          "from": 54,
+          "type": "step",
+          "gain": 0.12
+        }
+      ]
+    },
+    {
+      "id": "ending",
+      "chapter": "06 收束",
+      "narration": "新媒体运营的起点，不是你终于被所有人看见。而是有人看完以后说：这条内容，刚好帮到了我。",
+      "sentences": [
+        "新媒体运营的起点，不是你终于被所有人看见。",
+        "而是有人看完以后说：",
+        "这条内容，刚好帮到了我。"
+      ],
+      "headline": "“刚好，帮到了我。”",
+      "subline": "让内容连接到人",
+      "keywords": [
+        "一个人",
+        "刚好帮到我"
+      ],
+      "visualType": "ending",
+      "visual": "镜头从广阔的人群圆点慢慢靠近一个点，一枚暖色留言气泡出现；所有运动逐渐停下。最后一句完整停留至少1.2秒，再轻淡出。",
+      "pace": "缓慢收束，不突兀截断",
+      "emotion": "温暖／小小的成就感",
+      "estimatedDurationSeconds": 10,
+      "sfx": [
+        {
+          "cue": "结尾留言出现",
+          "offsetSeconds": 5.0,
+          "type": "chime",
+          "intensity": 0.18
+        }
+      ],
+      "narrationCharacters": 38,
+      "captionGuidance": "逐句出现，每屏1至2行，每行约12至18个汉字；不要将整段旁白一次铺满。",
+      "kind": "ending",
+      "estimatedStartSeconds": 152,
+      "estimatedEndSeconds": 162,
+      "index": 16,
+      "from": 9632,
+      "captions": [
+        {
+          "text": "新媒体运营的起点，不是你终于被所有人看见。",
+          "from": 26,
+          "to": 241
+        },
+        {
+          "text": "而是有人看完以后说：",
+          "from": 257,
+          "to": 359
+        },
+        {
+          "text": "这条内容，刚好帮到了我。",
+          "from": 375,
+          "to": 517
+        }
+      ],
+      "sentenceCues": [
+        {
+          "text": "新媒体运营的起点，不是你终于被所有人看见。",
+          "from": 26,
+          "durationInFrames": 215
+        },
+        {
+          "text": "而是有人看完以后说：",
+          "from": 257,
+          "durationInFrames": 102
+        },
+        {
+          "text": "这条内容，刚好帮到了我。",
+          "from": 375,
+          "durationInFrames": 142
+        }
+      ],
+      "durationInFrames": 614,
+      "durationSeconds": 10.233333333333333,
+      "visualCues": [
+        26,
+        257,
+        375
+      ],
+      "renderSfx": [
+        {
+          "from": 375,
+          "type": "chime",
+          "gain": 0.14
+        }
+      ]
+    }
+  ],
+  "soundEvents": [
+    {
+      "frame": 8,
+      "type": "click",
+      "gain": 0.23
+    },
+    {
+      "frame": 16,
+      "type": "click",
+      "gain": 0.2
+    },
+    {
+      "frame": 23,
+      "type": "click",
+      "gain": 0.18
+    },
+    {
+      "frame": 123,
+      "type": "impact",
+      "gain": 0.32
+    },
+    {
+      "frame": 211,
+      "type": "whoosh",
+      "gain": 0.17
+    },
+    {
+      "frame": 330,
+      "type": "riser",
+      "gain": 0.13
+    },
+    {
+      "frame": 881,
+      "type": "whoosh",
+      "gain": 0.15
+    },
+    {
+      "frame": 1073,
+      "type": "chime",
+      "gain": 0.18
+    },
+    {
+      "frame": 1503,
+      "type": "step",
+      "gain": 0.13
+    },
+    {
+      "frame": 1515,
+      "type": "step",
+      "gain": 0.13
+    },
+    {
+      "frame": 1527,
+      "type": "step",
+      "gain": 0.13
+    },
+    {
+      "frame": 1539,
+      "type": "step",
+      "gain": 0.13
+    },
+    {
+      "frame": 1551,
+      "type": "step",
+      "gain": 0.13
+    },
+    {
+      "frame": 1563,
+      "type": "step",
+      "gain": 0.13
+    },
+    {
+      "frame": 2042,
+      "type": "step",
+      "gain": 0.22
+    },
+    {
+      "frame": 2066,
+      "type": "whoosh",
+      "gain": 0.12
+    },
+    {
+      "frame": 2653,
+      "type": "click",
+      "gain": 0.13
+    },
+    {
+      "frame": 2662,
+      "type": "click",
+      "gain": 0.13
+    },
+    {
+      "frame": 2671,
+      "type": "click",
+      "gain": 0.13
+    },
+    {
+      "frame": 2680,
+      "type": "click",
+      "gain": 0.13
+    },
+    {
+      "frame": 3261,
+      "type": "whoosh",
+      "gain": 0.14
+    },
+    {
+      "frame": 3392,
+      "type": "chime",
+      "gain": 0.16
+    },
+    {
+      "frame": 3823,
+      "type": "step",
+      "gain": 0.18
+    },
+    {
+      "frame": 3930,
+      "type": "step",
+      "gain": 0.18
+    },
+    {
+      "frame": 4176,
+      "type": "step",
+      "gain": 0.18
+    },
+    {
+      "frame": 4489,
+      "type": "click",
+      "gain": 0.16
+    },
+    {
+      "frame": 4531,
+      "type": "click",
+      "gain": 0.16
+    },
+    {
+      "frame": 4573,
+      "type": "click",
+      "gain": 0.16
+    },
+    {
+      "frame": 4684,
+      "type": "chime",
+      "gain": 0.2
+    },
+    {
+      "frame": 5144,
+      "type": "whoosh",
+      "gain": 0.08
+    },
+    {
+      "frame": 5155,
+      "type": "whoosh",
+      "gain": 0.08
+    },
+    {
+      "frame": 5166,
+      "type": "whoosh",
+      "gain": 0.08
+    },
+    {
+      "frame": 5176,
+      "type": "whoosh",
+      "gain": 0.08
+    },
+    {
+      "frame": 5856,
+      "type": "step",
+      "gain": 0.16
+    },
+    {
+      "frame": 5961,
+      "type": "chime",
+      "gain": 0.11
+    },
+    {
+      "frame": 6620,
+      "type": "step",
+      "gain": 0.14
+    },
+    {
+      "frame": 6692,
+      "type": "click",
+      "gain": 0.21
+    },
+    {
+      "frame": 7274,
+      "type": "riser",
+      "gain": 0.07
+    },
+    {
+      "frame": 8001,
+      "type": "whoosh",
+      "gain": 0.14
+    },
+    {
+      "frame": 8103,
+      "type": "step",
+      "gain": 0.16
+    },
+    {
+      "frame": 8508,
+      "type": "impact",
+      "gain": 0.18
+    },
+    {
+      "frame": 8532,
+      "type": "impact",
+      "gain": 0.18
+    },
+    {
+      "frame": 8556,
+      "type": "impact",
+      "gain": 0.18
+    },
+    {
+      "frame": 9063,
+      "type": "step",
+      "gain": 0.12
+    },
+    {
+      "frame": 9075,
+      "type": "step",
+      "gain": 0.12
+    },
+    {
+      "frame": 9087,
+      "type": "step",
+      "gain": 0.12
+    },
+    {
+      "frame": 9099,
+      "type": "step",
+      "gain": 0.12
+    },
+    {
+      "frame": 10007,
+      "type": "chime",
+      "gain": 0.14
+    }
+  ]
+}

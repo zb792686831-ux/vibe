@@ -1,7 +1,9 @@
 import {Composition} from 'remotion';
 import {SetupTest} from './SetupTest';
+import {NewMediaRegistration} from './new-media/Registration.generated';
 
 export const RemotionRoot = () => (
+  <>
   <Composition
     id="SetupTest"
     component={SetupTest}
@@ -11,4 +13,6 @@ export const RemotionRoot = () => (
     durationInFrames={300}
     defaultProps={{title: 'VIDEO WORKSPACE'}}
   />
+  <NewMediaRegistration />
+  </>
 );

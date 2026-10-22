@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "description": "Remotion + FFmpeg video workspace, 1920x1080 at 60fps",
-  "engines": {"node": ">=22 <25"},
+  "engines": {
+    "node": ">=22 <25"
+  },
   "scripts": {
     "dev": "remotion studio src/index.ts --port=3000",
     "typecheck": "tsc --noEmit",
@@ -12,10 +14,16 @@
     "finalize:test": "node scripts/finalize-test.mjs",
     "verify:test": "node scripts/verify-test.mjs",
     "pretest:render": "node -e \"require('node:fs').rmSync('output/validation.json', {force: true})\"",
-    "test:render": "npm run typecheck && npm run render:test && npm run finalize:test && npm run verify:test"
+    "test:render": "npm run typecheck && npm run render:test && npm run finalize:test && npm run verify:test",
+    "video:prepare": "python3 scripts/prepare-new-media.py",
+    "video:render": "node scripts/render-new-media.mjs",
+    "video:verify": "node scripts/verify-new-media.mjs",
+    "video:build": "npm run typecheck && npm run video:render && npm run video:verify"
   },
   "dependencies": {
+    "@remotion/fonts": "4.0.537",
     "@remotion/media": "4.0.537",
+    "@remotion/transitions": "4.0.537",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "remotion": "4.0.537"
